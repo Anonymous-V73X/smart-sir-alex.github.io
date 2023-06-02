@@ -78,3 +78,26 @@ window.addEventListener("scroll", function () {
     }
   });
 });
+
+
+
+
+var icon = document.getElementById("icon");
+var instruction = document.getElementById("instruction");
+var container = document.getElementById("container");
+var clickCount = 0;
+var timer;
+
+icon.addEventListener("click", function () {
+  clickCount++;
+
+  if (clickCount === 2) {
+    clearTimeout(timer);
+    container.classList.add("hidden");
+  } else {
+    instruction.classList.toggle("hidden");
+    timer = setTimeout(function () {
+      container.classList.add("hidden");
+    }, 8000);
+  }
+});
