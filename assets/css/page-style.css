@@ -1364,7 +1364,7 @@ p {
 
 .scroll-to-top {
   position: fixed;
-  right: 5%;
+  right: 10px;
   bottom: 50px;
   width: 30px;
   height: 30px;
