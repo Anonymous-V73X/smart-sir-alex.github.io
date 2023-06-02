@@ -212,10 +212,12 @@ nav {
 
   padding: 10px 40px 40px 10px;
   border-radius: 5px;
+   transform-origin: 3.4s ease all;
 }
 
 .accordion {
   width: 100% !important;
+ 
 }
 h2 {
   font-size: 16px;
@@ -872,11 +874,17 @@ a:not([href]):not([tabindex]):focus {
 
 .collapse {
   display: none;
+  transition: all 0.5s ease; 
 }
 
 .collapse.show {
   display: block;
 }
+
+
+
+
+
 
 .accordion-panel-header.active .fas.fa-plus {
   transform: rotate(45deg);
