@@ -97,7 +97,56 @@ function toggleHamburger() {
   hamburger.classList.toggle("is-active");
   menu.classList.toggle("is-visible");
   body.classList.toggle("menu-open");
+
+  // Add event listeners to handle scrolling and outside click
+  window.addEventListener("scroll", handleScroll);
+  document.addEventListener("click", handleClickOutside);
+
+  function handleScroll() {
+    // Hide the menu when scrolling
+    menu.classList.remove("is-visible");
+    body.classList.remove("menu-open");
+    hamburger.classList.remove("is-active");
+
+    // Remove the event listener after hiding the menu
+    window.removeEventListener("scroll", handleScroll);
+  }
+
+function handleClickOutside(event) {
+  if (
+    !menu.contains(event.target) &&
+    !hamburger.contains(event.target) &&
+    !event.target.classList.contains("menu")
+  ) {
+    // Hide the menu when clicking outside
+    menu.classList.remove("is-visible");
+    body.classList.remove("menu-open");
+    hamburger.classList.remove("is-active");
+  }
+
+  // Remove the event listener after hiding the menu
+  setTimeout(function () {
+    document.removeEventListener("click", handleClickOutside);
+  });
 }
+
+// Add event listener for the initial click event
+document.addEventListener("click", function (event) {
+  // Execute handleClickOutside only once per click event
+  if (!event._menuClicked) {
+    handleClickOutside(event);
+    event._menuClicked = true;
+  }
+});
+
+
+}
+
+
+
+
+
+
 
 const accordionPanelHeaders = document.querySelectorAll(
   ".accordion-panel-header"
