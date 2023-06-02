@@ -101,3 +101,31 @@ icon.addEventListener("click", function () {
     }, 8000);
   }
 });
+
+
+
+
+
+// Scroll to top
+
+window.addEventListener("scroll", function () {
+  var scrollPos =
+    window.pageYOffset ||
+    document.documentElement.scrollTop ||
+    document.body.scrollTop;
+  var scrollHeight =
+    document.documentElement.scrollHeight || document.body.scrollHeight;
+
+  if (scrollPos > (1 / 4) * scrollHeight) {
+    document.querySelector(".scroll-to-top").style.display = "flex";
+  } else {
+    document.querySelector(".scroll-to-top").style.display = "none";
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
