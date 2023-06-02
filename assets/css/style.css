@@ -248,8 +248,8 @@ a {
 }
 
 .foot {
-  margin-top: 10px !important;
-  margin-bottom: -20px!important;
+  margin-top: 20px !important;
+  margin-bottom: -120px!important;
 }
 
 .smart-farming1 {
@@ -417,13 +417,13 @@ strong {
 
 .foot {
   /* Default padding */
-  padding: 50px;
+  padding: 10px;
 }
 
 @media (min-width: 700px) {
   /* Padding for screens over 700px */
   .foot {
-    padding-left: 180px;
+    padding-left: 90px;
   }
 }
 
@@ -499,3 +499,5 @@ strong {
       display: none;
     }
   } 
+
+  
