@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-...your-integrity-hash...=" crossorigin="anonymous" />
 
+    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 
 
@@ -32,9 +36,9 @@
             <h2 class="sem2"> Semester 2.2</h2>
             <div class="menu">
                 <a class="menu-link" href="index.html#home">Home</a>
-                <a class="menu-link" href="index.html#semesters">Semesters</a>
-                <a class="menu-link" href="index.html#links">Links</a>
-                <a class="menu-link" href="index.html#brainstorms"> Project Ideas</a>
+                <a class="menu-link" href="#past-papers">Past Papers</a>
+                <a class="menu-link" href="#tutorials">Tutorials</a>
+                <a class="menu-link" href="index.html#brainstorms"> Brainstorms</a>
             </div>
 
             <button class="hamburger" onclick="toggleHamburger()">
@@ -55,12 +59,12 @@
     <!---------Units Summary ------------->
 
 
-    <div class=" intro slide-down">
+    <div class="intro"    >
         <div class=" text-center">
-            <h1
+            <h1 data-aos="fade-down"  data-aos-delay="300"  
                 style="font-size: 1.6rem; margin-top: 50px; margin-bottom:50px;   font-family: 'Signika', sans-serif;font-weight:bold; color: rgb(95, 83, 68); ">
                 Semester Units</h1>
-            <ul class="border border-light shadow-soft ul-units" style="margin-bottom: 100px;">
+            <ul data-aos="fade-up"  data-aos-delay="300" class="border border-light shadow-soft ul-units" style="margin-bottom: 100px;">
 
                 <li style="display: flex;">
                     <p class="" style="font-weight: bold;">BIBL 222</p>
@@ -100,7 +104,7 @@
 
 
 
-    <div style="display: flex; justify-content: center;">
+    <div style="display: flex; justify-content: center; margin-top:-10px; " data-aos="fade-up"  data-aos-delay="100">
         <button class="btn btn-primary neumorphic shadow-soft border border-light">
             <span class="mr-1" style="font-weight: 500!important;"><span class="fab fa-whatsapp"></span>
                 Whatsapp Group
@@ -139,13 +143,13 @@
 
 
 
-    <div class="text-center">
+    <div class="text-center" data-aos="fade-up"  data-aos-delay="100">
         <h1
-            style="font-size: 1.6rem; margin-top: 50px; margin-bottom:30px; font-weight:bold; font-family: 'Signika', sans-serif;font-weight:bold; color: rgb(95, 83, 68);">
+            style="font-size: 1.6rem; margin-top: -50px; margin-bottom:30px; font-weight:bold; font-family: 'Signika', sans-serif;font-weight:bold; color: rgb(95, 83, 68);">
             Unit Notes </h1>
 
         <p class="notes-intro">
-            Dive into the comprehensive collection of notes curated specifically for each unit, empowering you with the
+            Dive into the comprehensive collection of notes <br> curated specifically for each unit,<br>empowering you with the
             knowledge
             and insights necessary to excel in your IT journey.
         </p>
@@ -156,7 +160,7 @@
 
 
 
-
+<div data-aos="fade-left"  data-aos-delay="200" class="scroll-to-top" onclick="scrollToTop()"></div>
 
 
     <!--------Notes Download links-->
@@ -164,7 +168,7 @@
 
 
     <div class="row mt-6">
-        <div class="col-md-4">
+        <div data-aos="fade-up"  data-aos-delay="200"  class="col-md-4">
 
 
             <!-- Icon box BIBL 222 -->
@@ -185,7 +189,7 @@
         </div>
 
 
-        <div class="col-md-4">
+        <div data-aos="fade-up"  data-aos-delay="100"  class="col-md-4">
             <!-- Icon box  COMP 326 -->
             <div class="icon-box text-center mb-5">
                 <div class="icon icon-shape icon-shape-sm shadow-soft border border-light rounded-circle">
@@ -205,7 +209,7 @@
 
 
 
-        <div class="col-md-4">
+        <div data-aos="fade-up"  data-aos-delay="100"  class="col-md-4">
             <!-- Icon box -->
             <div class="icon-box text-center mb-5">
                 <div class="icon icon-shape icon-shape-sm shadow-soft border border-light rounded-circle">
@@ -227,7 +231,7 @@
 
 
 
-        <div class="col-md-4">
+        <div data-aos="fade-up"  data-aos-delay="100"  class="col-md-4">
             <!-- Icon box -->
             <div class="icon-box text-center mb-5">
                 <div class="icon icon-shape icon-shape-sm shadow-soft border border-light rounded-circle">
@@ -248,7 +252,7 @@
 
 
 
-        <div class="col-md-4">
+        <div data-aos="fade-up"  data-aos-delay="100"  class="col-md-4">
             <!-- Icon box -->
             <div class="icon-box text-center mb-5">
                 <div class="icon icon-shape icon-shape-sm shadow-soft border border-light rounded-circle">
@@ -317,12 +321,12 @@
 
     <!--------====== Title ======-------->
 
-    <div class="row">
+    <div id="past-papers" data-aos="fade-up"  data-aos-delay="100"   class="row">
 
 
 
         <div class="col text-center">
-            <div class="mb-5" style="margin-top: 100px;
+            <div class="mb-5" style="margin-top: 50px;
         margin-bottom:30px; font-weight:bold; font-family: 'Signika', sans-serif !important;
         font-weight:bold; color: rgb(95, 83, 68);">
                 <span class="h5 text-center key-resources-intro">Key Resources</span>
@@ -350,7 +354,7 @@
     </div>
 
 
-    <div class="row justify-content-center">
+    <div  class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8">
 
 
@@ -358,14 +362,15 @@
 
             <!--========= Accordion =========-->
 
-            <div class="accordion shadow-soft rounded" id="accordionExample1">
+            <div data-aos="fade-up"  data-aos-delay="100"  
+             class="accordion shadow-soft rounded" id="accordionExample1">
                 <div class="card card-sm card-body bg-primary border-light mb-0">
                     <a href="#panel-1" data-target="#panel-1" class="accordion-panel-header" data-toggle="collapse"
                         role="button" aria-expanded="false" aria-controls="panel-1">
                         <span class="h6 mb-0 font-weight-bold">Past Papers</span>
                         <span class="icon"><span class="fas fa-plus"></span></span>
                     </a>
-                    <div class="collapse" id="panel-1" >
+                    <div class="collapse" id="panel-1">
 
 
 
@@ -406,25 +411,29 @@
                         <span class="icon"><span class="fas fa-plus"></span></span>
                     </a>
                     <div class="collapse" id="panel-2">
-                        <div class="pt-3" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <div class="pt-3"
+                            style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                             <button class="btn btn-primary neumorphic shadow-soft border border-light"
                                 style="margin-top: 40px; max-width: 200px">
                                 <span class="mr-1"><i class="fab fa-java" style="height: 20px!important;"></i></span>
                                 <strong>Java JDK</strong>
                                 <span class="mr-1"><i class="fab fa-java" style="height: 20px!important;"></i></span>
                             </button>
-                        
-                            <button class="btn btn-primary neumorphic shadow-soft border border-light" type="button" style="max-width: 200px;">
+
+                            <button class="btn btn-primary neumorphic shadow-soft border border-light" type="button"
+                                style="max-width: 200px;">
                                 <span class="mr-1"><i class="fab fa-windows"></i></span>
                                 VS Code
                             </button>
-                        
-                            <button class="btn btn-primary neumorphic shadow-soft border border-light" type="button" style="max-width: 200px;">
+
+                            <button class="btn btn-primary neumorphic shadow-soft border border-light" type="button"
+                                style="max-width: 200px;">
                                 <span class="mr-1"><i class="fas fa-code"></i></span>
                                 NetBeans
                             </button>
-                        
-                            <button class="btn btn-primary neumorphic shadow-soft border border-light" type="button" style="max-width: 200px;">
+
+                            <button class="btn btn-primary neumorphic shadow-soft border border-light" type="button"
+                                style="max-width: 200px;">
                                 <span class="mr-1"><i class="fas fa-file-code"></i></span>
                                 NASM
                             </button>
@@ -475,7 +484,7 @@
 
 
 
-                
+
             </div>
             <!--End of Accordion-->
 
@@ -520,10 +529,10 @@
 
 
 
-    <div class="row">
+    <div id="tutorials" data-aos="fade-up"  data-aos-delay="100"   class="row">
         <div class="col text-center">
             <div class="mb-5"
-                style="margin-top: 100px; margin-bottom: 30px; font-weight: bold; font-family: 'Signika', sans-serif !important; color: rgb(95, 83, 68);">
+                style="margin-top: 40px; margin-bottom: 30px; font-weight: bold; font-family: 'Signika', sans-serif !important; color: rgb(95, 83, 68);">
                 <span class="h5 text-center key-resources-intro">YouTube Tutorials</span>
             </div>
         </div>
@@ -535,22 +544,22 @@
 
 
 
-  
+
 
 
 
 
         </p>
 
-        
 
-                  
+
+
     </div>
 
-<div class="centered-container" id="container">
-    <i class="fas fa-exclamation-circle mr-2" id="icon"></i>
-    <p class="hidden" id="instruction">Tap image to watch online or click download to save to gallery.</p>
-</div>
+    <div data-aos="fade-up"  data-aos-delay="100"   class="centered-container" id="container">
+        <i class="fas fa-exclamation-circle mr-2" id="icon"></i>
+        <p class="hidden" id="instruction">Tap image to watch online or click download to save to gallery.</p>
+    </div>
 
 
 
@@ -576,7 +585,7 @@
     <div class="video-tutorials">
 
 
-        <div class="card video-card bg-primary border-light shadow-soft">
+        <div data-aos="fade-up"  data-aos-delay="200"   class="card video-card bg-primary border-light shadow-soft">
             <img class="thumbnail" src="./assets/images/Learn HTML IN 1hr.jpg" class="card-img-top rounded-top"
                 alt="Themesberg office">
             <div class="card-body" style="margin-top: -10%; margin-left:-4%">
@@ -598,7 +607,7 @@
 
         <!-- Repeat the same structure for the other card elements -->
 
-        <div class="card video-card bg-primary border-light shadow-soft">
+        <div data-aos="fade-up"  data-aos-delay="200"   class="card video-card bg-primary border-light shadow-soft">
             <img class="thumbnail" src="./assets/images/Full HTML Course.jpg" class="card-img-top rounded-top"
                 alt="Themesberg office">
             <div class="card-body" style="margin-top: -10%; margin-left:-4%">
@@ -620,7 +629,7 @@
 
         <!-- Repeat the same structure for the other card elements -->
 
-        <div class="card video-card bg-primary border-light shadow-soft">
+        <div data-aos="fade-up"  data-aos-delay="200"   class="card video-card bg-primary border-light shadow-soft">
             <img class="thumbnail" src="./assets/images/Whats js.jpg" alt="Themesberg office">
             <div class="card-body" style="margin-top: -10%; margin-left:-4%">
 
@@ -641,7 +650,7 @@
 
         <!-- Repeat the same structure for the other card elements -->
 
-        <div class="card video-card bg-primary border-light shadow-soft">
+        <div data-aos="fade-up"  data-aos-delay="200"   class="card video-card bg-primary border-light shadow-soft">
             <img class="thumbnail" src="./assets/images/js in 1hr.jpg" alt="Themesberg office">
             <div class="card-body" style="margin-top: -10%; margin-left:-4%">
 
@@ -664,7 +673,7 @@
 
 
 
-        <div class="card video-card bg-primary border-light shadow-soft">
+        <div data-aos="fade-up"  data-aos-delay="200"   class="card video-card bg-primary border-light shadow-soft">
             <img class="thumbnail" src="./assets/images/hq720.webp" class="card-img-top rounded-top"
                 alt="Themesberg office">
             <div class="card-body" style="margin-top: -10%; margin-left:-4%">
@@ -686,7 +695,7 @@
 
         <!-- Repeat the same structure for the other card elements -->
 
-        <div class="card video-card bg-primary border-light shadow-soft">
+        <div data-aos="fade-up"  data-aos-delay="200"   class="card video-card bg-primary border-light shadow-soft">
             <img class="thumbnail" src="./assets/images/js tutorial oop.jpg" alt="Themesberg office">
             <div class="card-body" style="margin-top: -10%; margin-left:-4%">
 
@@ -708,7 +717,7 @@
 
 
 
-        <div class="card video-card bg-primary border-light shadow-soft">
+        <div data-aos="fade-up"  data-aos-delay="200"   class="card video-card bg-primary border-light shadow-soft">
             <img class="thumbnail" src="./assets/images/hq720.webp" class="card-img-top rounded-top"
                 alt="Themesberg office">
             <div class="card-body" style="margin-top: -10%; margin-left:-4%">
@@ -730,7 +739,7 @@
         </div>
 
 
-        <div class="card video-card bg-primary border-light shadow-soft">
+        <div data-aos="fade-up"  data-aos-delay="200"   class="card video-card bg-primary border-light shadow-soft">
             <img class="thumbnail" src="./assets/images/hq720.jpg" alt="Themesberg office">
             <div class="card-body" style="margin-top: -10%; margin-left:-4%">
 
@@ -754,7 +763,7 @@
 
 
 
-        <div class="card video-card bg-primary border-light shadow-soft">
+        <div data-aos="fade-up"  data-aos-delay="200"   class="card video-card bg-primary border-light shadow-soft">
             <img class="thumbnail" src="./assets/images/assembly720.webp" class="card-img-top rounded-top"
                 alt="Themesberg office">
             <div class="card-body" style="margin-top: -10%; margin-left:-4%">
@@ -791,7 +800,7 @@
 
 
 
-    <div style="display: flex; justify-content: center;">
+    <div data-aos="fade-up"  data-aos-delay="200"   style="display: flex; justify-content: center;">
         <button class="btn btn-primary neumorphic shadow-soft border border-light">
             <span class="mr-1" style="font-weight: 500!important;">
                 <i class="fab fa-youtube"></i>
@@ -819,9 +828,9 @@
 
     <!-----Progress------>
 
-    <div class="container-1">
+    <div data-aos="fade-up"  data-aos-delay="200"   class="container-1">
         <h2 class="title-1"
-            style="font-size: 1.7rem; margin-top: 50px; margin-bottom:30px; font-weight:bold; font-family: 'Signika', sans-serif;font-weight:bold; color: rgb(95, 83, 68);"">Progress</h2>
+            style="font-size: 1.7rem; margin-top: -70px; margin-bottom:0px; font-weight:bold; font-family: 'Signika', sans-serif;font-weight:bold; color: rgb(95, 83, 68);"">Progress</h2>
         <p class=" paragraph-1">If you're at this stage, it means you have successfully completed 4 semesters out
             of a
             total of 8
@@ -832,7 +841,7 @@
 
 
 
-            <div class="progress">
+            <div data-aos="fade-left"  data-aos-delay="200"  class="progress">
                 <div class="progress__fill"></div>
             </div>
     </div>
@@ -842,13 +851,115 @@
 
 
 
+    <div style="border-top: 0.5px solid #a1a09f; margin-top: 10px; opacity: 0.2;"></div>
 
 
 
 
 
 
+    <!-------------========= 😁😁 Footer Starts Here😁😁 =======----------------------->
 
+    <footer data-aos="fade-up"  data-aos-delay="300"   class="foot">
+
+        <div class="foot-links" style="display: flex; flex-wrap: wrap; padding: 10px; ">
+            <div class="col-md-4 text-center">
+                <h4 style="font-weight: bold; text-align: start;
+              margin-bottom: 20px; ">Credits</h4>
+
+
+
+
+                <div class="credit-links " style="margin-bottom: 30px;">
+                    <p><a href="https://www.vecteezy.com" class="credits">- Vecteezy</a></p>
+                    <p><a href="https://www.vecteezy.com" class="credits">- Brandify</a></p>
+                    <p><a href="https://www.kabarak.ac.ke" class="credits">- Kabarak University</a></p>
+                    <p><a href="https://www.pngtree.com" class="credits">- pngTree</a></p>
+                    <p style="opacity: 1 !important;color: rgb(118, 116, 116) !important;"><a class="credits">-
+                            Others</a></p>
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="col-md-4 text-center con">
+                <h4 style="font-weight: bold;
+              text-align: start; margin-bottom: 20px; ">Contacts</h4>
+
+
+                <div class="contact-links" style="margin-bottom: 30px;">
+
+                    <p><a href="https://t.me/Kabarak_University_bot" class="credits" target="_blank">- Telegram
+                            Bot</a>
+                    </p>
+                    <p><a href="https://www.bing.com/ck/a?!&&p=e8fc103d80d5b15eJmltdHM9MTY4NDg4NjQwMCZpZ3VpZD0yYmJlMTA5YS1jZTJjLTY5MTMtMDFkMi0wMzgyY2ZhZTY4NWQmaW5zaWQ9NTE3OQ&ptn=3&hsh=3&fclid=2bbe109a-ce2c-6913-01d2-0382cfae685d&psq=kabarak+university+twitter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS9LYWJhcmFrVW5pdg&ntb=1"
+                            class="credits" target="_blank">- Twitter</a></p>
+
+                    <p><a href="https://wa.me//254773602480" class="credits" target="_blank">- Whatsapp</a></p>
+                    <p><a href="https://t.me//Anonymous_V73X_MVP" class="credits" target="_blank">- Telegram</a></p>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="col-md-4 text-center">
+                <h4 style="font-weight: bold; text-align: start; margin-bottom: 20px; ">Links</h4>
+
+
+                <div class="linkz">
+                    <p><a href="#home" class="lin">- Home</a></p>
+                    <p><a href="#semesters" class="lin">- Semesters</a></p>
+                    <p><a href="#contact" class="lin">- Contact Us</a></p>
+                    <p><a href="https://moodle.kabarak.ac.ke/login/index.php" class="lin">- Moodle</a></p>
+                    <p><a href="https://www.kabarak.ac.ke" class="lin">- Kabarak University</a></p>
+                    <p><a href="https://chat.openai.com" class="lin">- ChatGPT</a></p>
+                    <p><a href="https://www.youtube.com" class="lin">- YouTube</a></p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div style="display: flex; justify-content:center; text-align:center;margin-top: 100px;  ">
+            <p class="mb-0" style="opacity: 0.4; font-weight:bold !important; font-size:small"> © 2023 IT Course Hub.
+                All rights reserved.</p>
+        </div>
+
+        <div style="margin: 20px 0; display: flex; justify-content: center;">
+            <p style="font-weight: bold; opacity:0.8;">Developed by: <a class="Sir" href="https://wa.me//254773602480">
+                    Sir Alex</a></p>
+        </div>
+
+        <!--------- 💬💬💬Social Elements💬💬🗨️ ------------->
+
+
+        <div class="socials" style="margin-top: 10px;">
+
+            <a href="https://wa.me//254773602480">
+                <img class="socw" src="./assets/images/1860492_whatsapp_social media_icon.png" alt="" />
+            </a>
+            <a href="https://t.me//Anonymous_V73X_MVP">
+                <img class="soct" src="./assets/images/4375490_logo_telegram_icon.png" alt="" />
+            </a>
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+    <!---------========= 😁😁😁Footer Ends Here😁😁😁 ==========-------->
 
 
 
@@ -868,6 +979,10 @@
 
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/semesters.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
