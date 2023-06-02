@@ -1,21 +1,43 @@
 //acordion handler
-        const panelHeaders = document.querySelectorAll('.accordion-panel-header');
 
-        panelHeaders.forEach(function (panelHeader) {
-            const content = document.querySelector(panelHeader.getAttribute('href'));
-            const plusIcon = panelHeader.querySelector('.fas.fa-plus');
-            const paragraph = content.querySelector('p');
 
-            panelHeader.addEventListener('click', function () {
-                content.classList.toggle('show');
-                panelHeader.classList.toggle('active');
-                if (content.classList.contains('show')) {
-                    paragraph.style.display = 'block';
-                } else {
-                    paragraph.style.display = 'none';
-                }
-            });
-        });
+const panelHeaders = document.querySelectorAll(".accordion-panel-header");
+
+panelHeaders.forEach(function (panelHeader) {
+  const content = document.querySelector(panelHeader.getAttribute("href"));
+  const plusIcon = panelHeader.querySelector(".fas.fa-plus");
+  const paragraphs = content.querySelectorAll("p");
+  const buttons = content.querySelectorAll("button");
+
+  panelHeader.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevents the default behavior of anchor tag
+
+    content.classList.toggle("show");
+    panelHeader.classList.toggle("active");
+
+    if (content.classList.contains("show")) {
+      paragraphs.forEach(function (paragraph) {
+        paragraph.style.display = "block";
+      });
+      buttons.forEach(function (button) {
+        button.style.display = "block";
+      });
+      content.style.maxHeight = content.scrollHeight + "px";
+    } else {
+      paragraphs.forEach(function (paragraph) {
+        paragraph.style.display = "none";
+      });
+      buttons.forEach(function (button) {
+        button.style.display = "none";
+      });
+      content.style.maxHeight = "0";
+    }
+  });
+});
+
+
+
+        
     
 
 
