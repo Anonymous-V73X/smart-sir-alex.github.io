@@ -649,13 +649,69 @@
                 </span>
 
                 <button class="btn btn-primary neumorphic shadow-soft border border-light"
-                    style="display: block; margin: 10% auto 0;">
+                    style="display: block; margin: 10% auto 0;" onclick="showPopup(1)">
                     <span class="mr-1">
                         <i class="fas fa-download"></i> <!-- Replace this line with the download icon class -->
                     </span>
                     Download Video
                 </button>
             </div>
+        </div>
+
+
+
+        <!-------------Select Quality 1---------------->
+
+
+        <div class="popup-card" id="popupCard1">
+
+            <div data-aos="fade-up" data-aos-delay="200" class="card video-card bg-primary "
+                style="border: rgba(246, 245, 243, 0.957) 3px solid;">
+
+                <div class="card-body" style="margin-top: -10%; margin-left:-4%; display:flex; flex-direction:column;
+                align-items:center;">
+
+                    <h3 class="h5 card-title mt-3" style="margin-top:40px !important;
+                    margin-bottom: 40px; opacity:0.5;text-align:center;">Select Video Quality</h3>
+
+
+                    <a href="https://drive.google.com/uc?export=download&id=1kbcsrHwCqoVhoPQMLqs-gEIfr6C3bpx9"
+                        target="_blank">
+                        <button class="btn btn-primary neumorphic shadow-soft border border-light">
+                            <span class="mr-1">
+                                <i class="fas fa-video"></i>
+                            </span>
+                            1080p
+                        </button>
+
+                    </a>
+
+
+
+
+                    <a href="https://drive.google.com/uc?export=download&id=1u661f4HcVb44LZgalDKO1iec5jhy2x_Z"
+                        target="_blank">
+                        <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                            style="margin-bottom: 100px !important;">
+                            <span class="mr-1">
+                                <i class="fas fa-video"></i>
+                            </span>
+                            720p
+                        </button>
+                    </a>
+
+
+
+                    <span class="close-btn" onclick="rotateAndHidePopup(1)">
+                        <i class="fa fa-times-circle" style="font-size: 30px; color: rgb(92, 64, 51);"></i>
+                    </span>
+
+
+
+                </div>
+
+            </div>
+
         </div>
 
         <!-- Repeat the same structure for the other card elements -->
@@ -673,13 +729,78 @@
                 </span>
 
                 <button class="btn btn-primary neumorphic shadow-soft border border-light"
-                    style="display: block; margin: 10% auto 0;">
+                    style="display: block; margin: 10% auto 0;" onclick="showPopup(2)">
                     <span class="mr-1">
                         <i class="fas fa-download"></i> <!-- Replace this line with the download icon class -->
                     </span>
                     Download Video
                 </button>
             </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-------------Select Quality 2---------------->
+
+
+        <div class="popup-card" id="popupCard2">
+
+            <div data-aos="fade-up" data-aos-delay="200" class="card video-card bg-primary "
+                style="border: rgba(246, 245, 243, 0.957) 3px solid;">
+
+                <div class="card-body" style="margin-top: -10%; margin-left:-4%; display:flex; flex-direction:column;
+                        align-items:center;">
+
+                    <h3 class="h5 card-title mt-3" style="margin-top:40px !important;
+                            margin-bottom: 40px; opacity:0.5;text-align:center;">Select Video Quality</h3>
+
+
+
+
+                    <a href="https://drive.google.com/uc?export=download&id=1tIOe31WFatBJ12rIHhSscMxBceDQ7oLI"
+                        target="_blank">
+                        <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                            onclick="downloadVideo('1080p')">
+
+                            <span class="mr-1">
+                                <i class="fas fa-video"></i>
+                            </span>
+                            1080p
+
+
+                        </button>
+                    </a>
+
+
+
+
+                    <a href="https://drive.google.com/uc?export=download&id=140Z5dSKlzhf-Uz2blgsCsKy6uRu53vrW"
+                        target="_blank">
+                        <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                            onclick="downloadVideo('720p')" style="margin-bottom: 100px !important;">
+                            <span class="mr-1">
+                                <i class="fas fa-video"></i>
+                            </span>
+                            720p
+                        </button>
+                    </a>
+
+
+                    <span class="close-btn" onclick="rotateAndHidePopup(2)">
+                        <i class="fa fa-times-circle" style="font-size: 30px; color: rgb(92, 64, 51);"></i>
+                    </span>
+
+
+
+                </div>
+
+            </div>
+
         </div>
 
         <!-- Repeat the same structure for the other card elements -->
@@ -696,7 +817,7 @@
                 </span>
 
                 <button class="btn btn-primary neumorphic shadow-soft border border-light"
-                    style="display: block; margin: 10% auto 0;">
+                    style="display: block; margin: 10% auto 0;" onclick="showPopup(3)">
                     <span class="mr-1">
                         <i class="fas fa-download"></i> <!-- Replace this line with the download icon class -->
                     </span>
@@ -704,6 +825,65 @@
                 </button>
             </div>
         </div>
+
+
+
+
+
+        <div class="popup-card" id="popupCard3">
+
+            <div data-aos="fade-up" data-aos-delay="200" class="card video-card bg-primary "
+                style="border: rgba(246, 245, 243, 0.957) 3px solid;">
+
+                <div class="card-body" style="margin-top: -10%; margin-left:-4%; display:flex; flex-direction:column;
+                                align-items:center;">
+
+                    <h3 class="h5 card-title mt-3" style="margin-top:40px !important;
+                                    margin-bottom: 40px; opacity:0.5;text-align:center;">Select Video Quality</h3>
+
+
+                    <a href="https://drive.google.com/uc?export=download&id=1S2c56WyA69dkknurDXtuNaidbEdDiH0Z">
+                        <button class="btn btn-primary neumorphic shadow-soft border border-light">
+
+                            <span class="mr-1">
+                                <i class="fas fa-video"></i>
+                            </span>
+                            1080p
+
+
+                        </button>
+
+                    </a>
+
+
+                    <a href="https://drive.google.com/uc?export=download&id=1uoKPWM-8wSzypdnwMTuW4VVlJryog_HX">
+                        <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                            onclick="downloadVideo('720p')" style="margin-bottom: 100px !important;">
+                            <span class="mr-1">
+                                <i class="fas fa-video"></i>
+                            </span>
+                            720p
+                        </button>
+                    </a>
+
+
+
+                    <span class="close-btn" onclick="rotateAndHidePopup(3)">
+                        <i class="fa fa-times-circle" style="font-size: 30px; color: rgb(92, 64, 51);"></i>
+                    </span>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
 
         <!-- Repeat the same structure for the other card elements -->
 
@@ -719,7 +899,7 @@
                 </span>
 
                 <button class="btn btn-primary neumorphic shadow-soft border border-light"
-                    style="display: block; margin: 10% auto 0;">
+                    style="display: block; margin: 10% auto 0;" onclick="showPopup(4)">
                     <span class="mr-1">
                         <i class="fas fa-download"></i> <!-- Replace this line with the download icon class -->
                     </span>
@@ -727,6 +907,73 @@
                 </button>
             </div>
         </div>
+
+
+
+
+
+
+        <!-------------Select Quality 4---------------->
+
+
+        <div class="popup-card" id="popupCard4">
+
+            <div data-aos="fade-up" data-aos-delay="200" class="card video-card bg-primary "
+                style="border: rgba(246, 245, 243, 0.957) 3px solid;">
+
+                <div class="card-body" style="margin-top: -10%; margin-left:-4%; display:flex; flex-direction:column;
+                        align-items:center;">
+
+                    <h3 class="h5 card-title mt-3" style="margin-top:40px !important;
+                            margin-bottom: 40px; opacity:0.5;text-align:center;">Select Video Quality</h3>
+
+
+
+                    <a href="https://drive.google.com/uc?id=11JnU6pd17y4hZRlO9onFDKH74vQu2_PC&export=download">
+                        <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                            onclick="downloadVideo('1080p')">
+                            
+                            <span class="mr-1">
+                                <i class="fas fa-video"></i>
+                            </span>
+                            1080p
+
+
+                        </button>
+
+                    </a>
+
+
+                    <a href="https://drive.google.com/uc?id=1iK7uJSHArwl4_UUxwTB5qJx7zxilCCMc&export=download"
+                        target="_blank">
+                        <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                            onclick="downloadVideo('720p')" style="margin-bottom: 100px !important;">
+                            <span class="mr-1">
+                                <i class="fas fa-video"></i>
+                            </span>
+                            720p
+                        </button>
+                    </a>
+
+
+
+                    <span class="close-btn" onclick="rotateAndHidePopup(4)">
+                        <i class="fa fa-times-circle" style="font-size: 30px; color: rgb(92, 64, 51);"></i>
+                    </span>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
 
 
 
@@ -744,13 +991,66 @@
                 </span>
 
                 <button class="btn btn-primary neumorphic shadow-soft border border-light"
-                    style="display: block; margin: 10% auto 0;">
+                    style="display: block; margin: 10% auto 0;" onclick="showPopup(5)">
                     <span class="mr-1">
                         <i class="fas fa-download"></i> <!-- Replace this line with the download icon class -->
                     </span>
                     Download Video
                 </button>
             </div>
+        </div>
+
+
+
+
+
+
+        <!-------------Select Quality 5---------------->
+
+
+        <div class="popup-card" id="popupCard5">
+
+            <div data-aos="fade-up" data-aos-delay="200" class="card video-card bg-primary "
+                style="border: rgba(246, 245, 243, 0.957) 3px solid;">
+
+                <div class="card-body" style="margin-top: -10%; margin-left:-4%; display:flex; flex-direction:column;
+                        align-items:center;">
+
+                    <h3 class="h5 card-title mt-3" style="margin-top:40px !important;
+                            margin-bottom: 40px; opacity:0.5;text-align:center;">Select Video Quality</h3>
+
+
+                    <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                        onclick="downloadVideo('1080p')">
+                        <!-- Pass the desired quality as an argument -->
+                        <span class="mr-1">
+                            <i class="fas fa-video"></i>
+                        </span>
+                        1080p
+
+
+                    </button>
+
+
+                    <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                        onclick="downloadVideo('720p')" style="margin-bottom: 100px !important;">
+                        <span class="mr-1">
+                            <i class="fas fa-video"></i>
+                        </span>
+                        720p
+                    </button>
+
+
+                    <span class="close-btn" onclick="rotateAndHidePopup(5)">
+                        <i class="fa fa-times-circle" style="font-size: 30px; color: rgb(92, 64, 51);"></i>
+                    </span>
+
+
+
+                </div>
+
+            </div>
+
         </div>
 
         <!-- Repeat the same structure for the other card elements -->
@@ -768,7 +1068,7 @@
                 </span>
 
                 <button class="btn btn-primary neumorphic shadow-soft border border-light"
-                    style="display: block; margin: 10% auto 0;">
+                    style="display: block; margin: 10% auto 0;" onclick="showPopup(6)">
                     <span class="mr-1">
                         <i class="fas fa-download"></i> <!-- Replace this line with the download icon class -->
                     </span>
@@ -776,6 +1076,71 @@
                 </button>
             </div>
         </div>
+
+
+
+
+        <!-------------Select Quality 6---------------->
+
+
+        <div class="popup-card" id="popupCard6">
+
+            <div data-aos="fade-up" data-aos-delay="200" class="card video-card bg-primary "
+                style="border: rgba(246, 245, 243, 0.957) 3px solid;">
+
+                <div class="card-body" style="margin-top: -10%; margin-left:-4%; display:flex; flex-direction:column;
+                        align-items:center;">
+
+                    <h3 class="h5 card-title mt-3" style="margin-top:40px !important;
+                            margin-bottom: 40px; opacity:0.5;text-align:center;">Select Video Quality</h3>
+
+
+                    <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                        onclick="downloadVideo('1080p')">
+                        <!-- Pass the desired quality as an argument -->
+                        <span class="mr-1">
+                            <i class="fas fa-video"></i>
+                        </span>
+                        1080p
+
+
+                    </button>
+
+
+                    <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                        onclick="downloadVideo('720p')" style="margin-bottom: 100px !important;">
+                        <span class="mr-1">
+                            <i class="fas fa-video"></i>
+                        </span>
+                        720p
+                    </button>
+
+
+                    <span class="close-btn" onclick="rotateAndHidePopup(6)">
+                        <i class="fa fa-times-circle" style="font-size: 30px; color: rgb(92, 64, 51);"></i>
+                    </span>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -792,7 +1157,7 @@
                 </span>
 
                 <button class="btn btn-primary neumorphic shadow-soft border border-light"
-                    style="display: block; margin: 10% auto 0;">
+                    style="display: block; margin: 10% auto 0;" onclick="showPopup(7)">
                     <span class="mr-1">
                         <i class="fas fa-download"></i> <!-- Replace this line with the download icon class -->
                     </span>
@@ -800,6 +1165,67 @@
                 </button>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+        <!-------------Select Quality 7---------------->
+
+
+        <div class="popup-card" id="popupCard7">
+
+            <div data-aos="fade-up" data-aos-delay="200" class="card video-card bg-primary "
+                style="border: rgba(246, 245, 243, 0.957) 3px solid;">
+
+                <div class="card-body" style="margin-top: -10%; margin-left:-4%; display:flex; flex-direction:column;
+                        align-items:center;">
+
+                    <h3 class="h5 card-title mt-3" style="margin-top:40px !important;
+                            margin-bottom: 40px; opacity:0.5;text-align:center;">Select Video Quality</h3>
+
+
+                    <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                        onclick="downloadVideo('1080p')">
+                        <!-- Pass the desired quality as an argument -->
+                        <span class="mr-1">
+                            <i class="fas fa-video"></i>
+                        </span>
+                        1080p
+
+
+                    </button>
+
+
+                    <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                        onclick="downloadVideo('720p')" style="margin-bottom: 100px !important;">
+                        <span class="mr-1">
+                            <i class="fas fa-video"></i>
+                        </span>
+                        720p
+                    </button>
+
+
+                    <span class="close-btn" onclick="rotateAndHidePopup(7)">
+                        <i class="fa fa-times-circle" style="font-size: 30px; color: rgb(92, 64, 51);"></i>
+                    </span>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
 
 
         <div data-aos="fade-up" data-aos-delay="200" class="card video-card bg-primary border-light shadow-soft">
@@ -816,7 +1242,7 @@
                 </span>
 
                 <button class="btn btn-primary neumorphic shadow-soft border border-light"
-                    style="display: block; margin: 10% auto 0;">
+                    style="display: block; margin: 10% auto 0;" onclick="showPopup(8)">
                     <span class="mr-1">
                         <i class="fas fa-download"></i> <!-- Replace this line with the download icon class -->
                     </span>
@@ -824,6 +1250,66 @@
                 </button>
             </div>
         </div>
+
+
+
+        <!-------------Select Quality 8---------------->
+
+
+        <div class="popup-card" id="popupCard8">
+
+            <div data-aos="fade-up" data-aos-delay="200" class="card video-card bg-primary "
+                style="border: rgba(246, 245, 243, 0.957) 3px solid;">
+
+                <div class="card-body" style="margin-top: -10%; margin-left:-4%; display:flex; flex-direction:column;
+                        align-items:center;">
+
+                    <h3 class="h5 card-title mt-3" style="margin-top:40px !important;
+                            margin-bottom: 40px; opacity:0.5;text-align:center;">Select Video Quality</h3>
+
+
+                    <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                        onclick="downloadVideo('1080p')">
+                        <!-- Pass the desired quality as an argument -->
+                        <span class="mr-1">
+                            <i class="fas fa-video"></i>
+                        </span>
+                        1080p
+
+
+                    </button>
+
+
+                    <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                        onclick="downloadVideo('720p')" style="margin-bottom: 100px !important;">
+                        <span class="mr-1">
+                            <i class="fas fa-video"></i>
+                        </span>
+                        720p
+                    </button>
+
+
+                    <span class="close-btn" onclick="rotateAndHidePopup(8)">
+                        <i class="fa fa-times-circle" style="font-size: 30px; color: rgb(92, 64, 51);"></i>
+                    </span>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -843,7 +1329,7 @@
                 </span>
 
                 <button class="btn btn-primary neumorphic shadow-soft border border-light"
-                    style="display: block; margin: 10% auto 0;">
+                    style="display: block; margin: 10% auto 0;" onclick="showPopup(9)">
                     <span class="mr-1">
                         <i class="fas fa-download"></i> <!-- Replace this line with the download icon class -->
                     </span>
@@ -856,6 +1342,71 @@
 
 
 
+        <!-------------Select Quality 9---------------->
+
+
+        <div class="popup-card" id="popupCard9">
+
+            <div data-aos="fade-up" data-aos-delay="200" class="card video-card bg-primary "
+                style="border: rgba(246, 245, 243, 0.957) 3px solid;">
+
+                <div class="card-body" style="margin-top: -10%; margin-left:-4%; display:flex; flex-direction:column;
+                        align-items:center;">
+
+                    <h3 class="h5 card-title mt-3" style="margin-top:40px !important;
+                            margin-bottom: 40px; opacity:0.5;text-align:center;">Select Video Quality</h3>
+
+
+                    <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                        onclick="downloadVideo('1080p')">
+                        <!-- Pass the desired quality as an argument -->
+                        <span class="mr-1">
+                            <i class="fas fa-video"></i>
+                        </span>
+                        1080p
+
+
+                    </button>
+
+
+                    <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                        onclick="downloadVideo('720p')" style="margin-bottom: 100px !important;">
+                        <span class="mr-1">
+                            <i class="fas fa-video"></i>
+                        </span>
+                        720p
+                    </button>
+
+
+                    <span class="close-btn" onclick="rotateAndHidePopup(9)">
+                        <i class="fa fa-times-circle" style="font-size: 30px; color: rgb(92, 64, 51);"></i>
+                    </span>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -863,6 +1414,27 @@
 
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -875,6 +1447,54 @@
             </span>
         </button>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1003,19 +1623,6 @@
         <div style="margin: 20px 0; display: flex; justify-content: center;">
             <p style="font-weight: bold; opacity:0.8;">Developed by: <a class="Sir" href="https://wa.me//254773602480">
                     Sir Alex</a></p>
-        </div>
-
-        <!--------- 💬💬💬Social Elements💬💬🗨️ ------------->
-
-
-        <div class="socials" style="margin-top: 10px;">
-
-            <a href="https://wa.me//254773602480">
-                <img class="socw" src="./assets/images/1860492_whatsapp_social media_icon.png" alt="" />
-            </a>
-            <a href="https://t.me//Anonymous_V73X_MVP">
-                <img class="soct" src="./assets/images/4375490_logo_telegram_icon.png" alt="" />
-            </a>
         </div>
 
 
