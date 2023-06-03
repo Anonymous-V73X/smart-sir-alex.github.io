@@ -1148,7 +1148,7 @@ p {
 /* Media query for screen width between 250px and 300px */
 @media screen and (min-width: 250px) and (max-width: 450px) {
   .accordion {
-    width: 130% !important;
+    width: 135% !important;
     margin-left: -20%;
   
   }
