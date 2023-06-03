@@ -1213,7 +1213,14 @@ p {
 
 .thumbnail {
   width: 100%;
+  transition: transform 0.5s ease-in-out, opacity 0.6s ease-in-out;
 }
+
+.thumbnail:hover {
+  transform: scale(1.01);
+  opacity: 0.9;
+}
+
 
 .icon-tertiary.small .channel-name {
   font-size: 13px;
@@ -1364,8 +1371,8 @@ p {
 
 .scroll-to-top {
   position: fixed;
-  right: 10px;
-  bottom: 50px;
+  right: 7%;
+  bottom: 40px;
   width: 30px;
   height: 30px;
   background-color: #a78672;
@@ -1383,10 +1390,10 @@ p {
 .scroll-to-top:before {
   content: "";
   display: block;
-  width: 6px;
-  height: 6px;
-  border-top: 3px solid #f8f6f5;
-  border-left: 3px solid #f8f6f5;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #f8f6f5;
+  border-left: 2px solid #f8f6f5;
   transform: rotate(45deg);
   transition: border-color 0.4s;
 }
@@ -1398,3 +1405,52 @@ p {
 .scroll-to-top:hover:before {
   border-color: #90644e;
 }
+
+
+
+
+
+
+
+/*=========-----pop-----===========*/
+
+
+    .popup-card {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(28, 28, 28, 0.447);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+     
+    }
+
+    
+
+    .close-btn {
+        position: absolute;
+        bottom: 10%;
+        left: 45%;
+        opacity: 0.7;
+        cursor: pointer;
+        
+    }
+
+   @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+   
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+
+    .rotate-animation {
+        animation: rotate 0.3s linear;
+    }
