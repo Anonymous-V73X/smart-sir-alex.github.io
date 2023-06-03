@@ -129,3 +129,42 @@ function scrollToTop() {
     behavior: "smooth",
   });
 }
+
+
+
+
+
+function rotateAndHidePopup(index) {
+  var closeBtn = document.querySelector(`#popupCard${index} .close-btn`);
+  closeBtn.classList.add("rotate-animation");
+
+  setTimeout(function () {
+    hidePopup(index);
+    closeBtn.classList.remove("rotate-animation");
+  }, 300);
+}
+
+function hidePopup(index) {
+  document.getElementById(`popupCard${index}`).style.display = "none";
+}
+
+
+
+
+
+
+
+
+ function showPopup(index) {
+   const popupCard = document.getElementById(`popupCard${index}`);
+   if (popupCard) {
+     popupCard.style.display = "flex";
+   }
+ }
+
+ function hidePopup(index) {
+   const popupCard = document.getElementById(`popupCard${index}`);
+   if (popupCard) {
+     popupCard.style.display = "none";
+   }
+ }
