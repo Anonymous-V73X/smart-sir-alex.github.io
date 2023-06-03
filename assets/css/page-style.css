@@ -1049,12 +1049,20 @@ a:not([href]):not([tabindex]):focus {
   }
 }
 
-@media (min-width: 350px) and (max-width: 440px) {
+@media (min-width: 350px) and (max-width: 385px) {
   .ul-units {
-    width: 320px !important;
+    width: 328px !important;
     margin-left: -16px;
   }
 }
+
+@media (min-width: 386px) and (max-width: 449px) {
+  .ul-units {
+    width: 360px !important;
+    margin-left: -16px;
+  }
+}
+
 
 @media (max-width: 450px) and (min-width: 441px) {
   .ul-units {
