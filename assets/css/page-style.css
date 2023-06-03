@@ -1052,14 +1052,14 @@ a:not([href]):not([tabindex]):focus {
 @media (min-width: 350px) and (max-width: 385px) {
   .ul-units {
     width: 328px !important;
-    margin-left: -16px;
+    margin-left: -14px;
   }
 }
 
 @media (min-width: 386px) and (max-width: 449px) {
   .ul-units {
     width: 360px !important;
-    margin-left: -16px;
+    margin-left: -12px;
   }
 }
 
