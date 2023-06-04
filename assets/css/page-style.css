@@ -641,9 +641,7 @@ h6,
   cursor: pointer;
 }
 
-.shadow-soft {
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #ffffff !important;
-}
+
 
 .rounded {
   border-radius: 0.55rem !important;
@@ -974,8 +972,12 @@ a:not([href]):not([tabindex]):focus {
 }
 
 .shadow-soft {
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #ffffff !important;
+  box-shadow: 6px 6px 12px #c2c2c2c8, -6px -6px 12px #ffffff98 !important;
 }
+
+
+
+
 
 .border {
   border: 0.0825rem solid #fafbfe !important;
@@ -1462,3 +1464,6 @@ p {
     .rotate-animation {
         animation: rotate 0.3s linear;
     }
+
+
+
