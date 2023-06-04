@@ -641,9 +641,7 @@ h6,
   cursor: pointer;
 }
 
-.shadow-soft {
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #ffffff !important;
-}
+
 
 .rounded {
   border-radius: 0.55rem !important;
@@ -974,8 +972,12 @@ a:not([href]):not([tabindex]):focus {
 }
 
 .shadow-soft {
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #ffffff !important;
+  box-shadow: 6px 6px 12px #c2c2c2c8, -6px -6px 12px #ffffff98 !important;
 }
+
+
+
+
 
 .border {
   border: 0.0825rem solid #fafbfe !important;
@@ -1462,3 +1464,41 @@ p {
     .rotate-animation {
         animation: rotate 0.3s linear;
     }
+
+
+
+.blob{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.box{
+  background: url(./vecteezy_cute-cartoon-astronaut-riding-a-rocket-vector-illustration_10806689.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  width: 170px;
+   height:170px;
+  box-shadow:  2px 4px 4px rgba(144, 142, 142, 0.2);
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+
+
+@keyframes animate{
+  0%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+
+  100%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
