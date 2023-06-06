@@ -1517,3 +1517,16 @@ p {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
+
+
+
+@media (min-width: 768px){
+  .comp{
+
+    margin-left: -8.0% !important;
+  }
+
+  .comp-a{
+    margin-left: 14% !important;
+  }
+}
