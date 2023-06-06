@@ -47,7 +47,7 @@ panelHeaders.forEach(function (panelHeader) {
 window.addEventListener('scroll', function() {
   var nav = document.querySelector('nav');
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  var initialHeight = 58; // Initial height of the navbar in pixels
+  var initialHeight = 55; // Initial height of the navbar in pixels
   var scrollThreshold = 10; // Number of pixels to scroll before reducing the height
 
   if (scrollTop > scrollThreshold) {
