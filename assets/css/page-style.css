@@ -1,4 +1,4 @@
-/* Google Fonts Link Derive 🌐 */
+/* 🕸️ Google Fonts Link Derive 🌐 */
 
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
 
@@ -6,6 +6,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Rubik+Moonrocks&family=Signika:wght@400;500;700&family=Varela+Round&display=swap");
 
+
+/* 🕸️ Body Styling Starts Here 🌐 */
 
 body {
   -webkit-tap-highlight-color: transparent !important;
@@ -32,6 +34,9 @@ body {
 
   width: 100vw;
 }
+
+
+/* 🕸️ Body Styles End Here🌐 */
 a {
   text-decoration: none;
   color: #4a4a4a;
@@ -206,8 +211,7 @@ nav {
   -webkit-border-radius: 50px;
   border-radius: 20px;
   background: #f5ede6;
-  -webkit-box-shadow: 5px 5px 8px #d0c9c4, -5px -5px 8px #ffffff;
-  box-shadow: 5px 5px 8px #d0c9c4, -5px -5px 8px #ffffff;
+  box-shadow: 6px 6px 12px #c2c2c2c8, -6px -6px 12px #ffffff98 !important;
   border: 1.5px solid white;
 }
 
