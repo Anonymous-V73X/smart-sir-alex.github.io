@@ -3,10 +3,10 @@ const navbar = document.querySelector(".navbar");
 window.addEventListener("scroll", () => {
   if (this.scrollY > 0) {
     navbar.classList.remove("py-4");
-    navbar.classList.add("shadow", "py-3");
+    navbar.classList.add("shadow-custom", "py-3");
   } else {
     navbar.classList.add("py-4");
-    navbar.classList.remove("shadow", "py-3");
+    navbar.classList.remove("shadow-custom", "py-3");
   }
 });
 
@@ -112,54 +112,44 @@ function toggleHamburger() {
     window.removeEventListener("scroll", handleScroll);
   }
 
-function handleClickOutside(event) {
-  if (
-    !menu.contains(event.target) &&
-    !hamburger.contains(event.target) &&
-    !event.target.classList.contains("menu")
-  ) {
-    // Hide the menu when clicking outside
-    menu.classList.remove("is-visible");
-    body.classList.remove("menu-open");
-    hamburger.classList.remove("is-active");
+  function handleClickOutside(event) {
+    if (
+      !menu.contains(event.target) &&
+      !hamburger.contains(event.target) &&
+      !event.target.classList.contains("menu")
+    ) {
+      // Hide the menu when clicking outside
+      menu.classList.remove("is-visible");
+      body.classList.remove("menu-open");
+      hamburger.classList.remove("is-active");
+    }
+
+    // Remove the event listener after hiding the menu
+    setTimeout(function () {
+      document.removeEventListener("click", handleClickOutside);
+    });
   }
 
-  // Remove the event listener after hiding the menu
-  setTimeout(function () {
-    document.removeEventListener("click", handleClickOutside);
+  // Add event listener for the initial click event
+  document.addEventListener("click", function (event) {
+    // Execute handleClickOutside only once per click event
+    if (!event._menuClicked) {
+      handleClickOutside(event);
+      event._menuClicked = true;
+    }
   });
 }
-
-// Add event listener for the initial click event
-document.addEventListener("click", function (event) {
-  // Execute handleClickOutside only once per click event
-  if (!event._menuClicked) {
-    handleClickOutside(event);
-    event._menuClicked = true;
-  }
-});
-
-
-}
-
-
-
-
-
-
 
 const accordionPanelHeaders = document.querySelectorAll(
   ".accordion-panel-header"
 );
 
-const semesterDiv = document.getElementById("semester-2-2");
-semesterDiv.addEventListener("click", () => {
-  window.location.href = "semester-2.2.html";
-});
-
-
-
-
-
-
-
+for (let semester = 1; semester <= 4; semester++) {
+  for (let subsemester = 1; subsemester <= 2; subsemester++) {
+    const semesterId = `semester-${semester}-${subsemester}`;
+    const semesterDiv = document.getElementById(semesterId);
+    semesterDiv.addEventListener("click", () => {
+      window.location.href = `${semesterId}.html`;
+    });
+  }
+}
