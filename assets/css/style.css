@@ -97,6 +97,15 @@ a {
   background-color: #f5ede6 !important;
 }
 
+
+ .shadow-custom {
+  box-shadow: 0 30px 20px -20px rgba(174, 176, 176, 0.1),
+              0 4px 8px rgba(76, 105, 111, 0.124);
+}
+
+
+
+
 .navbar .nav-link {
   color: #584b42 !important; /* Dark brown */
 }
@@ -432,7 +441,7 @@ strong {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 8% !important;
 }
 
 .more-links:active {
@@ -501,3 +510,18 @@ strong {
   } 
 
   
+
+
+.navbar-nav .nav-link {
+  transition: color 0.5s ease !important; 
+  display: inline-block;  
+
+ 
+}
+
+.navbar-nav .nav-link:hover {
+  color: #5e2f0d !important; 
+}
+
+
+
