@@ -2,11 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap");
 
+
+
+
 /* Body Reverse From Styling 📝 */
 body {
   font-family: "Bai Jamjuree", sans-serif;
   line-height: 1.7;
   background-color: #f5ede6; /* Light cream */
+
+
+
+
 }
 
 .section-padding {
@@ -322,7 +329,16 @@ strong {
 .projectz {
   display: flex !important;
   flex-direction: row !important;
+  
 }
+
+ @media (min-width: 768px) {
+
+  .projectz {
+  margin-left: -4% !important;
+  margin-right:  -4% !important;
+}
+ }
 
 /*----------------- STYLING FOR THE SCROLL TO TOP ----------------------*/
 
