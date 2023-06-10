@@ -904,7 +904,7 @@ progress {
 
 .g-5,
 .gx-5 {
-  --bs-gutter-x: 3rem;
+  --bs-gutter-x: 1.7rem;
 }
 
 .g-5,
@@ -1141,6 +1141,8 @@ progress {
     flex: 0 0 auto;
     width: 50%;
   }
+
+
   .col-md-7 {
     flex: 0 0 auto;
     width: 58.33333333%;
