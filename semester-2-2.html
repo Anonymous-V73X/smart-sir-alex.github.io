@@ -113,7 +113,7 @@
     <!---------------------- 📲👥 WhatsApp Group Link 📲👥 -------------------------->
 
 
-    <div style="display: flex; justify-content: center; margin-top:-10px; " data-aos="fade-up" data-aos-delay="100">
+    <div style="display: flex; justify-content: center; margin-top:-60px;  " data-aos="fade-up" data-aos-delay="100">
         <a href="https://chat.whatsapp.com/DaLU1d75aI7BorcSSDQohs" target="_blank">
             <button class="btn btn-primary neumorphic shadow-soft border border-light">
                 <span class="mr-1" style="font-weight: 500!important;"><span class="fab fa-whatsapp"></span>
@@ -496,10 +496,10 @@
                                     onclick="showPopup(11)">Download</a>
                             </p>
 
-                            <p class="download-link comp" style="text-align: center; font-weight: bold; margin-left: -8%;">
+                            <p class="download-link comp"
+                                style="text-align: center; font-weight: bold; margin-left: -8%;">
                                 COMP 326:
-                                <a class="comp-a"
-                                style="margin-left: 12%; color: rgb(88, 132, 132);"
+                                <a class="comp-a" style="margin-left: 12%; color: rgb(88, 132, 132);"
                                     href="https://drive.google.com/uc?export=download&id=1VbIV0i2HBeIhUpBBhvC9BZq7PYBGEsS-"
                                     onclick="showPopup(11)">Download</a>
                             </p>
@@ -1702,6 +1702,63 @@
                 <div class="progress__fill"></div>
             </div>
     </div>
+
+
+
+    <style>
+        .progress {
+            max-width: 400px;
+            width: 100%;
+            height: 24px;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 7;
+            grid-row-end: 7;
+            position: relative;
+            margin-top: 16px;
+            border-radius: 12px;
+            box-shadow: 8px 8px 12px -2px rgba(72, 79, 96, 0.4), -6px -6px 12px -1px white;
+            background-color: #ebecf0;
+        }
+
+        .progress__fill {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            border-radius: inherit;
+            background-image: linear-gradient(to right, #cf9972, #fff8dc);
+        }
+
+        .progress__fill:before {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 18px;
+            color: #6c7587;
+            content: "50%";
+            padding: 11px 15px;
+            margin-top: -16px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(50%, -100%);
+            border-radius: 8px;
+            box-shadow: 8px 8px 12px -2px rgba(72, 79, 96, 0.4), -6px -6px 12px -1px white;
+            background-color: #ebecf0;
+        }
+
+        .progress__fill:after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            right: 0;
+            bottom: 24px;
+            transform: translate(50%, -100%);
+            border-top: 9px solid #ebecf0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+        }
+    </style>
 
 
     <!-------------🏁 Progress Ends Here 🏁----------------->
