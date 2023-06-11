@@ -29,7 +29,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #e7dfd8fe !important;
+  background-color: #f5ede6 !important;
   z-index: 9999;
   display: flex;
   flex-direction: column;
@@ -45,7 +45,7 @@ body {
 }
 
 .get {
-  color: #77471c;
+  color: #894f1d;
   font-size: 14px;
   text-align: center;
   font-weight: bold;
@@ -61,11 +61,11 @@ body {
 /* Bike Styling Starts Here... */
 
 :root {
-  --hue: 30; /* Dark brown hue */
-  --bg: hsl(var(--hue), 90%, 90%);
-  --fg: hsl(var(--hue), 90%, 10%);
-  --primary: hsl(var(--hue), 60%, 30%);
-  --trans-dur: 0.4s;
+  --hue: 30; 
+  --bg: hsl(var(--hue), 90%, 90%); 
+  --fg: hsl(var(--hue), 90%, 40%); 
+  --primary: hsl(var(--hue), 60%, 40%); 
+  --trans-dur: 0.3s;
 }
 
 .bike {
