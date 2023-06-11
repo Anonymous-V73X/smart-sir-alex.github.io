@@ -1,3 +1,16 @@
+//PreLoader Starts Here...
+
+const fade = () => {
+  const wrapper = document.querySelector(".wrapper-loader");
+  wrapper.classList.add("fade");
+};
+
+window.addEventListener("load", fade);
+
+//PreLoader Ends Here...
+
+//NavBar Animations Starts Here...
+
 const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
@@ -10,12 +23,14 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// AOS initialization
+//NavBar Animations End Here...
+
+//Data AOS initialization...
 AOS.init({
   duration: 700,
 });
 
-// Typing Effect
+// Typing Effect...
 
 const text = "Coming Soon . . . ";
 let index = 0;
@@ -30,12 +45,12 @@ function typeText() {
     document.getElementById("typing-effect").textContent = "";
   }
 
-  setTimeout(typeText, 150); // Adjust the typing speed (milliseconds)
+  setTimeout(typeText, 150);
 }
 
 typeText();
 
-// Scroll to top
+// Scroll to top...
 
 window.addEventListener("scroll", function () {
   var scrollPos =
