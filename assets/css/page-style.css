@@ -6,7 +6,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Rubik+Moonrocks&family=Signika:wght@400;500;700&family=Varela+Round&display=swap");
 
-
 /* 🕸️ Body Styling Starts Here 🌐 */
 
 body {
@@ -35,6 +34,10 @@ body {
   width: 100vw;
 }
 
+::selection {
+  color: #804000;
+  background-color: #f5deb3;
+}
 
 /* 🕸️ Body Styles End Here🌐 */
 a {
@@ -92,8 +95,6 @@ nav {
   cursor: pointer;
 }
 
-
-
 .hamburger span:nth-child(3) {
   display: block;
   width: 20px;
@@ -108,7 +109,7 @@ nav {
 }
 
 .hamburger span:nth-child(2) {
- display: block;
+  display: block;
   width: 20px;
   height: 2px;
   margin-bottom: 4px;
@@ -204,7 +205,7 @@ nav {
   padding-right: 10px;
   gap: 15px;
   margin-top: -50px;
-  
+
   align-items: center;
   z-index: 999;
   top: 150%;
@@ -214,8 +215,6 @@ nav {
   box-shadow: 6px 6px 12px #c2c2c2c8, -6px -6px 12px #ffffff98 !important;
   border: 1.5px solid white;
 }
-
-
 
 .accordion-menu {
   display: inline-block;
@@ -660,8 +659,6 @@ h6,
   cursor: pointer;
 }
 
-
-
 .rounded {
   border-radius: 0.55rem !important;
 }
@@ -994,10 +991,6 @@ a:not([href]):not([tabindex]):focus {
   box-shadow: 6px 6px 12px #c2c2c2c8, -6px -6px 12px #ffffff98 !important;
 }
 
-
-
-
-
 .border {
   border: 0.0825rem solid #fafbfe !important;
 }
@@ -1080,10 +1073,8 @@ a:not([href]):not([tabindex]):focus {
 @media (min-width: 386px) and (max-width: 449px) {
   .ul-units {
     width: 360px !important;
-    
   }
 }
-
 
 @media (max-width: 450px) and (min-width: 441px) {
   .ul-units {
@@ -1171,7 +1162,6 @@ p {
   .accordion {
     width: 138% !important;
     margin-left: -18.4%;
-  
   }
 }
 
@@ -1194,8 +1184,6 @@ p {
     margin-left: 13% !important;
   }
 }
-
-
 
 .col-lg-x {
   flex: 1 1 33.33333%;
@@ -1250,7 +1238,6 @@ p {
   opacity: 0.9;
 }
 
-
 .icon-tertiary.small .channel-name {
   font-size: 13px;
   color: grey;
@@ -1271,18 +1258,14 @@ p {
   display: none;
 }
 
-
-
-
-
 .credit-links p {
   color: rgba(135, 135, 210, 0.661) !important;
   font-size: 14px;
-  font-weight: bold!important;
+  font-weight: bold !important;
   opacity: 0.6;
   text-align: start;
   transition: transform 0.3s ease;
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .credit-links p:hover {
@@ -1290,10 +1273,9 @@ p {
   cursor: pointer;
 }
 
-.credit-links a{
+.credit-links a {
   font-weight: bold;
   font-size: 12px;
-
 }
 
 .contact-links p {
@@ -1303,7 +1285,7 @@ p {
   opacity: 0.6;
   text-align: start;
   transition: transform 0.3s ease;
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .contact-links p:hover {
@@ -1311,7 +1293,7 @@ p {
   cursor: pointer;
 }
 
-.contact-links a{
+.contact-links a {
   font-weight: bold;
   font-size: 12px;
 }
@@ -1331,18 +1313,15 @@ p {
   cursor: pointer;
 }
 
-.linkz a{
+.linkz a {
   font-weight: bold;
   font-size: 12px;
 }
 
-
-
 .foot {
   margin-top: 20px !important;
-  margin-bottom: -120px!important;
+  margin-bottom: -120px !important;
 }
-
 
 .socials {
   display: flex;
@@ -1362,39 +1341,24 @@ p {
   width: 25px;
 }
 
-
-
-
-
 .foot {
   margin-top: 20px !important;
   display: flex;
   flex-direction: column;
 }
 
-
-
-
-@media(min-width: 768px){
-
-  .foot-links{
+@media (min-width: 768px) {
+  .foot-links {
     margin-left: 150px !important;
   }
-} 
-
-
+}
 
 .Sir {
   font-family: "Signika", sans-serif;
   font-style: italic;
-  padding-right:  15px;
+  padding-right: 15px;
   color: #9c8473;
 }
-
-
-
-
-
 
 /*----------------- STYLING FOR THE SCROLL TO TOP ----------------------*/
 
@@ -1435,102 +1399,81 @@ p {
   border-color: #90644e;
 }
 
-
-
-
-
-
-
 /*=========-----pop-----===========*/
 
-
-    .popup-card {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(28, 28, 28, 0.447);
-        display: none;
-        justify-content: center;
-        align-items: center;
-        z-index: 2000;
-     
-    }
-
-    
-
-    .close-btn {
-        position: absolute;
-        bottom: 10%;
-        left: 45%;
-        opacity: 0.7;
-        cursor: pointer;
-        
-    }
-
-   @keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-   
-    100% {
-        transform: rotate(1turn);
-    }
+.popup-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 28, 28, 0.447);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
 }
 
+.close-btn {
+  position: absolute;
+  bottom: 10%;
+  left: 45%;
+  opacity: 0.7;
+  cursor: pointer;
+}
 
-    .rotate-animation {
-        animation: rotate 0.3s linear;
-    }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
 
+  100% {
+    transform: rotate(1turn);
+  }
+}
 
+.rotate-animation {
+  animation: rotate 0.3s linear;
+}
 
-.blob{
+.blob {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
-.box{
+.box {
   background: url(./vecteezy_cute-cartoon-astronaut-riding-a-rocket-vector-illustration_10806689.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   width: 170px;
-   height:170px;
-  box-shadow:  2px 4px 4px rgba(144, 142, 142, 0.2);
+  height: 170px;
+  box-shadow: 2px 4px 4px rgba(144, 142, 142, 0.2);
   animation: animate 5s ease-in-out infinite;
   transition: all 1s ease-in-out;
 }
 
-
-
-@keyframes animate{
-  0%{
+@keyframes animate {
+  0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 
-  50%{
+  50% {
     border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
   }
 
-
-  100%{
+  100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
 
-
-
-@media (min-width: 768px){
-  .comp{
-
-    margin-left: -8.0% !important;
+@media (min-width: 768px) {
+  .comp {
+    margin-left: -8% !important;
   }
 
-  .comp-a{
+  .comp-a {
     margin-left: 14% !important;
   }
 }
