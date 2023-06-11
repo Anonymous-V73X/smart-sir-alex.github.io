@@ -610,23 +610,29 @@ strong {
 }
 
 .mess {
-  width: 185px;
+  width: 100%;
+  border-radius: 10px;
+
 }
 
 .jobs-vacancy {
-  width: 185px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .police {
-  width: 190px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .money {
-  width: 160px;
+ width: 100%;
+  border-radius: 10px;
 }
 
 .teacher {
-  width: 170px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .credit-links p {
@@ -680,6 +686,18 @@ strong {
   /* Padding for screens over 700px */
   .foot {
     padding-left: 90px;
+  }
+
+  .mess{
+    margin-bottom: 15%;
+  }
+
+  .teacher{
+    margin-bottom: 11%;
+  }
+
+  .money{
+    margin-bottom: 11%;
   }
 }
 
