@@ -18,31 +18,7 @@ body {
   color: #804000;
   background-color: #f5deb3;
   cursor: pointer;
-  position: relative;
-  display: inline;
-  padding: 0 2px;
-}
-
-.permanent-selection::before,
-.permanent-selection::after {
-  content: "";
-  position: absolute;
-  top: 1.2px;
-  height: 55%;
-  width: 20px;
-  background-color: #f5deb3; 
-  z-index: -1;
-  border-radius: 50% 50% 50% 0;
-}
-
-.permanent-selection::before {
-  left: -8px;
-  transform: rotate(670deg);
-}
-
-.permanent-selection::after {
-  right: -6px;
-  transform: rotate(-95deg);
+  
 }
 
 /* PreLoader Styling Starts Here... */
