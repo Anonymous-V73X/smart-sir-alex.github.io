@@ -17,7 +17,12 @@
   <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
 </head>
 
+
 <!-- ======== Head Ends 🗣️🗣️🪦🪦 ======== -->
+
+
+
+
 
 
 
@@ -111,12 +116,13 @@
           <div class="intro-section text-center mb-5">
             <h1 class="fw-bold" style="font-size:1.6rem; margin-top:-20px;
             margin-bottom:1.5rem" data-aos="fade-up">Course Semesters</h1>
-            <p class="mx-auto" style="font-size:15px;" data-aos="fade-up">
+            <p class="mx-auto" style="font-size: 15px;" data-aos="fade-up">
               Each semester offers a wealth of valuable resources, including
-              lecture notes, past papers, executable files, assignments, and
-              more, to enhance your understanding and skills in the field of
-              Information Technology.
+              <span class="permanent-selection">lecture notes, past papers, executable files, assignments,</span>
+              and more, to enhance your understanding and skills in the field of
+              <span class="permanent-selection">Information Technology.</span>
             </p>
+
           </div>
         </div>
       </div>
@@ -254,11 +260,13 @@
           <div class="intro-section text-center mb-5" style="margin-top: -20px;">
             <h1 class="fw-bold" style="font-size:1.7rem; margin-top:-20px;
             margin-bottom:1.5rem">Students Hub</h1>
-            <p class="mx-auto" style="font-size:14px; margin-bottom:70px!important;">
-              Dive into the Knowledge Hub, where essential links await.
-              Explore OpenAI, YouTube, Moodle, and the school portal to access
+            <p class="mx-auto" style="font-size: 14px; margin-bottom: 70px !important;">
+              Dive into the <span class="permanent-selection">Knowledge Hub</span>, where essential links await.
+              Explore <span class="permanent-selection">OpenAI, YouTube, Moodle,</span> and the <span
+                class="permanent-selection">Students portal</span> to access
               resources that will support your educational journey.
             </p>
+
           </div>
         </div>
       </div>
@@ -396,10 +404,14 @@
             margin-bottom:1.5rem;" data-aos="fade-up">Project Ideas</h1>
                 <p class="mx-auto" style="font-size: 15px;" data-aos="fade-up">
                   Discover a world of exciting IT project ideas in our section. Whether you're a programmer, designer,
-                  or tech enthusiast, explore a range of projects spanning software development, web design, and data
-                  analysis. Choose a project that resonates with you, envision the impact you want to make, and let your
+                  or tech enthusiast, explore a range of projects spanning <span class="permanent-selection">software
+                    development, web
+                    design, and data
+                    analysis.</span> Choose a project that resonates with you, envision the impact you want to make, and
+                  let your
                   creativity thrive.
                 </p>
+
               </div>
             </div>
           </div>
@@ -577,6 +589,7 @@
                   <img class="sad" src="./assets/images/sad.png" loading="lazy">
                   <p class="coming-soon" id="typing-effect">
                   </p>
+
                 </div>
               </div>
             </div>
@@ -739,6 +752,86 @@
 
 
       <!---------========= 😁😁😁Footer Ends Here😁😁😁 ==========-------->
+
+
+
+
+
+
+      <!---------=========🔃🔃 PreLoader Starts Here 🔃🔃  ==========-------->
+
+
+
+      <div class="wrapper-loader">
+
+
+        <div class="loader"></div>
+
+        <svg class="bike" viewBox="0 0 48 30" width="48px" height="30px">
+          <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+            <g transform="translate(9.5,19)">
+              <circle class="bike__tire" r="9" stroke-dasharray="56.549 56.549" />
+              <g class="bike__spokes-spin" stroke-dasharray="31.416 31.416" stroke-dashoffset="-23.562">
+                <circle class="bike__spokes" r="5" />
+                <circle class="bike__spokes" r="5" transform="rotate(180,0,0)" />
+              </g>
+            </g>
+            <g transform="translate(24,19)">
+              <g class="bike__pedals-spin" stroke-dasharray="25.133 25.133" stroke-dashoffset="-21.991"
+                transform="rotate(67.5,0,0)">
+                <circle class="bike__pedals" r="4" />
+                <circle class="bike__pedals" r="4" transform="rotate(180,0,0)" />
+              </g>
+            </g>
+            <g transform="translate(38.5,19)">
+              <circle class="bike__tire" r="9" stroke-dasharray="56.549 56.549" />
+              <g class="bike__spokes-spin" stroke-dasharray="31.416 31.416" stroke-dashoffset="-23.562">
+                <circle class="bike__spokes" r="5" />
+                <circle class="bike__spokes" r="5" transform="rotate(180,0,0)" />
+              </g>
+            </g>
+            <polyline class="bike__seat" points="14 3,18 3" stroke-dasharray="5 5" />
+            <polyline class="bike__body" points="16 3,24 19,9.5 19,18 8,34 7,24 19" stroke-dasharray="79 79" />
+            <path class="bike__handlebars" d="m30,2h6s1,0,1,1-1,1-1,1" stroke-dasharray="10 10" />
+            <polyline class="bike__front" points="32.5 2,38.5 19" stroke-dasharray="19 19" />
+          </g>
+        </svg>
+
+
+        <p class="get" id="typing-dots">Getting Things Ready</p>
+
+        <script>
+
+          const dotsElement = document.getElementById('typing-dots');
+          const dots = '...';
+          let dotCount = 0;
+
+          function animateTypingDots() {
+            dotsElement.textContent = 'Getting Things Ready' + dots.substring(0, dotCount);
+            dotCount = (dotCount + 1) % (dots.length + 1);
+            setTimeout(animateTypingDots, 300);
+          }
+
+          animateTypingDots();
+
+        </script>
+
+
+
+
+      </div>
+
+
+
+
+
+      <!---------=========🔃🔃 PreLoader Ends Here 🔃🔃  ==========-------->
+
+
+
+
+
+
 
       <!---- 📑Linking JS Files📑 ----->
 
