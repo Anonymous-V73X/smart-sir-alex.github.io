@@ -1739,7 +1739,8 @@
 
             padding: 0 10%;
           }
-          .nt{
+
+          .nt {
             margin-bottom: 80px;
           }
         }
@@ -1959,7 +1960,51 @@
 
 
 
+  <div class="wrapper-loader">
+    <div class="loader">
 
+
+
+
+
+
+      <div class="book">
+        <div class="book__pg-shadow"></div>
+        <div class="book__pg"></div>
+        <div class="book__pg book__pg--2"></div>
+        <div class="book__pg book__pg--3"></div>
+        <div class="book__pg book__pg--4"></div>
+        <div class="book__pg book__pg--5"></div>
+      </div>
+
+
+
+      <p class="get" id="typing-dots">Getting Things Ready</p>
+      
+      <script>
+
+        const dotsElement = document.getElementById('typing-dots');
+        const dots = '...';
+        let dotCount = 0;
+
+        function animateTypingDots() {
+          dotsElement.textContent = 'Getting Things Ready' + dots.substring(0, dotCount);
+          dotCount = (dotCount + 1) % (dots.length + 1);
+          setTimeout(animateTypingDots, 300);
+        }
+
+        animateTypingDots();
+
+      </script>
+
+
+
+
+
+
+
+    </div>
+  </div>
 
 
 
