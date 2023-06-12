@@ -9,6 +9,7 @@ window.addEventListener("load", fade);
 
 //PreLoader Ends Here...
 
+
 //NavBar Animations Starts Here...
 
 const navbar = document.querySelector(".navbar");
@@ -34,21 +35,31 @@ AOS.init({
 
 const text = "Coming Soon . . . ";
 let index = 0;
+const typingElement = document.getElementById("typing-effect");
 
 function typeText() {
+  const currentText = typingElement.textContent;
+
   if (index < text.length) {
-    document.getElementById("typing-effect").textContent += text.charAt(index);
+    const nextChar = text.charAt(index);
+    typingElement.textContent = currentText + nextChar;
     index++;
   } else {
-    // When the entire text is typed, reset the index and clear the content
+    // When the entire text is typed, reset the index to the first character
     index = 0;
-    document.getElementById("typing-effect").textContent = "";
+    typingElement.textContent = text.charAt(index);
+    index++;
   }
 
   setTimeout(typeText, 150);
 }
 
 typeText();
+
+
+
+
+
 
 // Scroll to top...
 
