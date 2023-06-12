@@ -647,6 +647,7 @@ ul li:last-of-type {
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
+  
 }
 
 .paragraph-1 {
@@ -733,6 +734,7 @@ main {
 h5,
 .h5 {
   font-size: 1.25rem;
+  padding-left: 40px;
 }
 
 h1,
@@ -765,6 +767,8 @@ h6,
   font-size: 17px;
   opacity: 0.9;
 }
+
+
 
 .justify-content-center {
   justify-content: center !important;
