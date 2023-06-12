@@ -405,8 +405,15 @@ a {
 }
 
 .helb {
-  width: 100px;
+  width: 80px;
   margin-top: -20px;
+}
+
+@media (min-width: 768px) {
+  .hlb{
+  padding-left: 10px;
+  }
+
 }
 
 .socials {
@@ -625,7 +632,7 @@ strong {
 
 .credit-links p {
   color: rgba(135, 135, 210, 0.661) !important;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   opacity: 0.6;
   text-align: start;
@@ -639,7 +646,7 @@ strong {
 
 .contact-links p {
   color: rgba(135, 135, 210, 0.661) !important;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   opacity: 0.6;
   text-align: start;
@@ -653,7 +660,7 @@ strong {
 
 .linkz p {
   color: rgba(135, 135, 210, 0.661) !important;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   opacity: 0.6;
   text-align: start;
