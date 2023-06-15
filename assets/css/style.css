@@ -9,6 +9,18 @@ body {
   background-color: #f5ede6; /* Light cream */
 }
 
+::-webkit-scrollbar-thumb {
+  background: #88888800;
+}
+
+::-webkit-scrollbar-track {
+  background: #fefdfd03;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 ::selection {
   color: #804000;
   background-color: #f5deb3;
