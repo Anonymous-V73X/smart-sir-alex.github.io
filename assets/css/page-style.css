@@ -12,6 +12,18 @@ body {
   -webkit-tap-highlight-color: transparent !important;
 }
 
+::-webkit-scrollbar-thumb {
+  background: #88888800;
+}
+
+::-webkit-scrollbar-track {
+  background: #fefdfd03;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -734,7 +746,7 @@ main {
 h5,
 .h5 {
   font-size: 1.25rem;
-
+ 
 }
 
 h1,
