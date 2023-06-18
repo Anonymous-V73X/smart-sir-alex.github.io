@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card {
+        background-color: #f3f4f6;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+          5px 5px 9px rgba(94, 104, 121, 0.3);
+      }
+
+      .typing-text {
+        font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #91aace;
+        overflow: visible;
+        white-space: wrap;
+        border-right: 0.15em solid #4b5563;
+        animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+
+        50% {
+          border-color: #4b5563;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1 class="typing-text"></h1>
+      </div>
+    </div>
+
+    <script>
+      window.onload = function () {
+        const message =
+          "Apologies! The website is still under development by Sir Alex . . .";
+        const typingText = document.querySelector(".typing-text");
+
+        function typeMessage() {
+          let i = 0;
+          typingText.innerHTML = "";
+
+          function type() {
+            if (i < message.length) {
+              typingText.innerHTML += message.charAt(i);
+              i++;
+              setTimeout(type, 80);
+            } else {
+              setTimeout(typeMessage, 2000); // Delay before starting the next iteration
+            }
+          }
+
+          type();
+        }
+
+        typeMessage();
+      };
+    </script>
+  </body>
+</html>
