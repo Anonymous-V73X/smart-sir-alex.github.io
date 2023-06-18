@@ -100,7 +100,7 @@
           </p>
           <div style="display: flex; justify-content: center; margin-top: 20px">
             <a data-aos="fade-up" data-aos-delay="300" href="#semesters" class="btn btn-outline-info me-3">Semesters</a>
-            <a data-aos="fade-up" data-aos-delay="400" href="#contact" class="btn btn-info btn-contacts">Contact Us</a>
+            <a data-aos="fade-up" data-aos-delay="400" href="#apps" class="btn btn-info btn-contacts"> Online Apps </a>
           </div>
         </div>
       </div>
@@ -600,6 +600,10 @@
 
 
 
+
+
+
+
       <!-----===== 💹💹📑Comrades Marketplace Starts Here📑💹💹  =====-->
 
 
@@ -629,232 +633,520 @@
       <div class="divider-container"></div>
 
 
-      <!------------====== 👋👋Contacts Section Starts Here👋👋 =========------------>
 
 
-      <div id="contact" class="section-padding">
+      <!----- 📚📚📚Apps Start Here📚📚📚 ------>
+
+      <div id="apps" class="section-padding ">
         <div class="container">
+
           <div class="row">
-            <div class="col-12" data-aos="fade-up">
+            <div class="col-12">
               <div class="intro-section text-center mb-5">
-                <h1 class="fw-bold" style="font-size:1.6rem; margin-top:-80px; margin-bottom:1.5rem">Contact Us</h1>
-                <p class="mx-auto" style="font-size: 15px;">
-                  If you have any technical inquiries or innovative suggestions,
-                  we warmly encourage you to unleash your creativity and compose
-                  an email to our dedicated IT team. Your thoughts and feedback
-                  are highly valued, and we are eager to hear from you! Please
-                  utilize the space below to craft your message.
+                <h1 class="fw-bold" style="font-size:1.6rem; margin-top:-20px;
+                  margin-bottom:1.5rem" data-aos="fade-up">Web Apps</h1>
+                <p class="mx-auto" style="font-size: 15px;" data-aos="fade-up">
+                  This section offers a range of specialized web apps dedicated to <span
+                    class="permanent-selection">document handling</span>. These web apps are designed to
+                  efficiently handle various document-related tasks, allowing you to convert documents to PDF format,
+                  analyze and extract
+                  information from uploaded PDF files, and perform other useful functions. .
+
+
                 </p>
+
               </div>
             </div>
           </div>
 
-          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-md-8">
+          <div class="row gy-5 gx-4">
 
-
-              <!----------  Form Section ------------>
-
-              <form action="https://formsubmit.co/4b39027887b0f0e6889a8ede5644e855" method="POST" class="row g-3">
-
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control" name="Name" placeholder="Enter Name" required />
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" id="redirect-1"
+              onclick="redirectToSmallPDF()">
+              <div class="service border-hover p-4 shadow rounded-5">
+                <div class="icon rounded-4">
+                  <img class="icona" src="./assets/images/books-stack-of-three.png" />
                 </div>
-
-                <div class="form-group col-md-6">
-                  <input type="email" class="form-control" name="Email" placeholder="Enter Email" required />
-                </div>
-
-                <div class="form-group col-md-12">
-                  <input type="text" class="form-control" name="Subject" placeholder="Enter Subject" required />
-                </div>
-
-                <div class="form-group col-md-12">
-                  <textarea name="Message" class="form-control" rows="5" placeholder="Enter Message"></textarea>
-                </div>
-
-                <div class="form-group col-md-12">
-                  <button type="submit" class="btn btn-outline-info">
-                    Send Message
-                  </button>
-                </div>
-
-              </form>
-
-
+                <h5 class="mt-4 fw-bold">Image to PDF</h5>
+                <strong style="display: flex;">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <p style="margin-left: 4px;">(4.5)</p>
+                </strong>
+                <p class="units">Effortlessly and conveniently convert a wide range of image formats into high-quality
+                  PDF files
+                  with ease.</p>
+              </div>
             </div>
-          </div>
 
+            <script>
+              function redirectToSmallPDF() {
+                window.location.href = "https://smallpdf.com/jpg-to-pdf";
+              }
+            </script>
+
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" id="redirect-2"
+              onclick="redirectToChatPDF()">
+              <div class="service border-hover p-4 shadow rounded-5">
+                <div class="icon rounded-4">
+                  <img class="icona" src="./assets/images/books-stack-of-three.png" />
+                </div>
+                <h5 class="mt-4 fw-bold">ChatPDF</h5>
+                <strong style="display: flex;">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <p style="margin-left: 4px;">(4.6)</p>
+                </strong>
+                <p class="units">Customized ChatGPT designed exclusively for the content uploaded in the PDF you send to
+                  it.</p>
+              </div>
+            </div>
+
+            <script>
+              function redirectToChatPDF() {
+                window.location.href = "https://www.chatpdf.com";
+              }
+            </script>
+
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" id="redirect-3"
+              onclick="redirectToSmallPDFWordToPDF()">
+              <div class="service border-hover p-4 shadow rounded-5">
+                <div class="icon rounded-4">
+                  <img class="icona" src="./assets/images/books-stack-of-three.png" />
+                </div>
+                <h5 class="mt-4 fw-bold">DOCX to PDF</h5>
+                <strong style="display: flex;">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-line"></i>
+                  <p style="margin-left: 4px;">(4.0)</p>
+                </strong>
+                <p class="units">Easily convert DOCX (Word) documents to professional-looking PDF files with ease and
+                  convenience.
+                </p>
+              </div>
+            </div>
+
+            <script>
+              function redirectToSmallPDFWordToPDF() {
+                window.location.href = "https://smallpdf.com/word-to-pdf";
+              }
+            </script>
+
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" id="redirect-4"
+              onclick="redirectToSmallPDFPPTToPDF()">
+              <div class="service border-hover p-4 shadow rounded-5">
+                <div class="icon rounded-4">
+                  <img class="icona" src="./assets/images/books-stack-of-three.png" />
+                </div>
+                <h5 class="mt-4 fw-bold">PPT to PDF</h5>
+                <strong style="display: flex;">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <p style="margin-left: 4px;">(4.7)</p>
+                </strong>
+                <p class="units">Effortlessly transform PowerPoint (PPT) presentations into polished PDF documents with
+                  ease and
+                  convenience.</p>
+              </div>
+            </div>
+
+            <script>
+              function redirectToSmallPDFPPTToPDF() {
+                window.location.href = "https://smallpdf.com/ppt-to-pdf";
+              }
+            </script>
+
+
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" id="redirect-5"
+              onclick="redirectToProgramizCCompiler()">
+              <div class="service border-hover p-4 shadow rounded-5">
+                <div class="icon rounded-4">
+                  <img class="icona" src="./assets/images/books-stack-of-three.png" />
+                </div>
+                <h5 class="mt-4 fw-bold">Online C Compiler</h5>
+                <strong style="display: flex;">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <p style="margin-left: 4px;">(4.5)</p>
+                </strong>
+                <p class="units">Execute C programs with the convenience and efficiency provided by the application.</p>
+              </div>
+            </div>
+
+            <script>
+              function redirectToProgramizCCompiler() {
+                window.location.href = "https://www.programiz.com/c-programming/online-compiler/";
+              }
+            </script>
+
+
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" id="redirect-6"
+              onclick="redirectToProgramizCPPCompiler()">
+              <div class="service border-hover p-4 shadow rounded-5">
+                <div class="icon rounded-4">
+                  <img class="icona" src="./assets/images/books-stack-of-three.png" />
+                </div>
+                <h5 class="mt-4 fw-bold">Online C++ Compiler</h5>
+                <strong style="display: flex;">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <p style="margin-left: 4px;">(4.8)</p>
+                </strong>
+                <p class="units">Run C++ programs with ease and efficiency, utilizing the comprehensive capabilities of
+                  the
+                  application.</p>
+              </div>
+            </div>
+
+            <script>
+              function redirectToProgramizCPPCompiler() {
+                window.location.href = "https://www.programiz.com/cpp-programming/online-compiler/";
+              }
+            </script>
+
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" id="redirect-7"
+              onclick="redirectToProgramizJavaCompiler()">
+              <div class="service border-hover p-4 shadow rounded-5">
+                <div class="icon rounded-4">
+                  <img class="icona" src="./assets/images/books-stack-of-three.png" />
+                </div>
+                <h5 class="mt-4 fw-bold">Online Java Compiler</h5>
+                <strong style="display: flex;">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <p style="margin-left: 4px;">(4.5)</p>
+                </strong>
+                <p class="units">Execute Java programs with convenience, utilizing the robust features of the
+                  application.
+                </p>
+              </div>
+            </div>
+
+            <script>
+              function redirectToProgramizJavaCompiler() {
+                window.location.href = "https://www.programiz.com/java-programming/online-compiler/";
+              }
+            </script>
+
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" id="redirect-8"
+              onclick="redirectToProgramizHtmlCompiler()">
+              <div class="service border-hover p-4 shadow rounded-5">
+                <div class="icon rounded-4">
+                  <img class="icona" src="./assets/images/graduation-hat-and-diploma.png" />
+                </div>
+                <h5 class="mt-4 fw-bold">Online HTML Compiler</h5>
+                <strong style="display: flex;">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <p style="margin-left: 4px;">(4.4)</p>
+                </strong>
+                <p class="units">Effortlessly compile HTML code into a live and interactive web page using the app.</p>
+              </div>
+            </div>
+
+            <script>
+              function redirectToProgramizHtmlCompiler() {
+                window.location.href = "https://www.programiz.com/html/online-compiler/";
+              }
+            </script>
+
+
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" id="redirect-9"
+              onclick="redirectToOnlineConvertOcr()">
+              <div class="service border-hover p-4 shadow rounded-5">
+                <div class="icon rounded-4">
+                  <img class="icona" src="./assets/images/graduation-hat-and-diploma.png" />
+                </div>
+                <h5 class="mt-4 fw-bold">Image to Text</h5>
+                <strong style="display: flex;">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <p style="margin-left: 4px;">(4.7)</p>
+                </strong>
+                <p class="units">Effortlessly extract text from images using the application, making the process quick
+                  and
+                  convenient.</p>
+              </div>
+            </div>
+
+            <script>
+              function redirectToOnlineConvertOcr() {
+                window.location.href = "https://www.online-convert.com/ocr/image-to-text";
+              }
+            </script>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------ 📚📚📚Apps End Here📚📚📚 ----->
+
+
+  <!------------====== 👋👋Contacts Section Starts Here👋👋 =========------------>
+
+
+  <div id="contact" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" data-aos="fade-up">
+          <div class="intro-section text-center mb-5">
+            <h1 class="fw-bold" style="font-size:1.6rem; margin-top:-80px; margin-bottom:1.5rem">Contact Us</h1>
+            <p class="mx-auto" style="font-size: 15px;">
+              If you have any technical inquiries or innovative suggestions,
+              we warmly encourage you to unleash your creativity and compose
+              an email to our dedicated IT team. Your thoughts and feedback
+              are highly valued, and we are eager to hear from you! Please
+              utilize the space below to craft your message.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-md-8">
+
+
+          <!----------  Form Section ------------>
+
+          <form action="https://formsubmit.co/4b39027887b0f0e6889a8ede5644e855" method="POST" class="row g-3">
+
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" name="Name" placeholder="Enter Name" required />
+            </div>
+
+            <div class="form-group col-md-6">
+              <input type="email" class="form-control" name="Email" placeholder="Enter Email" required />
+            </div>
+
+            <div class="form-group col-md-12">
+              <input type="text" class="form-control" name="Subject" placeholder="Enter Subject" required />
+            </div>
+
+            <div class="form-group col-md-12">
+              <textarea name="Message" class="form-control" rows="5" placeholder="Enter Message"></textarea>
+            </div>
+
+            <div class="form-group col-md-12">
+              <button type="submit" class="btn btn-outline-info">
+                Send Message
+              </button>
+            </div>
+
+          </form>
 
 
         </div>
-
-
       </div>
 
-      <!---------- 👋👋👋Contacts Section Ends Here👋👋👋 ------->
+
+
+    </div>
+
+
+  </div>
+
+  <!---------- 👋👋👋Contacts Section Ends Here👋👋👋 ------->
 
 
 
-      <div class="scroll-to-top" onclick="scrollToTop()"></div>
+  <div class="scroll-to-top" onclick="scrollToTop()"></div>
 
 
 
 
-      <div class="divider-container"></div>
+  <div class="divider-container"></div>
 
 
 
 
 
-      <!-------------========= 😁😁 Footer Starts Here😁😁 =======----------------------->
+  <!-------------========= 😁😁 Footer Starts Here😁😁 =======----------------------->
 
-      <footer class="foot">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 text-center">
-              <h4 style="font-weight: bold; text-align: start;
+  <footer class="foot">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <h4 style="font-weight: bold; text-align: start;
               margin-bottom: 20px; 
               font-size:16px;">Credits</h4>
 
 
 
 
-              <div class="credit-links">
-                <p><a href="https://www.vecteezy.com" class="credits">- Vecteezy</a></p>
-                <p><a href="https://www.vecteezy.com" class="credits">- Brandify</a></p>
-                <p><a href="https://www.kabarak.ac.ke" class="credits">- Kabarak University</a></p>
-                <p><a href="https://www.pngtree.com" class="credits">- pngTree</a></p>
-                <p><a class="credits">- Others</a></p>
-              </div>
+          <div class="credit-links">
+            <p><a href="https://www.vecteezy.com" class="credits">- Vecteezy</a></p>
+            <p><a href="https://www.vecteezy.com" class="credits">- Brandify</a></p>
+            <p><a href="https://www.kabarak.ac.ke" class="credits">- Kabarak University</a></p>
+            <p><a href="https://www.pngtree.com" class="credits">- pngTree</a></p>
+            <p><a class="credits">- Others</a></p>
+          </div>
 
 
 
 
 
-            </div>
-            <div class="col-md-4 text-center con">
-              <h4 style="font-weight: bold;
+        </div>
+        <div class="col-md-4 text-center con">
+          <h4 style="font-weight: bold;
               text-align: start; margin-bottom: 20px;  font-size:15px;">Contacts</h4>
 
 
-              <div class="contact-links">
+          <div class="contact-links">
 
-                <p><a href="https://t.me/Kabarak_University_bot" class="credits" target="_blank">- Telegram Bot</a></p>
-                <p><a
-                    href="https://www.bing.com/ck/a?!&&p=e8fc103d80d5b15eJmltdHM9MTY4NDg4NjQwMCZpZ3VpZD0yYmJlMTA5YS1jZTJjLTY5MTMtMDFkMi0wMzgyY2ZhZTY4NWQmaW5zaWQ9NTE3OQ&ptn=3&hsh=3&fclid=2bbe109a-ce2c-6913-01d2-0382cfae685d&psq=kabarak+university+twitter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS9LYWJhcmFrVW5pdg&ntb=1"
-                    class="credits" target="_blank">- Twitter</a></p>
+            <p><a href="https://t.me/Kabarak_University_bot" class="credits" target="_blank">- Telegram Bot</a></p>
+            <p><a
+                href="https://www.bing.com/ck/a?!&&p=e8fc103d80d5b15eJmltdHM9MTY4NDg4NjQwMCZpZ3VpZD0yYmJlMTA5YS1jZTJjLTY5MTMtMDFkMi0wMzgyY2ZhZTY4NWQmaW5zaWQ9NTE3OQ&ptn=3&hsh=3&fclid=2bbe109a-ce2c-6913-01d2-0382cfae685d&psq=kabarak+university+twitter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS9LYWJhcmFrVW5pdg&ntb=1"
+                class="credits" target="_blank">- Twitter</a></p>
 
-                <p><a href="https://wa.me//254773602480" class="credits" target="_blank">- Whatsapp</a></p>
-                <p><a href="https://t.me//Anonymous_V73X_MVP" class="credits" target="_blank">- Telegram</a></p>
-              </div>
-
-
-
-            </div>
+            <p><a href="https://wa.me//254773602480" class="credits" target="_blank">- Whatsapp</a></p>
+            <p><a href="https://t.me//Anonymous_V73X_MVP" class="credits" target="_blank">- Telegram</a></p>
+          </div>
 
 
-            <div class="col-md-4 text-center">
-              <h4 style="font-weight: bold; text-align: start; margin-bottom: 20px;
+
+        </div>
+
+
+        <div class="col-md-4 text-center">
+          <h4 style="font-weight: bold; text-align: start; margin-bottom: 20px;
                font-size:16px; ">Links</h4>
 
 
-              <div class="linkz">
-                <p><a href="#home" class="lin">- Home</a></p>
-                <p><a href="#semesters" class="lin">- Semesters</a></p>
-                <p><a href="#contact" class="lin">- Contact Us</a></p>
-                <p><a href="https://moodle.kabarak.ac.ke/login/index.php" class="lin">- Moodle</a></p>
-                <p><a href="https://www.kabarak.ac.ke" class="lin">- Kabarak University</a></p>
-                <p><a href="https://chat.openai.com" class="lin">- ChatGPT</a></p>
-                <p><a href="https://www.youtube.com" class="lin">- YouTube</a></p>
-              </div>
-
-
-            </div>
-
-
+          <div class="linkz">
+            <p><a href="#home" class="lin">- Home</a></p>
+            <p><a href="#semesters" class="lin">- Semesters</a></p>
+            <p><a href="#contact" class="lin">- Contact Us</a></p>
+            <p><a href="https://moodle.kabarak.ac.ke/login/index.php" class="lin">- Moodle</a></p>
+            <p><a href="https://www.kabarak.ac.ke" class="lin">- Kabarak University</a></p>
+            <p><a href="https://chat.openai.com" class="lin">- ChatGPT</a></p>
+            <p><a href="https://www.youtube.com" class="lin">- YouTube</a></p>
           </div>
-        </div>
-
-        <div style="display: flex; justify-content:center; text-align:center;margin-top: 100px; ">
-          <p class="mb-0" style="opacity: 0.6; font-size:13px;"> <b>© 2023 IT Course Hub. All rights reserved.</b></p>
-        </div>
-
-        <div style="margin-top: 3px; display: flex; justify-content: center;">
-          <p style="font-weight: bold; font-size: 12px; opacity: 0.8;">Developed by: <a
-              href="https://wa.me//254773602480" style="color: rgb(150, 90, 5);">Sir Anonymous-V73X</a></p>
 
 
         </div>
-
-
-      </footer>
-
-
-
-
-
-      <!---------========= 😁😁😁Footer Ends Here😁😁😁 ==========-------->
-
-
-
-
-
-
-      <!---------=========🔃🔃 PreLoader Starts Here 🔃🔃  ==========-------->
-
-
-
-      <div class="wrapper-loader">
-
-
-        <div class="loader"></div>
-
-        <div class="scene">
-          <div class="cube-wrapper">
-            <div class="cube">
-              <div class="cube-faces">
-                <div class="cube-face shadow"></div>
-                <div class="cube-face bottom"></div>
-                <div class="cube-face top"></div>
-                <div class="cube-face left"></div>
-                <div class="cube-face right"></div>
-                <div class="cube-face back"></div>
-                <div class="cube-face front"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <p class="get" id="typing-dots">Getting Things Ready</p>
-
-        <script>
-
-          const dotsElement = document.getElementById('typing-dots');
-          const dots = '...';
-          let dotCount = 0;
-
-          function animateTypingDots() {
-            dotsElement.textContent = 'Getting Things Ready' + dots.substring(0, dotCount);
-            dotCount = (dotCount + 1) % (dots.length + 1);
-            setTimeout(animateTypingDots, 300);
-          }
-
-          animateTypingDots();
-
-        </script>
-
-
 
 
       </div>
+    </div>
+
+    <div style="display: flex; justify-content:center; text-align:center;margin-top: 100px; ">
+      <p class="mb-0" style="opacity: 0.6; font-size:13px;"> <b>© 2023 IT Course Hub. All rights reserved.</b></p>
+    </div>
+
+    <div style="margin-top: 3px; display: flex; justify-content: center;">
+      <p style="font-weight: bold; font-size: 12px; opacity: 0.8;">Developed by: <a href="https://wa.me//254773602480"
+          style="color: rgb(150, 90, 5);">Sir Anonymous-V73X</a></p>
+
+
+    </div>
+
+
+  </footer>
 
 
 
 
 
-      <!---------=========🔃🔃 PreLoader Ends Here 🔃🔃  ==========-------->
+  <!---------========= 😁😁😁Footer Ends Here😁😁😁 ==========-------->
+
+
+
+
+
+
+  <!---------=========🔃🔃 PreLoader Starts Here 🔃🔃  ==========-------->
+
+
+
+  <div class="wrapper-loader">
+
+
+    <div class="loader"></div>
+
+    <div class="scene">
+      <div class="cube-wrapper">
+        <div class="cube">
+          <div class="cube-faces">
+            <div class="cube-face shadow"></div>
+            <div class="cube-face bottom"></div>
+            <div class="cube-face top"></div>
+            <div class="cube-face left"></div>
+            <div class="cube-face right"></div>
+            <div class="cube-face back"></div>
+            <div class="cube-face front"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <p class="get" id="typing-dots">Getting Things Ready</p>
+
+    <script>
+
+      const dotsElement = document.getElementById('typing-dots');
+      const dots = '...';
+      let dotCount = 0;
+
+      function animateTypingDots() {
+        dotsElement.textContent = 'Getting Things Ready' + dots.substring(0, dotCount);
+        dotCount = (dotCount + 1) % (dots.length + 1);
+        setTimeout(animateTypingDots, 300);
+      }
+
+      animateTypingDots();
+
+    </script>
+
+
+
+
+  </div>
+
+
+
+
+
+  <!---------=========🔃🔃 PreLoader Ends Here 🔃🔃  ==========-------->
 
 
 
@@ -862,13 +1154,13 @@
 
 
 
-      <!---- 📑Linking JS Files📑 ----->
+  <!---- 📑Linking JS Files📑 ----->
 
-      <script src="./assets/js/bootstrap.bundle.min.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./assets/js/app.js"></script>
 
-      <!------------ 🔗🔗🔗Linking Ends Here🔗🔗🔗 ------------>
+  <!------------ 🔗🔗🔗Linking Ends Here🔗🔗🔗 ------------>
 
 
 </body>
