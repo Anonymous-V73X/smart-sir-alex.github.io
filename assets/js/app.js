@@ -192,3 +192,7 @@ for (let semester = 1; semester <= 4; semester++) {
       window.location.href = 'electives.html';
     });
   });
+
+
+
+  

@@ -46,6 +46,56 @@ body {
   width: 100vw;
 }
 
+
+
+.btn:focus {
+        outline: none!important;
+        border-color: transparent!important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ::selection {
   color: #804000;
   background-color: #f5deb3;
@@ -392,7 +442,7 @@ a {
   margin-top: 6px;
 
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   margin-left: -20px;
   color: #77695d;
   font-family: "Signika", sans-serif;
