@@ -55,26 +55,26 @@
           <li class="nav-item">
             <a class="nav-link" onclick="navigateTo('links')">Links</a>
           </li>
-          
-        <li class="nav-item">
-          <a class="nav-link" onclick="navigateTo('apps')">Apps</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" onclick="navigateTo('brainstorms')">Brainstorms</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" onclick="navigateTo('donate')">Donate</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" onclick="navigateTo('contact')">Contact</a>
-        </li>
-        
-        <script>
-          function navigateTo(section) {
-            document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
-          }
-        </script>
+
+          <li class="nav-item">
+            <a class="nav-link" onclick="navigateTo('apps')">Apps</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" onclick="navigateTo('brainstorms')">Brainstorms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="navigateTo('donate')">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="navigateTo('contact')">Contact</a>
+          </li>
+
+          <script>
+            function navigateTo(section) {
+              document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
+            }
+          </script>
 
 
 
@@ -117,8 +117,14 @@
             four. Embark on an educational journey with us.
           </p>
           <div style="display: flex; justify-content: center; margin-top: 20px">
-            <a data-aos="fade-up" data-aos-delay="300" onclick="navigateTo('semesters')" class="btn btn-outline-info me-3">Semesters</a>
-            <a data-aos="fade-up" data-aos-delay="400" onclick="navigateTo('apps')"class="btn btn-info btn-contacts"> Online Apps </a>
+            <a data-aos="fade-up" data-aos-delay="300" onclick="navigateTo('semesters')" class="btn me-3" style="
+            box-shadow:  5px 5px 10px rgba(202, 202, 202, 0.8),
+              -5px -5px 10px rgba(246, 246, 246, 0.8);">Semesters</a>
+
+            <a data-aos="fade-up" data-aos-delay="400" onclick="navigateTo('apps')" class="btn btn-contacts" style="
+            box-shadow:  5px 5px 10px rgba(202, 202, 202, 0.8),
+              -5px -5px 10px rgba(246, 246, 246, 0.8);">Online Apps</a>
+
           </div>
         </div>
       </div>
@@ -405,10 +411,10 @@
 
 
 
-      
+
 
       <div class="more-links">
-        <a data-aos="fade-up" data-aos-delay="400" onclick="navigateTo('contact')" class="btn btn-info"> More Links </a>
+        <a data-aos="fade-up" data-aos-delay="400" onclick="navigateTo('contact')" class="btn"> More Links </a>
 
       </div>
 
@@ -448,7 +454,7 @@
 
 
 
-          
+
           <div class="projectz">
 
             <div class="row gy-5 gx-5">
@@ -485,7 +491,7 @@
                     <h5 class="fw-bold" style="font-size: 16px;
                                   margin-bottom:20px;">DialectLing: Interactive Local Dialect Learning App</h5>
                   </a>
-                  <a  onclick="navigateThis('Dialectling.html')">
+                  <a onclick="navigateThis('Dialectling.html')">
                     <span class="badge read-more bg-info">Read More</span>
                   </a>
                 </div>
@@ -521,7 +527,7 @@
                     margin-bottom:15px; ">SmartGreen: Intelligent Greenhouse Management System</h5>
                   </a>
 
-                  <a  onclick="navigateThis('Smartgreen.html')">
+                  <a onclick="navigateThis('Smartgreen.html')">
                     <span class="badge read-more bg-info">Read More</span>
                   </a>
 
@@ -544,7 +550,7 @@
                       at Kabarak
                       University</h5>
                   </a>
-                  <a  onclick="navigateThis('CareerLink.html')">
+                  <a onclick="navigateThis('CareerLink.html')">
                     <span class="badge read-more bg-info">Read More</span>
                   </a>
                 </div>
@@ -562,10 +568,10 @@
                     margin-bottom:20px; ">MessMaster: Streamlining Food Orders at Kabarak University
                     </h5>
                     <style>
-                      @media(min-width:768px){
-                        .messy{
+                      @media(min-width:768px) {
+                        .messy {
 
-                          margin-top:-30px;
+                          margin-top: -30px;
                         }
                       }
                     </style>
@@ -586,7 +592,8 @@
 
 
               <div class="more-ideas">
-                <a onclick="navigateTo('contact')" data-aos="fade-up" data-aos-delay="400" class="moreIdeaz">More Project Ideas</a>
+                <a onclick="navigateThis('more-ideas.html')" data-aos="fade-up" data-aos-delay="400" class="moreIdeaz">More
+                  Project Ideas</a>
               </div>
 
 
@@ -998,29 +1005,47 @@
           <!----------  Form Section ------------>
 
           <form action="https://formsubmit.co/4b39027887b0f0e6889a8ede5644e855" method="POST" class="row g-3">
-
             <div class="form-group col-md-6">
               <input type="text" class="form-control" name="Name" placeholder="Enter Name" required />
             </div>
-
             <div class="form-group col-md-6">
               <input type="email" class="form-control" name="Email" placeholder="Enter Email" required />
             </div>
-
             <div class="form-group col-md-12">
               <input type="text" class="form-control" name="Subject" placeholder="Enter Subject" required />
             </div>
-
             <div class="form-group col-md-12">
               <textarea name="Message" class="form-control" rows="5" placeholder="Enter Message"></textarea>
             </div>
-
             <div class="form-group col-md-12">
-              <button type="submit" class="btn btn-outline-info">
-                Send Message
-              </button>
-            </div>
+              <button type="submit" class="btn" onclick="delaySubmit(event)">Send Message</button>
 
+
+
+              <script>
+                function delaySubmit(event) {
+                  // Prevent the form from submitting immediately
+                  event.preventDefault();
+
+                  // Validate the form
+                  const form = document.querySelector('form');
+                  if (!form.checkValidity()) {
+                    // If the form is invalid, display an error message or handle it accordingly
+                    showPopup(11);
+                    return;
+                  }
+
+                  // Display the pop-up message
+                   showPopup(12);
+
+                  // Delay the form submission for 5 seconds
+                  setTimeout(function () {
+                    // Submit the form after the delay
+                    form.submit();
+                  }, 10); 
+                }
+              </script>
+            </div>
           </form>
 
 
@@ -1044,6 +1069,257 @@
 
 
   <div class="divider-container"></div>
+
+
+
+
+
+    <!-------------========= 📑📑 Pop UP Styling Starts Here 📑📑 =======----------------------->
+
+
+
+
+
+  <style>
+    .popup-card {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(28, 28, 28, 0.447);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+
+    .close-btn {
+      position: absolute;
+      bottom: 10%;
+      left: 45%;
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(1turn);
+      }
+    }
+
+    .rotate-animation {
+      animation: rotate 0.3s linear;
+    }
+
+    .blob {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box {
+      background: url(./assets/images/no.jpg);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      width: 200px;
+      height: 200px;
+      box-shadow: 2px 4px 4px rgba(144, 142, 142, 0.2);
+      animation: animate 5s ease-in-out infinite;
+      transition: all 1s ease-in-out;
+    }
+
+    @keyframes animate {
+      0% {
+       
+         border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+      }
+
+      50% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+      }
+
+      100% {
+       border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+      }
+    }
+  </style>
+
+
+
+  <script>
+
+    function rotateAndHidePopup(index) {
+      var closeBtn = document.querySelector(`#popupCard${index} .close-btn`);
+      closeBtn.classList.add("rotate-animation");
+
+      setTimeout(function () {
+        hidePopup(index);
+        closeBtn.classList.remove("rotate-animation");
+      }, 300);
+    }
+
+    function hidePopup(index) {
+      document.getElementById(`popupCard${index}`).style.display = "none";
+    }
+
+    function showPopup(index) {
+      const popupCard = document.getElementById(`popupCard${index}`);
+      if (popupCard) {
+        popupCard.style.display = "flex";
+      }
+    }
+
+    function hidePopup(index) {
+      const popupCard = document.getElementById(`popupCard${index}`);
+      if (popupCard) {
+        popupCard.style.display = "none";
+      }
+    }
+  </script>
+
+
+
+
+
+    <!-------------========= ⚠️⚠️ Warning ⚠️⚠️ =======----------------------->
+
+
+
+  <div class="popup-card" id="popupCard11">
+
+    <div data-aos="fade-up" data-aos-delay="200" class="card"  style="border: rgba(246, 245, 243, 0.957) 3px solid; background-color: #f5ede6;">
+
+      <div class="card-body" style="margin-top: -10%; margin-left:-4%; display:flex; flex-direction:column;
+                                  align-items:center;">
+
+        <h3 class="h5 card-title mt-3" style="margin-top:40px !important;
+                                      margin-bottom: 40px; opacity:0.8;text-align:center;
+                                      color:#4a2e02 !important; font-weight:bold;">Hang On!</h3>
+
+
+
+
+
+        <div class="blob">
+          <div class="box">
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <p data-aos="fade-up" data-aos-delay="200" class="notes-intro"
+          style="text-align: center; margin-bottom: 80px !important;
+                              margin-top:30px !important; color: #4a4845; font-weight:500;opacity:0.8; max-width:300px;">
+          Please fill in all the details before sending the message.
+        </p>
+
+
+
+
+
+
+
+
+        <span data-aos="fade-up" data-aos-delay="200" class="close-btn" onclick="rotateAndHidePopup(11)
+                              " style="bottom: 8% ;">
+          <i class="fa fa-times-circle" style="font-size: 30px; color: rgb(92, 64, 51);
+                                  "></i>
+        </span>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-------------========= 🤖🤖 To Captcha 🤖🤖 =======----------------------->
+
+
+
+  <div class="popup-card" id="popupCard12">
+  
+    <div data-aos="fade-up" data-aos-delay="200" class="card"
+      style="border: rgba(246, 245, 243, 0.957) 3px solid; background-color: #f5ede6;">
+  
+      <div class="card-body" style="margin-top: -10%; margin-left:-4%; display:flex; flex-direction:column;
+                                    align-items:center;">
+  
+        <h3 class="h5 card-title mt-3" style="margin-top:20px !important;
+                                        margin-bottom: 20px; opacity:0.8;text-align:center;
+                                        color:#4a2e02 !important; font-weight:bold;">Robot Check!</h3>
+  
+  
+  
+  
+  
+        <div class="blob">
+          <div class="box" style="background: url(./assets/images/captcha.jpg); -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      width: 200px;
+      height: 200px;
+      box-shadow: 2px 4px 4px rgba(144, 142, 142, 0.2);
+      animation: animate 5s ease-in-out infinite;
+      transition: all 1s ease-in-out;">
+  
+          </div>
+        </div>
+  
+  
+  
+
+  
+        <p data-aos="fade-up" data-aos-delay="200" class="notes-int" style="text-align: center; margin-bottom: 60px !important;
+            margin-top:30px !important; color: #4a4845; font-weight:500; opacity:0.8; max-width:300px;">Thank you for your message.
+          Redirecting to captcha...
+        </p>
+        
+        <span data-aos="fade-up" data-aos-delay="200" class="close-btn"
+          onclick="rotateAndHidePopup(12); stopFormSubmission(event);" style="bottom: 6%;">
+          <i class="fa fa-times-circle" style="font-size: 30px; color: rgb(92, 64, 51);"></i>
+        </span>
+        
+        <script>
+          function stopFormSubmission(event) {
+            event.stopPropagation();
+          }
+        </script>
+
+  
+        
+      </div>
+  
+    </div>
+  
+  </div>
+
+
+
+
+
+
 
 
 
@@ -1130,10 +1406,10 @@
     </div>
 
     <div style="margin-top: 3px; display: flex; justify-content: center;">
-      <p style="font-weight: bold; font-size: 12px; opacity: 0.8;">Version: <a 
-          style="color: rgb(150, 90, 5);">Beta 1.0</a></p>
-    
-    
+      <p style="font-weight: bold; font-size: 12px; opacity: 0.8;">Version: <a style="color: rgb(150, 90, 5);">Beta
+          1.0</a></p>
+
+
     </div>
 
 
