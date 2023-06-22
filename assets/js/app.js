@@ -1,3 +1,5 @@
+
+
 //PreLoader Starts Here...
 
 const fade = () => {
@@ -8,7 +10,6 @@ const fade = () => {
 window.addEventListener("load", fade);
 
 //PreLoader Ends Here...
-
 
 //NavBar Animations Starts Here...
 
@@ -55,11 +56,6 @@ function typeText() {
 }
 
 typeText();
-
-
-
-
-
 
 // Scroll to top...
 
@@ -180,19 +176,48 @@ for (let semester = 1; semester <= 4; semester++) {
   }
 }
 
+const electiveElements = document.querySelectorAll(".electives p");
 
-
-
- 
-  const electiveElements = document.querySelectorAll('.electives p');
-  
-  
-  electiveElements.forEach(function(element) {
-    element.addEventListener('click', function() {
-      window.location.href = 'electives.html';
-    });
+electiveElements.forEach(function (element) {
+  element.addEventListener("click", function () {
+    window.location.href = "electives.html";
   });
+});
 
 
 
-  
+
+//Alternate Images
+
+var images = [
+  "./assets/images/hero.png",
+  "./assets/images/Compress_20230521_170917_7149.jpg",
+];
+var currentIndex = 0;
+var imageElement = document.getElementById("image");
+
+function fadeIn() {
+  imageElement.style.opacity = "1";
+}
+
+function fadeOut() {
+  imageElement.style.opacity = "0";
+}
+
+function changeImage() {
+  fadeOut();
+  setTimeout(function () {
+    imageElement.src = images[currentIndex];
+    currentIndex = (currentIndex + 1) % images.length;
+    fadeIn();
+  }, 500); // Delay for 0.5 seconds (adjust as needed)
+}
+
+// Immediately show the first image
+imageElement.src = images[currentIndex];
+currentIndex = (currentIndex + 1) % images.length;
+
+setTimeout(function () {
+  // Start alternating images after 30 seconds
+  setInterval(changeImage, 20000); // 30 seconds in milliseconds
+}, 500); // Delay for 30 seconds before starting rotation

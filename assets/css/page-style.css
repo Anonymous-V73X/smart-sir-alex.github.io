@@ -1839,7 +1839,17 @@ p {
   .comp-a {
     margin-left: 14% !important;
   }
+
+ 
 }
+
+
+@media (max-width: 767px) {
+   .video-tutorials{
+  padding-left: 5%;
+}
+}
+
 
 
 

@@ -226,6 +226,10 @@ a {
   }
 }
 
+.nav-item a{
+ cursor: pointer;
+}
+
 .service .icon {
   display: grid !important;
   background-color: #d3c5bb;
