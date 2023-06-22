@@ -29,7 +29,7 @@ window.addEventListener("scroll", () => {
 
 //Data AOS initialization...
 AOS.init({
-  duration: 700,
+  duration: 600,
 });
 
 // Typing Effect...
