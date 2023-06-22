@@ -293,8 +293,15 @@
 
       <div class="menu">
 
-        <a class="menu-link" href="semester-2-2.html"><i style="font-size: 14px;" class="fas fa-arrow-left"></i> Go
-          Back</a>
+       <a class="menu-link" onclick="goBack()" style="color: #412f22; cursor:pointer;"><i style="font-size: 14px;"
+            class="fas fa-arrow-left"></i> Go Back</a>
+        
+        <script>
+          function goBack() {
+            window.history.back();
+          }
+        </script>
+
         <a class="menu-link" href="semester-2-2.html#past-papers">Past Papers</a>
         <a class="menu-link" href="semester-2-2.html#tutorials">Tutorials</a>
 

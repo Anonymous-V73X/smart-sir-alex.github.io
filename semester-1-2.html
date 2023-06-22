@@ -33,10 +33,17 @@
       <h2 class="sem2">Semester 1.2</h2>
 
       <div class="menu">
-        <a class="menu-link" href="index.html#home">Home</a>
-        <a class="menu-link" href="#past-papers">Past Papers</a>
-        <a class="menu-link" href="#tutorials">Tutorials</a>
-        <a class="menu-link" href="index.html#brainstorms">Brainstorms</a>
+        <a class="menu-link" onclick="navigateTo('index.html#home')" style="color: #6B5840; cursor: pointer;">Home</a>
+        <a class="menu-link" onclick="navigateTo('#past-papers')" style="color: #6B5840; cursor: pointer;">Past Papers</a>
+        <a class="menu-link" onclick="navigateTo('#tutorials')" style="color: #6B5840; cursor: pointer;">Tutorials</a>
+        <a class="menu-link" onclick="navigateTo('index.html#brainstorms')"
+          style="color: #6B5840; cursor: pointer;">Brainstorms</a>
+        
+        <script>
+          function navigateTo(page) {
+            window.location.href = page;
+          }
+        </script>
       </div>
 
       <button class="hamburger" onclick="toggleHamburger()">
@@ -801,7 +808,7 @@
 
   <div data-aos="fade-up" data-aos-delay="200" style="display: flex; justify-content: center; margin-top:20px;">
 
-    <a href="index.html#contact">
+    <a href="https://wa.me//254773602480">
       <button class="btn btn-primary neumorphic shadow-soft border border-light">
         <span class="mr-1" style="font-weight: 500!important;">
           <i class="fas fa-comments"></i>
@@ -1630,7 +1637,7 @@
 
   <div data-aos="fade-up" data-aos-delay="200" class="container-1">
     <h2 class="title-1"
-      style="font-size: 1.5rem; margin-top: -160px!important; margin-bottom:0px; font-weight:bold; font-family: 'Signika', sans-serif;font-weight:bold; color: rgb(95, 83, 68);"">Progress Update</h2>
+      style="font-size: 1.5rem; margin-top: -140px!important; margin-bottom:0px; font-weight:bold; font-family: 'Signika', sans-serif;font-weight:bold; color: rgb(95, 83, 68);"">Progress Update</h2>
         <p class=" paragraph-1" style="font-size: 15px;max-width:500px">If you're at this stage, it means you have
       successfully completed the first semester out of a total of eight semesters.
       Congratulations on completing the first leg of your academic journey! As you prepare to start the second semester,

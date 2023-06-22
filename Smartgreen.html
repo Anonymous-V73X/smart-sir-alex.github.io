@@ -200,8 +200,14 @@
       <h2 class="sem2" style="font-size: 18px;">Smartgreen</h2>
 
       <div class="menu">
-        <a class="menu-link" href="index.html#brainstorms"><i style="font-size: 14px;" class="fas fa-arrow-left"></i> Go
-          Back</a>
+        <a class="menu-link" onclick="goBack()" style="color: #412f22; cursor:pointer;"><i style="font-size: 14px;"
+            class="fas fa-arrow-left"></i> Go Back</a>
+        
+        <script>
+          function goBack() {
+            window.history.back();
+          }
+        </script>
 
       </div>
 
@@ -426,7 +432,7 @@
 
 
           <p class="pB" data-aos="fade-up" data-aos-delay="200" style="text-align: left; margin-top: 10px; font-size:16px; font-weight:500;
-            max-height:1000px">
+            max-height:2000px">
             <b>Step 1: Planning and Requirements Gathering</b>
             <br>
             <br>

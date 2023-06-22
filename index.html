@@ -51,21 +51,33 @@
 
       <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav ms-auto">
+
           <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" onclick="navigateTo('links')">Links</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#semesters">Semesters</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#links">Links</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#brainstorms">Brainstorms</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contacts</a>
-          </li>
+          
+        <li class="nav-item">
+          <a class="nav-link" onclick="navigateTo('apps')">Apps</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" onclick="navigateTo('brainstorms')">Brainstorms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="navigateTo('donate')">Donate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="navigateTo('contact')">Contact</a>
+        </li>
+        
+        <script>
+          function navigateTo(section) {
+            document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
+          }
+        </script>
+
+
+
         </ul>
       </div>
 
@@ -82,11 +94,12 @@
 
   <div id="home" class="section-padding divider">
     <div class="container">
-      
+
       <div class="row gy-4 align-items-center">
         <div class="col-lg-5">
-          <img data-aos="fade-down" data-aos-delay="200" src="./assets/images/hero.png" class="img-fluid" alt="" />
+          <img id="image" data-aos="fade-down" data-aos-delay="200" class="img-fluid" alt="" />
         </div>
+
 
         <div class="col-lg-6" style="
               display: flex;
@@ -104,8 +117,8 @@
             four. Embark on an educational journey with us.
           </p>
           <div style="display: flex; justify-content: center; margin-top: 20px">
-            <a data-aos="fade-up" data-aos-delay="300" href="#semesters" class="btn btn-outline-info me-3">Semesters</a>
-            <a data-aos="fade-up" data-aos-delay="400" href="#apps" class="btn btn-info btn-contacts"> Online Apps </a>
+            <a data-aos="fade-up" data-aos-delay="300" onclick="navigateTo('semesters')" class="btn btn-outline-info me-3">Semesters</a>
+            <a data-aos="fade-up" data-aos-delay="400" onclick="navigateTo('apps')"class="btn btn-info btn-contacts"> Online Apps </a>
           </div>
         </div>
       </div>
@@ -328,6 +341,26 @@
         </div>
       </a>
 
+      <a href="https://studentportal.helb.co.ke/auth/signin" target="_blank">
+        <div class="row mt-4 gx-0 gy-4 p-5 border-hover rounded-5 shadow unique-class" data-aos="fade-up"
+          data-aos-delay="400">
+          <div class="col-md-3">
+            <img class="helb" src="./assets/images/logo-login.png" alt="" />
+          </div>
+          <div class="col-md-3 " style="padding-left: -25px;">
+            <h5>HELB</h5>
+            <small class="text-info">Higher Education Loans Board</small>
+          </div>
+          <div class="col-md-6 hlb">
+            <p class="mb-0">
+              HELB provides financial support for higher education. The portal enables students to access loan
+              applications, check
+              status, and manage accounts.
+            </p>
+          </div>
+        </div>
+      </a>
+
       <a href="https://chat.openai.com" target="_blank">
         <div class="row gx-0 gy-4 p-5 border-hover rounded-5 shadow unique-class" style="margin-top: 20px!important;"
           data-aos="fade-up" data-aos-delay="200">
@@ -372,28 +405,10 @@
 
 
 
-      <a href="https://studentportal.helb.co.ke/auth/signin" target="_blank">
-        <div class="row mt-4 gx-0 gy-4 p-5 border-hover rounded-5 shadow unique-class" data-aos="fade-up"
-          data-aos-delay="400">
-          <div class="col-md-3">
-            <img class="helb" src="./assets/images/logo-login.png" alt="" />
-          </div>
-          <div class="col-md-3 " style="padding-left: -25px;">
-            <h5>HELB</h5>
-            <small class="text-info">Higher Education Loans Board</small>
-          </div>
-          <div class="col-md-6 hlb">
-            <p class="mb-0">
-              HELB provides financial support for higher education. The portal enables students to access loan
-              applications, check
-              status, and manage accounts.
-            </p>
-          </div>
-        </div>
-      </a>
+      
 
       <div class="more-links">
-        <a data-aos="fade-up" data-aos-delay="400" href="#contact" class="btn btn-info"> More Links </a>
+        <a data-aos="fade-up" data-aos-delay="400" onclick="navigateTo('contact')" class="btn btn-info"> More Links </a>
 
       </div>
 
@@ -429,67 +444,15 @@
             </div>
           </div>
 
-          <!---------Smart Farm ------------->
+
+
+
+
+          
           <div class="projectz">
+
             <div class="row gy-5 gx-5">
 
-              <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="p-4 border-hover shadow rounded-5">
-                  <div class="farm">
-                    <img class="smart-farming1" src="./assets/images/image-from-rawpixel-id-2808780-original.png"
-                      class="img-fluid rounded-5 mb-3" alt="" />
-                    <img class="smart-farming2" src="./assets/images/image-from-rawpixel-id-2808781-png.png"
-                      class="img-fluid rounded-5 mb-3" alt="" />
-                  </div>
-                  <a class="d-block mt-2">
-                    <h5 class="fw-bold" style="font-size: 16px;
-                    margin-bottom:20px">SmartGreen: Intelligent Greenhouse Management System</h5>
-                  </a>
-
-                  <a href="Smartgreen.html">
-                    <span class="badge read-more bg-info">Read More</span>
-                  </a>
-
-                </div>
-
-              </div>
-
-              <!-------Mess Upgrade------->
-
-              <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="p-4 border-hover shadow rounded-5">
-                  <div class="farm">
-                    <img class="mess"
-                      src="./assets/images/—Pngtree—vegetable salad food vegetables vegetable_3822948.png"
-                      class="img-fluid rounded-5 mb-3" alt="" />
-                  </div>
-                  <a href="#" class="d-block mt-4">
-                    <h5 class="fw-bold" style="font-size: 16px;
-                    margin-bottom:20px">MessMaster: Streamlining Food Orders at Kabarak University</h5>
-                  </a>
-                  <a href="MessMaster.html">
-                    <span class="badge read-more bg-info">Read More</span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="p-4 border-hover shadow rounded-5">
-                  <div class="farm">
-                    <img class="jobs-vacancy"
-                      src="./assets/images/vecteezy_friendly-and-approachable-3d-engineer-women-personable-and_22694986_383-min.png"
-                      class="img-fluid rounded-5 mb-3" alt="" />
-                  </div>
-                  <a href="#" class="d-block mt-2">
-                    <h5 class="fw-bold" style="font-size: 16px;
-                    margin-bottom:20px;">CareerLink: Job Training and Placement Portal at Kabarak University</h5>
-                  </a>
-                  <a href="CareerLink.html">
-                    <span class="badge read-more bg-info">Read More</span>
-                  </a>
-                </div>
-              </div>
 
               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="p-4 border-hover shadow rounded-5">
@@ -501,9 +464,9 @@
                   </div>
                   <a href="#" class="d-block mt-2">
                     <h5 class="fw-bold" style="font-size: 16px;
-                    margin-bottom:20px;">FinanceTrack: Online Personal Finance Manager</h5>
+                                  margin-bottom:20px;">FinanceTrack: Online Personal Finance Manager</h5>
                   </a>
-                  <a href="FinanceTrack.html">
+                  <a onclick="navigateThis('FinanceTrack.html')">
                     <span class="badge read-more bg-info">Read More</span>
                   </a>
                 </div>
@@ -520,9 +483,9 @@
                   </div>
                   <a href="#" class="d-block mt-2">
                     <h5 class="fw-bold" style="font-size: 16px;
-                    margin-bottom:20px;">DialectLing: Interactive Local Dialect Learning App</h5>
+                                  margin-bottom:20px;">DialectLing: Interactive Local Dialect Learning App</h5>
                   </a>
-                  <a href="Dialectling.html">
+                  <a  onclick="navigateThis('Dialectling.html')">
                     <span class="badge read-more bg-info">Read More</span>
                   </a>
                 </div>
@@ -538,16 +501,92 @@
                   </div>
                   <a href="#" class="d-block mt-2">
                     <h5 class="fw-bold" style="font-size: 16px;
-                    margin-bottom:20px;">CommuniSafe: Empowering Community Safety Through a Mobile App</h5>
+                                  margin-bottom:20px;">CommuniSafe: Empowering Community Safety Through a Mobile App
+                    </h5>
                   </a>
-                  <a href="Communisafe.html">
+                  <a onclick="navigateThis('Communisafe.html')">
                     <span class="badge read-more bg-info">Read More</span>
                   </a>
                 </div>
               </div>
 
+              <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="p-4 border-hover shadow rounded-5">
+                  <div class="farm">
+                    <img class="mess" src="./assets/images/smartgreen.jpg" class="img-fluid rounded-5 mb-3" alt="" />
+                  </div>
+                  <a class="d-block mt-2">
+                    <h5 class="fw-bold messy" style="font-size: 16px;
+                    margin-bottom:15px; ">SmartGreen: Intelligent Greenhouse Management System</h5>
+                  </a>
+
+                  <a  onclick="navigateThis('Smartgreen.html')">
+                    <span class="badge read-more bg-info">Read More</span>
+                  </a>
+
+                </div>
+
+              </div>
+
+
+
+              <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="p-4 border-hover shadow rounded-5">
+                  <div class="farm">
+                    <img class="jobs-vacancy"
+                      src="./assets/images/vecteezy_friendly-and-approachable-3d-engineer-women-personable-and_22694986_383-min.png"
+                      class="img-fluid rounded-5 mb-3" alt="" />
+                  </div>
+                  <a href="#" class="d-block mt-2">
+                    <h5 class="fw-bold" style="font-size: 16px;
+                                    margin-bottom:10px; margin-top:20px;">CareerLink: Job Training and Placement Portal
+                      at Kabarak
+                      University</h5>
+                  </a>
+                  <a  onclick="navigateThis('CareerLink.html')">
+                    <span class="badge read-more bg-info">Read More</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-------Mess Upgrade------->
+
+              <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="p-4 border-hover shadow rounded-5">
+                  <div class="farm">
+                    <img class="mess" src="./assets/images/food.jpg" class="img-fluid rounded-5 mb-3" alt="" />
+                  </div>
+                  <a href="#" class="d-block mt-4">
+                    <h5 class="fw-bold messy" style="font-size: 16px; 
+                    margin-bottom:20px; ">MessMaster: Streamlining Food Orders at Kabarak University
+                    </h5>
+                    <style>
+                      @media(min-width:768px){
+                        .messy{
+
+                          margin-top:-30px;
+                        }
+                      }
+                    </style>
+                  </a>
+                  <a onclick="navigateThis('MessMaster.html')">
+                    <span class="badge read-more bg-info">Read More</span>
+                  </a>
+                </div>
+              </div>
+
+              <script>
+                function navigateThis(page) {
+                  window.location.href = page;
+                }
+              </script>
+
+
+
+
               <div class="more-ideas">
-                <a href="#contact" data-aos="fade-up" data-aos-delay="400" class="moreIdeaz">More Project Ideas</a>
+                <a onclick="navigateTo('contact')" data-aos="fade-up" data-aos-delay="400" class="moreIdeaz">More Project Ideas</a>
               </div>
 
 
@@ -1088,6 +1127,13 @@
           style="color: rgb(150, 90, 5);">Sir Anonymous-V73X</a></p>
 
 
+    </div>
+
+    <div style="margin-top: 3px; display: flex; justify-content: center;">
+      <p style="font-weight: bold; font-size: 12px; opacity: 0.8;">Version: <a 
+          style="color: rgb(150, 90, 5);">Beta 1.0</a></p>
+    
+    
     </div>
 
 

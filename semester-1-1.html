@@ -33,11 +33,25 @@
       <h2 class="sem2">Semester 1.1</h2>
 
       <div class="menu">
-        <a class="menu-link" href="index.html#home">Home</a>
-        <a class="menu-link" href="#past-papers">Past Papers</a>
-        <a class="menu-link" href="#tutorials">Tutorials</a>
-        <a class="menu-link" href="index.html#brainstorms">Brainstorms</a>
+        <a class="menu-link" onclick="navigateTo('index.html#home')" style="color: #6B5840; cursor: pointer;">Home</a>
+        <a class="menu-link" onclick="navigateTo('#past-papers')" style="color: #6B5840; cursor: pointer;">Past Papers</a>
+        <a class="menu-link" onclick="navigateTo('#tutorials')" style="color: #6B5840; cursor: pointer;">Tutorials</a>
+        <a class="menu-link" onclick="navigateTo('index.html#brainstorms')"
+          style="color: #6B5840; cursor: pointer;">Brainstorms</a>
+        
+        <script>
+          function navigateTo(page) {
+            window.location.href = page;
+          }
+        </script>
+
+
       </div>
+
+
+
+      
+
 
       <button class="hamburger" onclick="toggleHamburger()">
         <span></span>
@@ -538,10 +552,12 @@
             <div class="pt-3">
               <p class="download-link" style="text-align: center; font-weight: bold; margin-left: -8%;">
                 INTE 111:
-                <a style="margin-left: 15%; color: rgb(88, 132, 132);" href="https://drive.google.com/uc?export=download&id=1_mH5VUwtPsm9-8zFFC-Q9d0bDpiuZStp" onclick="showPopup(11)">Download</a>
+                <a style="margin-left: 15%; color: rgb(88, 132, 132);"
+                  href="https://drive.google.com/uc?export=download&id=1_mH5VUwtPsm9-8zFFC-Q9d0bDpiuZStp"
+                  onclick="showPopup(11)">Download</a>
               </p>
 
-             
+
 
 
 
@@ -578,11 +594,10 @@
             <div class="pt-3"
               style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
               <a href="https://www.zoom.us/download" target="_blank">
-              <button
-                class="btn btn-primary neumorphic shadow-soft border border-light"
-                style="margin-top: 40px; max-width: 200px">
-                <span class="mr-1"><i class="fas fa-video" style="height: 20px!important;"></i></span>
-                <strong>Zoom</strong>
+                <button class="btn btn-primary neumorphic shadow-soft border border-light"
+                  style="margin-top: 40px; max-width: 200px">
+                  <span class="mr-1"><i class="fas fa-video" style="height: 20px!important;"></i></span>
+                  <strong>Zoom</strong>
                 </button>
 
               </a>
@@ -614,7 +629,8 @@
 
 
 
-              <a href="https://support.microsoft.com/en-us/office/download-and-install-or-reinstall-microsoft-365-or-office-2021-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658" target="_blank">
+              <a href="https://support.microsoft.com/en-us/office/download-and-install-or-reinstall-microsoft-365-or-office-2021-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658"
+                target="_blank">
                 <button class="btn btn-primary neumorphic shadow-soft border border-light" type="button"
                   style="max-width: 200px;">
                   <span class="mr-1"><i class="fas fa-file-alt"></i></span>
@@ -708,8 +724,8 @@
 
 
   <div data-aos="fade-up" data-aos-delay="200" style="display: flex; justify-content: center; margin-top:20px;">
-  
-    <a href="index.html#contact">
+
+    <a href="https://wa.me//254773602480">
       <button class="btn btn-primary neumorphic shadow-soft border border-light">
         <span class="mr-1" style="font-weight: 500!important;">
           <i class="fas fa-comments"></i>
@@ -717,7 +733,7 @@
         </span>
       </button>
     </a>
-  
+
   </div>
 
 
@@ -1370,7 +1386,7 @@
 
   <div data-aos="fade-up" data-aos-delay="200" class="container-1">
     <h2 class="title-1"
-      style="font-size: 1.5rem; margin-top: -100px!important; margin-bottom:0px; font-weight:bold; font-family: 'Signika', sans-serif;font-weight:bold; color: rgb(95, 83, 68);"">Progress Update</h2>
+      style="font-size: 1.5rem; margin-top: -50px!important; margin-bottom:0px; font-weight:bold; font-family: 'Signika', sans-serif;font-weight:bold; color: rgb(95, 83, 68);"">Progress Update</h2>
         <p class=" paragraph-1" style="font-size: 14px; text-align: center; ">
       If you're about to start this semester, it marks the beginning of your academic journey. Congratulations on
       embarking
@@ -1414,7 +1430,7 @@
       position: relative;
       margin-top: 16px;
       border-radius: 12px;
-       box-shadow: 6px 6px 12px #c2c2c2c8, -6px -6px 12px #ffffff98 !important;
+      box-shadow: 6px 6px 12px #c2c2c2c8, -6px -6px 12px #ffffff98 !important;
       background-color: #ebecf0;
     }
 
@@ -1645,7 +1661,8 @@
 
     <div style="margin: 10px 0; margin-top:-10px!important; display: flex; justify-content: center; font-size:10px">
       <p style="font-weight: bold; opacity:0.8;
-      font-size:13px;">Developed by: <a href="https://wa.me//254773602480" style="font-weight: bold; font-size:12px; color: rgb(150, 90, 5);">
+      font-size:13px;">Developed by: <a href="https://wa.me//254773602480"
+          style="font-weight: bold; font-size:12px; color: rgb(150, 90, 5);">
           Sir Anonymous-V73X</a></p>
     </div>
 
