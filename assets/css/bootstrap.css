@@ -4024,11 +4024,7 @@ fieldset:disabled .btn {
 .navbar-toggler:hover {
   text-decoration: none;
 }
-.navbar-toggler:focus {
-  text-decoration: none;
-  outline: 0;
-  box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
-}
+
 
 .navbar-toggler-icon {
   display: inline-block;

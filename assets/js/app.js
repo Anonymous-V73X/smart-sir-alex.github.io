@@ -7,7 +7,16 @@ const fade = () => {
   wrapper.classList.add("fade");
 };
 
-window.addEventListener("load", fade);
+// Add an event listener to ensure the preloader stays visible until the content is loaded
+document.addEventListener("DOMContentLoaded", () => {
+  // Remove the "fade" class from the preloader wrapper initially
+  const wrapper = document.querySelector(".wrapper-loader");
+  wrapper.classList.remove("fade");
+
+  // Add the "fade" class to the preloader wrapper once the content is loaded
+  window.addEventListener("load", fade);
+});
+
 
 //PreLoader Ends Here...
 
@@ -24,6 +33,32 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("shadow-custom", "py-3");
   }
 });
+
+
+// Add event listeners for showing/hiding the navbar-toggler icon and hiding the dropdown
+          document.addEventListener("DOMContentLoaded", function () {
+            const navbarToggler = document.querySelector("#navbarTogglerIcon");
+            const navbarCollapse = document.querySelector("#navbarColor03");
+
+            // Hide the dropdown when the user clicks outside
+            document.addEventListener("click", function (event) {
+              const isInsideNavbar = navbarCollapse.contains(event.target);
+              const isNavbarToggler = navbarToggler.contains(event.target);
+
+              if (!isInsideNavbar && !isNavbarToggler) {
+                navbarCollapse.classList.remove("show");
+                
+              }
+            });
+
+           // Add event listener for hiding the focus style when the user scrolls
+            window.addEventListener("scroll", function () {
+              const navbarToggler = document.querySelector(".navbar-toggler");
+              navbarToggler.blur();
+              navbarCollapse.classList.remove("show");
+            });
+          });
+
 
 //NavBar Animations End Here...
 
@@ -81,34 +116,6 @@ function scrollToTop() {
   });
 }
 
-// Add event listeners for showing/hiding the navbar-toggler icon and hiding the dropdown
-document.addEventListener("DOMContentLoaded", function () {
-  const navbarToggler = document.querySelector("#navbarTogglerIcon");
-  const navbarCollapse = document.querySelector("#navbarColor03");
-
-  navbarCollapse.addEventListener("show.bs.collapse", function () {
-    navbarToggler.innerHTML = '<span class="navbar-toggler-icon"></span>'; // Change the icon to "X"
-  });
-
-  navbarCollapse.addEventListener("hide.bs.collapse", function () {
-    navbarToggler.innerHTML = '<span class="navbar-toggler-icon"></span>'; // Remove the "X" icon
-  });
-
-  // Hide the dropdown when the user clicks outside
-  document.addEventListener("click", function (event) {
-    const isInsideNavbar = navbarCollapse.contains(event.target);
-    const isNavbarToggler = navbarToggler.contains(event.target);
-
-    if (!isInsideNavbar && !isNavbarToggler) {
-      navbarCollapse.classList.remove("show");
-    }
-  });
-
-  // Hide the dropdown when the user scrolls
-  window.addEventListener("scroll", function () {
-    navbarCollapse.classList.remove("show");
-  });
-});
 
 // Toggle the drop
 function toggleHamburger() {
@@ -192,6 +199,7 @@ electiveElements.forEach(function (element) {
 var images = [
   "./assets/images/hero.png",
   "./assets/images/Compress_20230521_170917_7149.jpg",
+  "./assets/images/Compress_20230521_170854_4474.jpg",
 ];
 var currentIndex = 0;
 var imageElement = document.getElementById("image");
@@ -210,14 +218,15 @@ function changeImage() {
     imageElement.src = images[currentIndex];
     currentIndex = (currentIndex + 1) % images.length;
     fadeIn();
-  }, 500); // Delay for 0.5 seconds (adjust as needed)
+  }, 600); // Delay for 0.5 seconds before fading in (adjust as needed)
 }
 
 // Immediately show the first image
 imageElement.src = images[currentIndex];
 currentIndex = (currentIndex + 1) % images.length;
+fadeIn(); // Apply initial fade-in effect
 
 setTimeout(function () {
   // Start alternating images after 30 seconds
   setInterval(changeImage, 20000); // 30 seconds in milliseconds
-}, 500); // Delay for 30 seconds before starting rotation
+}, 200); // Delay for 0.5 seconds before starting rotation

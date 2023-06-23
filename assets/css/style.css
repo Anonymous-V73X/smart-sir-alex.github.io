@@ -9,6 +9,18 @@ body {
   background-color: #f5ede6; /* Light cream */
 }
 
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
+}
+
+.no-box-shadow {
+  box-shadow: none !important;
+}
+
+
+
 ::-webkit-scrollbar-thumb {
   background: #88888800;
 }
@@ -669,6 +681,11 @@ strong {
 .navbar-toggler:hover {
   cursor: pointer;
 }
+
+.navbar-toggler:focus {
+  outline: none !important;
+}
+
 
 .moreIdeaz {
   background-color: #7d563fcf;
