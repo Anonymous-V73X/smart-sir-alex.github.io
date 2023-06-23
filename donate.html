@@ -21,10 +21,23 @@
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
 
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap');
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
         body {
             background-color: #f5ede6;
             font-family: "Bai Jamjuree", sans-serif;
+            color: rgba(99, 62, 36, 0.908);
 
+
+
+        }
+
+        a {
+            text-decoration: none;
         }
 
         .bg-primary {
@@ -50,6 +63,7 @@
             margin-bottom: -0.0625rem;
             background-color: transparent;
             border: 0.0625rem solid #e2e2e2;
+            font-weight: 500;
         }
 
 
@@ -228,6 +242,7 @@
             gap: 30px;
             justify-content: center !important;
             align-items: center !important;
+            margin-bottom: 100px;
 
 
 
@@ -468,6 +483,56 @@
             font-size: 1.27rem;
             margin-bottom: 1.5rem;
         }
+
+        img {
+            width: 380px;
+        }
+
+        .description {
+            max-width: 450px;
+            text-align: center;
+
+        }
+
+
+
+        .row1 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 2%;
+            justify-content: space-around !important;
+            align-items: center !important;
+
+
+
+        }
+
+        .menu-link:hover .fas {
+            color: #f7be8c;
+            transform: translateX(-50%);
+            transition: transform 500ms ease-in-out;
+        }
+
+        .menu-link:hover {
+            background-color: #feece0 !important;
+            transform: translateX(-50%) !important;
+            transition: transform 500ms ease-in-out;
+            color: #f7be8c !important;
+            box-shadow: inset 2px 2px 5px #b8b9bec6, inset -3px -3px 7px #ffffffce !important;
+        }
+
+        .menu-link:hover a .g {
+            transform: translateX(-10px) !important;
+        }
+
+        .divider{
+             width:100%;
+             background-color: rgba(236, 215, 187, 0.447);
+             height: 0.1px;
+
+        }
+       
     </style>
 </head>
 
@@ -476,124 +541,210 @@
 
 <body>
 
+    <div data-aos="fade-down" data-aos-delay="200" class="back" style="text-align:right!important; margin-top:10px!important; padding-top:40px">
+        <a class="menu-link shadow-soft" onclick="goBack() "
+            style="color: #966a4b; cursor: pointer; background-color: #e6ccba; padding: 15px; padding-left: 20px; padding-right: 20px; border-radius: 25px; font-size: 16px; font-weight: 600; margin-right:7%">
+            <i style="font-size: 16px; margin-right:4px;" class="fas fa-arrow-left"></i> <b class="g">Go Back</b>
+
+        </a>
+
+
+    </div>
+
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+    <div class="row1" style="margin-bottom: 50px; ">
+        <div class="image" data-aos="fade-up" data-aos-delay="200">
+            <img src="./assets/images/Compress_20230521_170856_6540.jpg" alt="">
+        </div>
+        <div class="description">
+            <h3 data-aos="fade-down" data-aos-delay="200"
+                style="font-size: 35px;  font-family: 'Dancing Script', cursive;">Support an independent
+                developer.</h3>
+            <p data-aos="fade-up" data-aos-delay="200">As an independent developer, I rely on the support of generous
+                individuals like you to continue creating innovative and
+                impactful projects. Your donation can make a world of difference in fueling my passion and sustaining
+                the development of
+                future endeavors. Every contribution, no matter the size, is deeply appreciated and goes a long way in
+                empowering me to pursue my creative
+                endeavors.</p>
+        </div>
+    </div>
+
+    <div class="divider"></div>
 
 
 
-    <div class="container">
-        <div class="row">
+    <h3 data-aos="fade-up" data-aos-delay="100"
+        style="font-size: 34px; margin-top:40px; margin-bottom:60px; text-align:center; font-family: 'Dancing Script', cursive;">
+        Become A Patron.</h3>
 
-            <!-- Pricing Card -->
-            <div class="card bg-primary shadow-inset border-light p-4">
-                <!-- Header -->
-                <header class="card-header shadow-soft text-center border border-light rounded mb-4">
-                    <span class="d-block">
-                        <h2 class="donator">Seedling Donator</h2>
-                        <h3 class="amount"> 100 KSH </h3>
-                    </span>
-                </header>
-                <!-- End Header -->
-                <!-- Content -->
-                <div class="card-body shadow-soft text-center border border-light rounded">
-                    <p>Become a Seedling Donator and help nurture the growth of my independent development work. By
-                        contributing 100 Ksh
-                        (Kenyan Shillings), you'll be supporting my journey as an independent developer and playing a
-                        vital role in shaping the
-                        future of my projects.Together, we can sow the seeds of innovation and creativity.</p>
-                    <ul class="list-group mb-4">
-                        <li class="list-group-item"><strong>Support: </strong>Moderate</li>
-                        <li class="list-group-item"><strong>Amount: </strong>100Ksh</li>
-                        <li class="list-group-item"><strong>Thank you in advance for your support as a Seedling
-                                Donator.</strong></li>
 
-                    </ul>
-                    <button type="button" class="btn btn-primary btn-block" tabindex="0">
-                        <span class="fab fa-whatsapp mr-2"></span>WhatsApp
-                    </button>
 
-                </div>
-                <!-- End Content -->
+
+
+
+    <div class="row" data-aos="fade-up" data-aos-delay="200">
+
+        <!-- Pricing Card -->
+        <div class="card bg-primary shadow-inset border-light p-4">
+            <!-- Header -->
+            <header class="card-header shadow-soft text-center border border-light rounded mb-4">
+                <span class="d-block">
+                    <h2 class="donator" style="color: #e6892c; text-transform:uppercase;font-size:20px;">Seedling
+                        Donator</h2>
+                    <h3 class="amount" style="color: rgb(115, 74, 74);"> 100 KSH </h3>
+                </span>
+            </header>
+            <!-- End Header -->
+            <!-- Content -->
+            <div class="card-body shadow-soft text-center border border-light rounded">
+                <p style="font-weight: 500!important;">Become a Seedling Donator and help nurture the growth of my
+                    independent development work. By
+                    contributing 100 Ksh
+                    (Kenyan Shillings), you'll be supporting my journey as an independent developer and playing a
+                    vital role in shaping the
+                    future of my projects.Together, we can sow the seeds of innovation and creativity.</p>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item"><strong> <img src="./assets/images/mpesa-logo.png"
+                                style="width:60px; margin-bottom:-10px; margin-right:8px;" alt="">: </strong><b
+                            style="font-weight: 500;">0745179023</b></li>
+                    <li class="list-group-item"><strong>Support: </strong> <b style="font-weight: 500;">Moderate</b>
+                    </li>
+                    <li class="list-group-item"><strong>Amount: </strong>100 Ksh</li>
+                    <li class="list-group-item"><strong
+                            style="font-weight: 500; font-family: 'Sacramento', cursive; font-size:28px; line-height:0px;">Thank
+                            you in advance for your support
+                            as a Seedling
+                            Donator.</strong></li>
+
+                </ul>
+                <button type="button" class="btn btn-primary btn-block" tabindex="0"
+                    style="color:rgb(104, 76, 41);  font-family: Bai Jamjuree, sans-serif;font-weight:500;">
+                    <span class="fab fa-telegram-plane mr-2"></span>Telegram
+                </button>
+
             </div>
-            <!-- End of Pricing Card -->
+            <!-- End Content -->
+        </div>
+        <!-- End of Pricing Card -->
 
 
 
 
 
-            <!-- Pricing Card -->
-            <div class="card bg-primary shadow-inset border-light p-4">
-                <!-- Header -->
-                <header class="card-header shadow-soft text-center border border-light rounded mb-4">
-                    <span class="d-block">
-                        <h2 class="donator">Momentum Builder</h2>
-                        <h3 class="amount"> 500 KSH </h3>
+        <!-- Pricing Card -->
+        <div class="card bg-primary shadow-inset border-light p-4">
+            <!-- Header -->
+            <header class="card-header shadow-soft text-center border border-light rounded mb-4">
+                <span class="d-block">
+                    <h2 class="donator" style="color: #487D71;  text-transform:uppercase;font-size:20px;">Momentum
+                        Builder</h2>
+                    <h3 class="amount" style="color: rgb(115, 74, 74);"> 500 KSH </h3>
 
-                    </span>
-                </header>
-                <!-- End Header -->
-                <!-- Content -->
-                <div class="card-body shadow-soft text-center border border-light rounded">
-                    <p>Join the ranks of Momentum Builders and fuel the progress of my independent development
-                        endeavors. Your substantial
-                        contribution of 500 Ksh will empower me to expand my skills, tackle larger projects, and reach
-                        new heights in my career.
-                        Together, we can cultivate a thriving ecosystem of innovation and make a lasting impact.</p>
-                    <ul class="list-group mb-4">
-                        <li class="list-group-item"><strong>Support: </strong>Significant</li>
-                        <li class="list-group-item"><strong>Amount: </strong>500Ksh</li>
-                        <li class="list-group-item"><strong>Thank you in advance for your support as a Momentum
-                                Builder.</strong></li>
-                    </ul>
-                    <button type="button" class="btn btn-primary btn-block" tabindex="0">
-                        <span class="fab fa-telegram-plane mr-2"></span>Telegram
+                </span>
+            </header>
+            <!-- End Header -->
+            <!-- Content -->
+            <div class="card-body shadow-soft text-center border border-light rounded">
+                <p style="font-weight: 500!important;">Join the ranks of Momentum Builders and fuel the progress of
+                    my independent development
+                    endeavors. Your substantial
+                    contribution of 500 Ksh will empower me to expand my skills, tackle larger projects, and reach
+                    new heights in my career.
+                    Together, we can cultivate a thriving ecosystem of innovation and make a lasting impact.</p>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item"><strong> <img src="./assets/images/mpesa-logo.png"
+                                style="width:60px; margin-bottom:-10px; margin-right:8px;" alt="">: </strong> <b
+                            style="font-weight: 500;"><b style="font-weight: 500;">0745179023</b></b></li>
+                    <li class="list-group-item"><strong>Support: </strong><b style="font-weight: 500;">Significant</b>
+                    </li>
+                    <li class="list-group-item"><strong>Amount: </strong>500 Ksh</li>
+                    <li class="list-group-item"><strong
+                            style="font-weight: 500; font-family: 'Sacramento', cursive; font-size:26px; line-height:0px;">Thank
+                            you in advance for your support
+                            as a Momentum
+                            Builder.</strong></li>
+                </ul>
+
+                <a href="https://wa.me/254773602480">
+                    <button type="button" class="btn btn-primary btn-block" tabindex="0"
+                        style="color:rgb(109, 80, 42);  font-family: Bai Jamjuree, sans-serif;font-weight:500;">
+                        <span class="fab fa-whatsapp mr-2"></span>Whatsapp
                     </button>
+                </a>
 
-                </div>
-                <!-- End Content -->
+
             </div>
-            <!-- End of Pricing Card -->
+            <!-- End Content -->
+        </div>
+        <!-- End of Pricing Card -->
 
 
 
 
 
 
-            <!-- Pricing Card -->
-            <div class="card bg-primary shadow-inset border-light p-4">
-                <!-- Header -->
-                <header class="card-header shadow-soft text-center border border-light rounded mb-4">
-                    <span class="d-block">
-                        <h2 class="donator">Master Donator</h2>
-                        <h3 class="amount"> 1000 KSH </h3>
-                    </span>
-                </header>
-                <!-- End Header -->
-                <!-- Content -->
-                <div class="card-body shadow-soft text-center border border-light rounded">
-                    <p>Become a VIP Donator and be at the forefront of my independent development success story. Your
-                        generous donation of
-                        1000 Ksh showcases your unwavering belief in my abilities as an independent developer. As a
-                        Champion Donator, you'll
-                        play a pivotal role in accelerating my growth, enabling me to push boundaries.</p>
-                    <ul class="list-group mb-4">
-                        <li class="list-group-item"><strong>Support: </strong>Extreme</li>
-                        <li class="list-group-item"><strong>Amount: </strong>1000Ksh</li>
-                        <li class="list-group-item"><strong>Thank you in advance for your support as a Master
-                                Donator.</strong></li>
-                    </ul>
-                    <button type="button" class="btn btn-primary btn-block" tabindex="0">
+        <!-- Pricing Card -->
+        <div class="card bg-primary shadow-inset border-light p-4">
+            <!-- Header -->
+            <header class="card-header shadow-soft text-center border border-light rounded mb-4">
+                <span class="d-block">
+                    <h2 class="donator" style="color: #6C567B;  text-transform:uppercase;font-size:20px;">Master
+                        Donator</h2>
+                    <h3 class="amount" style="color: rgb(115, 74, 74);"> 1000 KSH </h3>
+                </span>
+            </header>
+            <!-- End Header -->
+            <!-- Content -->
+            <div class="card-body shadow-soft text-center border border-light rounded">
+                <p style="font-weight: 500!important; padding-top:10px; padding-bottom:16px;">Become a VIP Donator
+                    and be at the forefront of my independent development success story. Your
+                    generous donation of
+                    1000 Ksh showcases your unwavering belief in my abilities as an independent developer. As a
+                    Champion Donator, you'll
+                    play a pivotal role in accelerating my growth, enabling me to push boundaries.</p>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item"><strong> <img src="./assets/images/mpesa-logo.png"
+                                style="width:60px; margin-bottom:-10px; margin-right:8px;" alt="">: </strong><b
+                            style="font-weight: 500;">0745179023</b></li>
+                    <li class="list-group-item"><strong>Support: </strong><b style="font-weight: 500;">Extreme</b></li>
+                    <li class="list-group-item"><strong>Amount: </strong>1000 Ksh</li>
+                    <li class="list-group-item"><strong
+                            style="font-weight: 500; font-family: 'Sacramento', cursive; font-size:28px; line-height:0px;">Thank
+                            you in advance for your support
+                            as a Master
+                            Donator.</strong></li>
+                </ul>
+                <a href="tel:+254745179023">
+                    <button type="button" class="btn btn-primary btn-block" tabindex="0"
+                        style="color:rgb(114, 83, 43);  font-family: Bai Jamjuree, sans-serif;font-weight:500;">
                         <span class="fas fa-phone-alt mr-2"></span>Call Me
                     </button>
+                </a>
 
-                </div>
-                <!-- End Content -->
+
             </div>
-            <!-- End of Pricing Card -->
-
+            <!-- End Content -->
         </div>
+        <!-- End of Pricing Card -->
+
+
+
+  
+
     </div>
 
 
 
+    <h3
+        style="font-size: 24px; margin-top:40px; margin-bottom:60px; text-align:center; font-family: 'Dancing Script', cursive; opacity:0.6">
+        Anonymous-V73X</h3>
 
 
 
