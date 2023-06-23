@@ -8,7 +8,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Semester 1.1</title>
+    <title>Support Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -34,6 +34,10 @@
 
 
 
+        }
+
+        body {
+            -webkit-tap-highlight-color: transparent !important;
         }
 
         a {
@@ -64,6 +68,11 @@
             background-color: transparent;
             border: 0.0625rem solid #e2e2e2;
             font-weight: 500;
+        }
+
+        .btn:focus {
+            outline: none !important;
+            border-color: transparent !important;
         }
 
 
@@ -247,6 +256,8 @@
 
 
         }
+
+
 
 
         .card {
@@ -515,7 +526,7 @@
         }
 
         .menu-link:hover {
-            background-color:  #f5ede6 !important;
+            background-color: #f5ede6 !important;
             transform: translateX(-50%) !important;
             transition: transform 500ms ease-in-out;
             color: #f7be8c !important;
@@ -532,6 +543,14 @@
             height: 0.1px;
 
         }
+
+        @media(max-width:768px) {
+
+            .pA {
+                padding-left: 5px !important;
+                padding-right: 5px !important;
+            }
+        }
     </style>
 </head>
 
@@ -540,20 +559,22 @@
 
 <body>
 
-    
 
 
-    
 
-    <div class="row1" style="margin-bottom: 50px; ">
-        <div class="image" data-aos="fade-up" data-aos-delay="200">
+
+
+    <div class="row1" style="margin-bottom: 50px; margin-top:50px; ">
+        <div class="image" data-aos="fade-down" data-aos-delay="200">
             <img src="./assets/images/Compress_20230521_170856_6540.jpg" alt="">
         </div>
         <div class="description">
-            <h3 data-aos="fade-down" data-aos-delay="200"
+            <h3 data-aos="fade-up" data-aos-delay="200"
                 style="font-size: 35px; margin-top:0;  font-family: 'Dancing Script', cursive;">Support an independent
                 developer.</h3>
-            <p data-aos="fade-up" data-aos-delay="200" style=" margin-bottom:50px!important;">As an independent developer, I rely on the support of generous
+            <p class="pA" data-aos="fade-up" data-aos-delay="200" style=" margin-bottom:50px!important;">As an
+                independent
+                developer, I rely on the support of generous
                 individuals like you to continue creating innovative and
                 impactful projects. Your donation can make a world of difference in fueling my passion and sustaining
                 the development of
@@ -561,15 +582,20 @@
                 empowering me to pursue my creative
                 endeavors.</p>
 
-                <div  data-aos="fade-up" data-aos-delay="200">
-                    <a class="menu-link shadow-soft" onclick="goBack() "
-                        style="color: #966a4b; cursor: pointer; background-color: #e6ccba; padding: 15px; padding-left: 25px; padding-right: 25px; border-radius: 25px; font-size: 16px; font-weight: 600;">
-                    
-                        <i style="font-size: 16px; margin-right:4px;" class="fas fa-arrow-left"></i> <b class="g">Go Back</b>
-                    
+            <div data-aos="fade-up" data-aos-delay="200"
+                style="display: flex;align-content:center; justify-content:center;">
+                <div class="shadow-inset" style="width: 180px;height:50px; padding-top:33px; border-radius:90px">
+                    <a class="menu-link" onclick="goBack() " style="color: #966a4b; cursor: pointer; background-color: #e6ccba; padding: 15px; padding-left: 25px; padding-right: 25px; border-radius: 25px; font-size: 16px; font-weight: 600;
+                                        box-shadow: 2px 3px 6px #b8b9be58, -2px -3px 6px #ffffff71 !important;">
+
+                        <i style="font-size: 16px; margin-right:4px;" class="fas fa-arrow-left"></i> <b class="g">Go
+                            Back</b>
+
                     </a>
                 </div>
-            
+
+            </div>
+
 
 
             <script>
@@ -594,10 +620,10 @@
 
 
 
-    <div class="row" data-aos="fade-up" data-aos-delay="200">
+    <div class="row">
 
         <!-- Pricing Card -->
-        <div class="card bg-primary shadow-inset border-light p-4">
+        <div data-aos="fade-up" data-aos-delay="200" class="card bg-primary shadow-inset border-light p-4">
             <!-- Header -->
             <header class="card-header shadow-soft text-center border border-light rounded mb-4">
                 <span class="d-block">
@@ -644,7 +670,7 @@
 
 
         <!-- Pricing Card -->
-        <div class="card bg-primary shadow-inset border-light p-4">
+        <div data-aos="fade-up" data-aos-delay="200" class="card bg-primary shadow-inset border-light p-4">
             <!-- Header -->
             <header class="card-header shadow-soft text-center border border-light rounded mb-4">
                 <span class="d-block">
@@ -696,7 +722,7 @@
 
 
         <!-- Pricing Card -->
-        <div class="card bg-primary shadow-inset border-light p-4">
+        <div data-aos="fade-up" data-aos-delay="200" class="card bg-primary shadow-inset border-light p-4">
             <!-- Header -->
             <header class="card-header shadow-soft text-center border border-light rounded mb-4">
                 <span class="d-block">
