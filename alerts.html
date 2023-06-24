@@ -7,7 +7,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Support Developer</title>
+  <title>Notifications</title>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -52,142 +52,11 @@
       border-color: #e6dad1 !important;
     }
 
-    .list-group-item {
-      position: relative;
-      display: block;
-      padding: 1rem 1rem;
-      margin-bottom: -0.0625rem;
-      background-color: transparent;
-      border: 0.0625rem solid #e2e2e2;
-      font-weight: 500;
-    }
 
-    .btn:focus {
-      outline: none !important;
-      border-color: transparent !important;
-    }
 
-    .btn {
-      display: inline-block;
-      font-weight: 400;
-      color: #44476a;
-      text-align: center;
-      vertical-align: middle;
-      -webkit-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      background-color: transparent;
-      border: 0.0625rem solid transparent;
-      padding: 0.55rem 0.95rem;
-      font-size: 1rem;
-      line-height: 1.5;
-      border-radius: 0.55rem;
-      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    }
 
-    .btn:hover {
-      color: #44476a;
-      text-decoration: none;
-    }
 
-    .btn:focus,
-    .btn.focus {
-      outline: 0;
-      box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff;
-    }
 
-    .btn-primary {
-      color: #31344b;
-      background-color: #f9ddc599;
-      border-color: #e6e7ee;
-      box-shadow: inset 0 1px 0 rgba(236, 240, 243, 0.15),
-        0 1px 1px rgba(38, 40, 51, 0.075);
-      transition: all 0.3s ease-in-out;
-    }
-
-    .btn-primary:hover {
-      box-shadow: inset 2px 2px 5px #b8b9bec6, inset -2px -2px 5px #ffffffce !important;
-      background-color: #fae9db9b;
-      border-color: #c8cad9;
-      cursor: pointer;
-    }
-
-    .btn-primary:focus,
-    .btn-primary.focus {
-      box-shadow: inset 0 1px 0 rgba(236, 240, 243, 0.15),
-        0 1px 1px rgba(38, 40, 51, 0.075),
-        0 0 0 0.0625rem rgba(203, 204, 214, 0.5);
-    }
-
-    .btn-block {
-      display: block;
-      width: 100%;
-    }
-
-    .btn-block+.btn-block {
-      margin-top: 0.5rem;
-    }
-
-    .mr-2,
-    .mx-2 {
-      margin-right: 0.5rem !important;
-    }
-
-    .card-header {
-      padding: 1.25rem 1.5rem;
-      margin-bottom: 0;
-      background-color: #f3f7fa;
-      border-bottom: 0.0625rem solid rgba(243, 247, 250, 0.05);
-    }
-
-    .card-header:first-child {
-      border-radius: calc(0.55rem - 0.0625rem) calc(0.55rem - 0.0625rem) 0 0;
-    }
-
-    .card-header+.list-group .list-group-item:first-child {
-      border-top: 0;
-    }
-
-    .card-footer {
-      padding: 1.25rem 1.5rem;
-      background-color: #f3f7fa;
-      border-top: 0.0625rem solid rgba(243, 247, 250, 0.05);
-    }
-
-    .card-footer:last-child {
-      border-radius: 0 0 calc(0.55rem - 0.0625rem) calc(0.55rem - 0.0625rem);
-    }
-
-    .card-header-tabs {
-      margin-right: -0.75rem;
-      margin-bottom: -1.25rem;
-      margin-left: -0.75rem;
-      border-bottom: 0;
-    }
-
-    .card-header-pills {
-      margin-right: -0.75rem;
-      margin-left: -0.75rem;
-    }
-
-    .p-4 {
-      padding: 1.5rem !important;
-    }
-
-    .section {
-      position: relative;
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-      display: flex;
-      flex-direction: row !important;
-      gap: 10px !important;
-    }
-
-    .pt-0,
-    .py-0 {
-      padding-top: 0 !important;
-    }
 
     .row {
       display: flex;
@@ -199,187 +68,17 @@
       margin-bottom: 100px;
     }
 
-    .card {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      max-width: 290px;
-      word-wrap: break-word;
-      background-color: #e6e7ee;
-      background-clip: border-box;
-      border: 0.0625rem solid rgba(243, 247, 250, 0.05);
-      border-radius: 0.55rem;
+    .c1{
+      max-width: 300px;
     }
 
-    .text-center {
-      text-align: center !important;
-    }
+@media(max-width: 768px){
+  .c1{
+     max-width: 400px;
+  }
+ 
+}
 
-    .mb-5,
-    .my-5 {
-      margin-bottom: 3rem !important;
-    }
-
-    .card>hr {
-      margin-right: 0;
-      margin-left: 0;
-    }
-
-    .card>.list-group:first-child .list-group-item:first-child {
-      border-top-left-radius: 0.55rem;
-      border-top-right-radius: 0.55rem;
-    }
-
-    .card>.list-group:last-child .list-group-item:last-child {
-      border-bottom-right-radius: 0.55rem;
-      border-bottom-left-radius: 0.55rem;
-    }
-
-    .card-body {
-      flex: 0 33.33333%;
-    }
-
-    .card-title {
-      margin-bottom: 1.25rem;
-    }
-
-    .card-subtitle {
-      margin-top: -0.625rem;
-      margin-bottom: 0;
-    }
-
-    .card-text:last-child {
-      margin-bottom: 0;
-    }
-
-    .card-link:hover {
-      text-decoration: none;
-    }
-
-    .card-link+.card-link {
-      margin-left: 1.5rem;
-    }
-
-    .card-header {
-      padding: 1.25rem 1.5rem;
-      margin-bottom: 0;
-      background-color: #f3f7fa;
-      border-bottom: 0.0625rem solid rgba(243, 247, 250, 0.05);
-    }
-
-    .card-header:first-child {
-      border-radius: calc(0.55rem - 0.0625rem) calc(0.55rem - 0.0625rem) 0 0;
-    }
-
-    .card-header+.list-group .list-group-item:first-child {
-      border-top: 0;
-    }
-
-    .card-footer {
-      padding: 1.25rem 1.5rem;
-      background-color: #f3f7fa;
-      border-top: 0.0625rem solid rgba(243, 247, 250, 0.05);
-    }
-
-    .card-footer:last-child {
-      border-radius: 0 0 calc(0.55rem - 0.0625rem) calc(0.55rem - 0.0625rem);
-    }
-
-    .card-header-tabs {
-      margin-right: -0.75rem;
-      margin-bottom: -1.25rem;
-      margin-left: -0.75rem;
-      border-bottom: 0;
-    }
-
-    .card-header-pills {
-      margin-right: -0.75rem;
-      margin-left: -0.75rem;
-    }
-
-    .card-deck {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .card-deck .card {
-      margin-bottom: 15px;
-    }
-
-    .card .card-header {
-      background: transparent;
-    }
-
-    .rounded {
-      border-radius: 0.55rem !important;
-    }
-
-    .mb-4,
-    .my-4 {
-      margin-bottom: 1.5rem !important;
-    }
-
-    .d-block {
-      display: block !important;
-    }
-
-    .display-1 {
-      font-size: 5rem;
-      font-weight: 600;
-      line-height: 1.3;
-    }
-
-    .font-weight-bold {
-      font-weight: 600 !important;
-    }
-
-    .align-top {
-      vertical-align: top !important;
-    }
-
-    .font-medium {
-      font-size: 1.25rem;
-      font-weight: 300;
-    }
-
-    .font-small {
-      font-size: 0.875rem;
-    }
-
-    .card-body {
-      flex: 1 1 auto;
-      padding: 1.5rem;
-    }
-
-    .list-group {
-      display: flex;
-      flex-direction: column;
-      padding-left: 0;
-      margin-bottom: 0;
-    }
-
-    p,
-    ol li,
-    ul li {
-      font-size: 1rem;
-      font-weight: 300;
-      line-height: 1.6;
-    }
-
-    article ul li,
-    article ol li {
-      font-size: 1.27rem;
-      margin-bottom: 1.5rem;
-    }
-
-    img {
-      width: 380px;
-    }
-
-    .description {
-      max-width: 450px;
-      text-align: center;
-    }
 
     .row1 {
       display: flex;
@@ -408,18 +107,7 @@
       transform: translateX(-10px) !important;
     }
 
-    .divider {
-      width: 100%;
-      background-color: rgba(236, 215, 187, 0.447);
-      height: 0.1px;
-    }
 
-    @media (max-width: 768px) {
-      .pA {
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-      }
-    }
 
     .show-full {
 
@@ -434,6 +122,14 @@
     .hidden {
       display: none;
     }
+
+
+    .button:hover .button:focus {
+      background-color: #754D42 !important;
+      color: #f5ede6 !important;
+    }
+
+
   </style>
 </head>
 
@@ -493,11 +189,11 @@
 
   <div class="row">
     <!-- Pricing Card -->
-    <div style=" background-color: #f5ede6;
+    <div class="c1" style=" background-color: #f5ede6;
 padding:1.5rem;
  border-radius: 16px;
       box-shadow: 4px 4px 6px #b8b9be58, -4px -4px 6px #ffffffc1 !important;
-       max-width: 330px;
+      
       border: #754d425f 1px solid;">
       <span class="tag" style=" display: inline-block;
       background-color: #f5ede6;
@@ -607,11 +303,11 @@ padding:1.5rem;
 
 
 
-    <div style=" background-color: #f5ede6;
+    <div class="c1" style=" background-color: #f5ede6;
 padding:1.5rem;
  border-radius: 16px;
       box-shadow: 4px 4px 6px #b8b9be58, -4px -4px 6px #ffffffc1 !important;
-       max-width: 330px;
+       
       border: #754d425f 1px solid;">
       <span class="tag" style=" display: inline-block;
       background-color: #f5ede6;
@@ -676,11 +372,11 @@ padding:1.5rem;
 
 
 
-    <div style=" background-color: #f5ede6;
+    <div class="c1" style=" background-color: #f5ede6;
 padding:1.5rem;
  border-radius: 16px;
       box-shadow: 4px 4px 6px #b8b9be58, -4px -4px 6px #ffffffc1 !important;
-       max-width: 330px;
+      
       border: #754d425f 1px solid;">
       <span class="tag" style=" display: inline-block;
       background-color: #f5ede6;
