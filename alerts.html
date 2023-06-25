@@ -17,18 +17,13 @@
 
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
-
     @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap");
-
     @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 
     body {
       background-color: #f5ede6;
       font-family: "Bai Jamjuree", sans-serif;
       color: rgba(99, 62, 36, 0.908);
-    }
-
-    body {
       -webkit-tap-highlight-color: transparent !important;
     }
 
@@ -52,12 +47,6 @@
       border-color: #e6dad1 !important;
     }
 
-
-
-
-
-
-
     .row {
       display: flex;
       flex-wrap: wrap;
@@ -68,17 +57,15 @@
       margin-bottom: 100px;
     }
 
-    .c1{
+    .c1 {
       max-width: 300px;
     }
 
-@media(max-width: 768px){
-  .c1{
-     max-width: 400px;
-  }
- 
-}
-
+    @media (max-width: 768px) {
+      .c1 {
+        max-width: 400px;
+      }
+    }
 
     .row1 {
       display: flex;
@@ -89,12 +76,6 @@
       align-items: center !important;
     }
 
-    .menu-link:hover .fas {
-      color: #f7be8c;
-      transform: translateX(-50%);
-      transition: transform 500ms ease-in-out;
-    }
-
     .menu-link:hover {
       background-color: #f5ede6 !important;
       transform: translateX(-50%) !important;
@@ -103,19 +84,21 @@
       box-shadow: inset 2px 2px 5px #b8b9bec6, inset -3px -3px 7px #ffffffce !important;
     }
 
+    .menu-link:hover .fas {
+      color: #f7be8c;
+      transform: translateX(-50%);
+      transition: transform 500ms ease-in-out;
+    }
+
     .menu-link:hover a .g {
       transform: translateX(-10px) !important;
     }
 
-
-
     .show-full {
-
       height: auto !important;
     }
 
     .hide-button {
-
       display: none;
     }
 
@@ -123,14 +106,117 @@
       display: none;
     }
 
-
-    .button:hover .button:focus {
-      background-color: #754D42 !important;
+    .button:hover,
+    .button:focus {
+      background-color: #754d42 !important;
       color: #f5ede6 !important;
     }
 
 
+
+
+
+    .c1 {
+      background-color: #f5ede6;
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 4px 4px 6px #b8b9be58, -4px -4px 6px #ffffffc1 !important;
+      border: #754d425f 1px solid;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #f5ede6;
+      color: #754D42;
+      font-weight: 600;
+      font-size: 0.875rem;
+      padding: 0.5em 0.75em;
+      line-height: 1;
+      border-radius: 6px;
+      box-shadow: inset 1px 1px 4px rgba(80, 60, 51, 0.175), inset -2px -2px 8px rgba(232, 231, 231, 0.8) !important;
+      border: #754d4234 0.01px solid;
+      margin-top: 1rem;
+    }
+
+    .title {
+      font-size: 1.2rem;
+      color: var(--c-void);
+      line-height: 1.25;
+    }
+
+    .info {
+      height: 3em;
+      line-height: 1.5em;
+      overflow: hidden;
+    }
+
+    .button {
+      font: inherit;
+      line-height: 1;
+      background-color: #f5ede6;
+      border: 2px solid #754D42;
+      color: #754D42;
+      padding: 0.5em 1em;
+      border-radius: 6px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      cursor: pointer;
+    }
+
+
+    [data-aos="fade-up"] {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .shadow-inset {
+      width: 180px;
+      height: 50px;
+      padding-top: 33px;
+      border-radius: 90px;
+    }
+
+    .menu-link {
+      color: #966a4b;
+      cursor: pointer;
+      background-color: #e6ccba;
+      padding: 15px;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 30px !important;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: 600;
+      box-shadow: 2px 3px 6px #b8b9be58, -2px -3px 6px #ffffff71 !important;
+    }
+
+    .anonymous-heading {
+      font-size: 24px;
+      margin-top: 40px;
+      margin-bottom: 60px;
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      opacity: 0.6;
+    }
+
+     .fade-up-heading {
+    font-size: 34px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+  }
   </style>
+
+
+
+
 </head>
 
 <!-- ================ Head Ends 🗣️🗣️🪦🪦 ================== -->
@@ -139,29 +225,10 @@
   <div class="row1" style="margin-bottom: 50px; margin-top: 50px">
 
 
-    <div data-aos="fade-up" data-aos-delay="200" style="display: flex; align-content: center; justify-content: center">
-      <div class="shadow-inset" style="
-              width: 180px;
-              height: 50px;
-              padding-top: 33px;
-              border-radius: 90px;
-            ">
-        <a class="menu-link" onclick="goBack() " style="
-                   color: #966a4b;
-                  cursor: pointer;
-                  background-color: #e6ccba;
-                  padding: 15px;
-                  padding-left: 25px;
-                  padding-right: 25px;
-                  margin-left: 20px;
-                  margin-right: 20px;
-                  margin-bottom:30px!important;
-                  border-radius: 25px;
-                  font-size: 16px;
-                  font-weight: 600;
-                  box-shadow: 2px 3px 6px #b8b9be58, -2px -3px 6px #ffffff71 !important;
-              ">
-          <i style="font-size: 16px; margin-right: 4px" class="fas fa-arrow-left"></i>
+    <div data-aos="fade-up" data-aos-delay="200">
+      <div class="shadow-inset">
+        <a class="menu-link" onclick="goBack()">
+          <i class="fas fa-arrow-left"></i>
           <b class="g">Go Back</b>
         </a>
       </div>
@@ -177,45 +244,24 @@
 
 
 
-  <h3 data-aos="fade-up" data-aos-delay="100" style="
-        font-size: 34px;
-        margin-top: 40px;
-        margin-bottom: 60px;
-        text-align: center;
-        font-family: 'Dancing Script', cursive;
-      ">
+
+  <h3 data-aos="fade-up" data-aos-delay="100" class="fade-up-heading">
     Notifications.
   </h3>
 
   <div class="row">
-    <!-- Pricing Card -->
-    <div class="c1" style=" background-color: #f5ede6;
-padding:1.5rem;
- border-radius: 16px;
-      box-shadow: 4px 4px 6px #b8b9be58, -4px -4px 6px #ffffffc1 !important;
-      
-      border: #754d425f 1px solid;">
-      <span class="tag" style=" display: inline-block;
-      background-color: #f5ede6;
-      color: #754D42;
-      font-weight: 600;
-      font-size: 0.875rem;
-      padding: 0.5em 0.75em;
-      line-height: 1;
-      border-radius: 6px;
-      box-shadow: inset 1px 1px 4px rgba(80, 60, 51, 0.175), inset -2px -2px 8px rgba(232, 231, 231, 0.8) !important;
 
-      border: #754d4234 0.01px solid;
-      margin-top: 1rem;">Kabarak Notices</span>
 
-      <h2 class="title" style="font-size: 1.2rem;
-      color: var(--c-void);
-      line-height: 1.25;">Kabarak University NTV Crossover</h2>
+    <!-- Card -->
+
+
+
+    <div class="c1">
+      <span class="tag">Kabarak Notices</span>
+      <h2 class="title">Kabarak University NTV Crossover</h2>
       <p class="date">18th June 2023</p>
-      <p class="info" style="height: 3em;
-      line-height: 1.5em;
-      overflow: hidden;
-">Kabarak University, a renowned institution of higher learning, played host to an exciting event that blended
+      <p class="info">
+        Kabarak University, a renowned institution of higher learning, played host to an exciting event that blended
         entertainment, education, and spirituality. The university's spacious auditorium became the stage for NTV's
         crossover
         live segment, which centered around the theme of "Life with Social Media." The event aimed to explore the impact
@@ -223,12 +269,11 @@ padding:1.5rem;
         social media on our daily lives, with a particular focus on its potential to bring us closer to God.
         <br><br>
         The Kabarak University chaplain, Rev. Justus Mutuku, emphasized that social media, if used wisely, can serve as
-        a tool
-        to deepen our spiritual connection rather than alienate us from it. He encouraged the audience to harness the
-        power of
-        social media in a positive way, using it to strengthen their relationship with God and as a means to spread
-        messages
-        of love, compassion, and faith.
+        a tool to deepen our spiritual connection rather than alienate us from it. He encouraged the audience to harness
+        the
+        power of social media in a positive way, using it to strengthen their relationship with God and as a means to
+        spread
+        messages of love, compassion, and faith.
         <br><br>
         Following Rev. Justus Mutuku's inspiring words, the audience was treated to outstanding performances by talented
         Kabarak University students and Kenya's top Gospel artists. The stage came alive with vibrant music,
@@ -246,30 +291,19 @@ padding:1.5rem;
         <br><br>
         Prof Kiplangat extended an invitation to prospective students aspiring to join universities, encouraging them to
         choose Kabarak University. He assured them that Kabarak's educational programs would not only prepare them for
-        the job
+        the
+        job
         market but also instill in them the principles and values needed to navigate the professional world with
-        integrity and
+        integrity
+        and
         competence.
       </p>
-
-      <button class="button" style="font: inherit;
-      line-height: 1;
-      background-color: #f5ede6;
-      border: 2px solid #754D42;
-      color: #754D42;
-      padding: 0.5em 1em;
-      border-radius: 6px;
-      font-weight: 500;
-      display: inline-flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.5rem;
-      cursor: pointer;
-">
+      <button class="button">
         <span>Read More</span>
         <i class="icon fas fa-eye"></i>
       </button>
     </div>
+
 
 
 
@@ -299,46 +333,28 @@ padding:1.5rem;
 
     </script>
 
-    <!-- End of Pricing Card -->
 
 
 
-    <div class="c1" style=" background-color: #f5ede6;
-padding:1.5rem;
- border-radius: 16px;
-      box-shadow: 4px 4px 6px #b8b9be58, -4px -4px 6px #ffffffc1 !important;
-       
-      border: #754d425f 1px solid;">
-      <span class="tag" style=" display: inline-block;
-      background-color: #f5ede6;
-      color: #754D42;
-      font-weight: 600;
-      font-size: 0.875rem;
-      padding: 0.5em 0.75em;
-      line-height: 1;
-      border-radius: 6px;
-      box-shadow: inset 1px 1px 4px rgba(80, 60, 51, 0.175), inset -2px -2px 8px rgba(232, 231, 231, 0.8) !important;
 
-      border: #754d4234 0.01px solid;
-      margin-top: 1rem;">Kabarak Huawei Academy</span>
 
-      <h2 class="title" style="font-size: 1.2rem;
-      color: var(--c-void);
-      line-height: 1.25;">HCIA Cloud Computing & Certification</h2>
+    <!-- End of Card -->
+
+
+
+    <div class="c1">
+      <span class="tag">Kabarak Huawei Academy</span>
+      <h2 class="title">HCIA Cloud Computing & Certification</h2>
       <p class="date">15th June 2023</p>
-      <p class="info" style="height: 3em;
-      line-height: 1.5em;
-      overflow: hidden;
-">
+      <p class="info">
         Greetings from Kabarak Huawei Academy,
         <br><br>
         This course introduces the knowledge of computing, networking, and storage related to virtualization, and
-        introduces
-        the features of virtualization so that everyone can quickly understand the field of cloud computing. The
-        training will
-        take place via online sessions, virtual lab exercises, as well as onsite sessions. Participants will also
-        benefit from
-        mentorship by experts in the cloud computing field.
+        introduces the features of virtualization so that everyone can quickly understand the field of cloud computing.
+        The
+        training will take place via online sessions, virtual lab exercises, as well as onsite sessions. Participants
+        will
+        also benefit from mentorship by experts in the cloud computing field.
         <br><br>
         Training Start Date: 20th June 2023
         <br><br>
@@ -348,21 +364,7 @@ padding:1.5rem;
           href="https://docs.google.com/forms/d/10W3itAFEKbhllfObRswb-aRpHLn7KEcRoVr2rEJAufQ/edit?pli=1">Application
           Form</a>.
       </p>
-
-      <button class="button" style="font: inherit;
-      line-height: 1;
-      background-color: #f5ede6;
-      border: 2px solid #754D42;
-      color: #754D42;
-      padding: 0.5em 1em;
-      border-radius: 6px;
-      font-weight: 500;
-      display: inline-flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.5rem;
-      cursor: pointer;
-">
+      <button class="button">
         <span>Read More</span>
         <i class="icon fas fa-eye"></i>
       </button>
@@ -372,33 +374,12 @@ padding:1.5rem;
 
 
 
-    <div class="c1" style=" background-color: #f5ede6;
-padding:1.5rem;
- border-radius: 16px;
-      box-shadow: 4px 4px 6px #b8b9be58, -4px -4px 6px #ffffffc1 !important;
-      
-      border: #754d425f 1px solid;">
-      <span class="tag" style=" display: inline-block;
-      background-color: #f5ede6;
-      color: #754D42;
-      font-weight: 600;
-      font-size: 0.875rem;
-      padding: 0.5em 0.75em;
-      line-height: 1;
-      border-radius: 6px;
-      box-shadow: inset 1px 1px 4px rgba(80, 60, 51, 0.175), inset -2px -2px 8px rgba(232, 231, 231, 0.8) !important;
 
-      border: #754d4234 0.01px solid;
-      margin-top: 1rem;">Kabarak Notices</span>
-
-      <h2 class="title" style="font-size: 1.2rem;
-      color: var(--c-void);
-      line-height: 1.25;">Signing Of The Students Nominal Roll</h2>
+    <div class="c1">
+      <span class="tag">Kabarak Notices</span>
+      <h2 class="title">Signing Of The Students Nominal Roll</h2>
       <p class="date">09th June 2023</p>
-      <p class="info" style="height: 3em;
-      line-height: 1.5em;
-      overflow: hidden;
-">
+      <p class="info">
         This is to notify all students that they are required to sign the nominal roll starting from Wednesday, 14th' to
         Friday, June 30 2023.
         <br><br>
@@ -420,21 +401,7 @@ padding:1.5rem;
         <br>
         <b>REGISTRAR (ACADEMIC &amp; RESEARCH)</b>
       </p>
-
-      <button class="button" style="font: inherit;
-      line-height: 1;
-      background-color: #f5ede6;
-      border: 2px solid #754D42;
-      color: #754D42;
-      padding: 0.5em 1em;
-      border-radius: 6px;
-      font-weight: 500;
-      display: inline-flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.5rem;
-      cursor: pointer;
-">
+      <button class="button">
         <span>Read More</span>
         <i class="icon fas fa-eye"></i>
       </button>
@@ -449,18 +416,11 @@ padding:1.5rem;
 
 
 
+
   </div>
 
-  <h3 style="
-        font-size: 24px;
-        margin-top: 40px;
-        margin-bottom: 60px;
-        text-align: center;
-        font-family: 'Dancing Script', cursive;
-        opacity: 0.6;
-      ">
-    Anonymous-v73x
-  </h3>
+  <h3 class="anonymous-heading">Anonymous-v73x</h3>
+
 
   <!-- ======== 😎😎 Script actually starts here 😎😎 ======== -->
 
