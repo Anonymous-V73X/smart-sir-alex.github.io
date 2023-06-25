@@ -19,8 +19,6 @@ body {
   box-shadow: none !important;
 }
 
-
-
 ::-webkit-scrollbar-thumb {
   background: #88888800;
 }
@@ -224,7 +222,7 @@ a {
   font-size: 13px !important;
   text-transform: uppercase;
   font-weight: 650;
-  color: #6a625dc0 !important;
+  color: #6d594dd9 !important;
 }
 
 .navbar .navbar-nav .nav-link.active {
@@ -238,8 +236,24 @@ a {
   }
 }
 
-.nav-item a{
- cursor: pointer;
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    border: #f0c0995c 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    
+  }
+  
+ 
+}
+
+
+
+.nav-item a {
+  cursor: pointer;
 }
 
 .service .icon {
@@ -686,7 +700,6 @@ strong {
   outline: none !important;
 }
 
-
 .moreIdeaz {
   background-color: #7d563fcf;
   color: #f8f6f5;
@@ -726,7 +739,3 @@ strong {
 .navbar-nav .nav-link:hover {
   color: #5e2f0d !important;
 }
-
-
-
-
