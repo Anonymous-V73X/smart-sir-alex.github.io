@@ -33,10 +33,68 @@
 
 <!-- ========= 👽👽👽 Body 👽👽👽 =========== -->
 
-<body data-bs-spy="scroll" data-bs-target=".navbar">
+<body >
 
+  <!---------=========🔃🔃 PreLoader Starts Here 🔃🔃  ==========-------->
+  
+  
+  
+  <div class="wrapper-loader">
+  
+  
+    <div class="loader"></div>
+  
+    <div class="scene">
+      <div class="cube-wrapper">
+        <div class="cube">
+          <div class="cube-faces">
+            <div class="cube-face shadow"></div>
+            <div class="cube-face bottom"></div>
+            <div class="cube-face top"></div>
+            <div class="cube-face left"></div>
+            <div class="cube-face right"></div>
+            <div class="cube-face back"></div>
+            <div class="cube-face front"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <p class="get" id="typing-dots">Getting Things Ready</p>
+  
+    <script>
+
+      const dotsElement = document.getElementById('typing-dots');
+      const dots = '...';
+      let dotCount = 0;
+
+      function animateTypingDots() {
+        dotsElement.textContent = 'Getting Things Ready' + dots.substring(0, dotCount);
+        dotCount = (dotCount + 1) % (dots.length + 1);
+        setTimeout(animateTypingDots, 300);
+      }
+
+      animateTypingDots();
+
+    </script>
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  <!---------=========🔃🔃 PreLoader Ends Here 🔃🔃  ==========-------->
+
+
+
+  
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg py-4 fixed-top navbar-light bg-body">
+  <nav data-bs-spy="scroll" data-bs-target=".navbar" class="navbar navbar-expand-lg py-4 fixed-top navbar-light bg-body">
     <div class="container">
       <a class="navbar-brand" href="https://www.paypal.com/donate/?hosted_button_id=QZLE9MFJQ2DLW">
         <h4 class="fw-bold" style="padding-left:8px">Bsc. IT</h4>
@@ -1463,60 +1521,7 @@
 
 
 
-  <!---------=========🔃🔃 PreLoader Starts Here 🔃🔃  ==========-------->
 
-
-
-  <div class="wrapper-loader">
-
-
-    <div class="loader"></div>
-
-    <div class="scene">
-      <div class="cube-wrapper">
-        <div class="cube">
-          <div class="cube-faces">
-            <div class="cube-face shadow"></div>
-            <div class="cube-face bottom"></div>
-            <div class="cube-face top"></div>
-            <div class="cube-face left"></div>
-            <div class="cube-face right"></div>
-            <div class="cube-face back"></div>
-            <div class="cube-face front"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <p class="get" id="typing-dots">Getting Things Ready</p>
-
-    <script>
-
-      const dotsElement = document.getElementById('typing-dots');
-      const dots = '...';
-      let dotCount = 0;
-
-      function animateTypingDots() {
-        dotsElement.textContent = 'Getting Things Ready' + dots.substring(0, dotCount);
-        dotCount = (dotCount + 1) % (dots.length + 1);
-        setTimeout(animateTypingDots, 300);
-      }
-
-      animateTypingDots();
-
-    </script>
-
-
-
-
-  </div>
-
-
-
-
-
-  <!---------=========🔃🔃 PreLoader Ends Here 🔃🔃  ==========-------->
 
 
 
