@@ -55,7 +55,7 @@
       justify-content: center !important;
       align-items: start !important;
       margin-bottom: 100px;
-      padding: 1.5%;
+      padding: 1%;
 
     }
 
@@ -108,12 +108,8 @@
       color: #ab8479;
     }
 
-    .show-full {
-      height: auto !important;
-      margin-bottom: 15px!important;
-      overflow: show !important;
-      white-space: wrap!important;
-    }
+   
+
 
     .hide-button {
       display: none;
@@ -166,17 +162,29 @@
       line-height: 1.25;
     }
 
-    .info {
-      height: 3em;
-      line-height: 1.5em;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      margin-bottom: -10px;
-      font-weight: 500;
-      font-size: 15px;
-      color: rgb(103, 107, 114);
-    }
+.info {
+  height: 3em;
+  line-height: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(103, 107, 114);
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.show-full {
+  height: auto !important;
+  margin-bottom: 15px !important;
+  overflow: visible !important;
+  display: block; 
+  -webkit-line-clamp: initial; 
+}
+
+
 
 
     .button {
