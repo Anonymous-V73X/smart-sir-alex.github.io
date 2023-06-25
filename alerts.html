@@ -20,6 +20,7 @@
     @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 
+
     body {
       background-color: #f5ede6;
       font-family: "Bai Jamjuree", sans-serif;
@@ -55,8 +56,7 @@
       justify-content: center !important;
       align-items: start !important;
       margin-bottom: 100px;
-      padding: 1%;
-
+      padding: 0.8%;
     }
 
     .c1 {
@@ -66,15 +66,14 @@
     @media (max-width: 768px) {
       .c1 {
         max-width: 400px;
-         margin-left: 10px;
-      margin-right: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
       }
     }
 
-    
     @media (min-width: 768px) {
-      .row{
-        justify-content: left!important;
+      .row {
+        justify-content: left !important;
       }
     }
 
@@ -101,15 +100,11 @@
       transition: transform 500ms ease-in-out;
     }
 
-
     .date {
       font-size: 13px;
       font-weight: 600;
       color: #ab8479;
     }
-
-   
-
 
     .hide-button {
       display: none;
@@ -117,7 +112,6 @@
 
     .hidden {
       display: none;
-      
     }
 
     .button:hover,
@@ -126,10 +120,6 @@
       color: #f5ede6 !important;
     }
 
-
-
-
-
     .c1 {
       background-color: #f5ede6;
       padding: 1.5rem;
@@ -137,9 +127,6 @@
       border-radius: 16px;
       box-shadow: 4px 4px 6px #b8b9be58, -4px -4px 6px #ffffffc1 !important;
       border: #754d425f 1px solid;
-
-  
-     
     }
 
     .tag {
@@ -158,34 +145,30 @@
 
     .title {
       font-size: 1.2rem;
-
       line-height: 1.25;
     }
 
-.info {
-  height: 3em;
-  line-height: 1.5em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-bottom: 15px;
-  font-weight: 500;
-  font-size: 15px;
-  color: rgb(103, 107, 114);
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* Number of lines to show */
-  -webkit-box-orient: vertical;
-}
+    .info {
+      height: 3em;
+      line-height: 1.5em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 15px;
+      font-weight: 500;
+      font-size: 15px;
+      color: rgb(103, 107, 114);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
 
-.show-full {
-  height: auto !important;
-  margin-bottom: 15px !important;
-  overflow: visible !important;
-  display: block; 
-  -webkit-line-clamp: initial; 
-}
-
-
-
+    .show-full {
+      height: auto !important;
+      margin-bottom: 15px !important;
+      overflow: visible !important;
+      display: block;
+      -webkit-line-clamp: initial;
+    }
 
     .button {
       font: inherit;
@@ -203,7 +186,6 @@
       cursor: pointer;
     }
 
-
     .fade-up-heading {
       display: flex;
       align-content: center;
@@ -217,14 +199,10 @@
       border-radius: 90px;
       align-items: center;
       justify-content: center;
-
       padding: 10px;
       padding-top: 20px;
       padding-bottom: 20px;
       padding-right: 9.5px;
-
-
-
     }
 
     .menu-link {
@@ -234,8 +212,6 @@
       padding: 15px;
       padding-left: 25px;
       padding-right: 25px;
-
-
       border-radius: 25px;
       font-size: 16px;
       font-weight: 600;
@@ -258,6 +234,102 @@
       text-align: center;
       font-family: 'Dancing Script', cursive;
     }
+
+    .loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 10px;
+      background: #e56707;
+      border-radius: 5px;
+      -webkit-animation: load 1.8s ease-in-out infinite;
+      animation: load 1.8s ease-in-out infinite;
+    }
+
+    .loader:before,
+    .loader:after {
+      position: absolute;
+      display: block;
+      content: "";
+      -webkit-animation: load 1.8s ease-in-out infinite;
+      animation: load 1.8s ease-in-out infinite;
+      height: 10px;
+      border-radius: 5px;
+    }
+
+    .loader:before {
+      top: -20px;
+      left: 10px;
+      width: 40px;
+      background: #c87405;
+    }
+
+    .loader:after {
+      bottom: -20px;
+      width: 35px;
+      background: #F5AB35;
+    }
+
+    @-webkit-keyframes load {
+      0% {
+        -webkit-transform: translateX(40px);
+        transform: translateX(40px);
+      }
+
+      50% {
+        -webkit-transform: translateX(-30px);
+        transform: translateX(-30px);
+      }
+
+      100% {
+        -webkit-transform: translateX(40px);
+        transform: translateX(40px);
+      }
+    }
+
+    @keyframes load {
+      0% {
+        -webkit-transform: translateX(40px);
+        transform: translateX(40px);
+      }
+
+      50% {
+        -webkit-transform: translateX(-30px);
+        transform: translateX(-30px);
+      }
+
+      100% {
+        -webkit-transform: translateX(40px);
+        transform: translateX(40px);
+      }
+    }
+
+    .get {
+      margin-top: 350px !important;
+    }
+
+    .wrapper-loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #f5ede6 !important;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.5s ease;
+    }
+
+    .wrapper-loader.fade {
+      opacity: 0;
+      pointer-events: none;
+    }
   </style>
 
 
@@ -271,7 +343,7 @@
   <div class="row1" style="margin-bottom: 50px; margin-top: 50px">
 
 
-    <div data-aos="fade-down" data-aos-delay="100">
+    <div>
       <div class="shadow-inset">
         <a class="menu-link" onclick="goBack()">
           <i class="fas fa-arrow-left"></i>
@@ -291,7 +363,7 @@
 
 
 
-  <h3 data-aos="fade-up" data-aos-delay="100" class="fade-up-heading">
+  <h3 class="fade-up-heading">
     Notifications.
   </h3>
 
@@ -466,28 +538,34 @@
         <br><br>
         I hope this message finds you well. As an independent developer, I have been tirelessly working on creating
         innovative and useful software solutions that can make a positive impact in people's lives. However, developing
-        high-quality software requires significant time, effort, and resources. That's why I am reaching out to you today to
+        high-quality software requires significant time, effort, and resources. That's why I am reaching out to you
+        today to
         kindly request your support and donation.
         <br><br>
         With your generous contribution, I will be able to continue dedicating my time and energy to develop and improve
-        these software projects. Your donation will directly contribute to the advancement of new features, bug fixes, and
-        overall enhancement of the user experience. By supporting independent developers like me, you are not only helping
+        these software projects. Your donation will directly contribute to the advancement of new features, bug fixes,
+        and
+        overall enhancement of the user experience. By supporting independent developers like me, you are not only
+        helping
         me pursue my passion but also empowering the creation of valuable tools for individuals and businesses alike.
         <br><br>
-        Every contribution matters, no matter the amount. Your donation will be used judiciously to further the development
+        Every contribution matters, no matter the amount. Your donation will be used judiciously to further the
+        development
         of these projects and bring them to a wider audience. If you believe in the importance of supporting independent
-        developers and the impact that innovative software can have on society, I kindly request you to consider making a
+        developers and the impact that innovative software can have on society, I kindly request you to consider making
+        a
         donation today.
         <br><br>
         Thank you for your time and consideration. Your support means the world to me, and I am truly grateful for any
         contribution you can make. Together, we can make a difference and shape the future of technology.
         <br><br>
 
-       <b>Click here to donate:</b>  <a href="https://www.paypal.com/donate/?hosted_button_id=QZLE9MFJQ2DLW"> Paypal Support</a> 
+        <b>Click here to donate:</b> <a href="https://www.paypal.com/donate/?hosted_button_id=QZLE9MFJQ2DLW"> Paypal
+          Support</a>
         <br><br>
         <b>Sincerely,</b>
         <br>
-       <b>Sir Anonymous-V73X</b> 
+        <b>Sir Anonymous-V73X</b>
       </p>
       <button class="button">
         <span>Read More</span>
@@ -508,16 +586,28 @@
   <h3 class="anonymous-heading">Anonymous-v73x</h3>
 
 
+
+
+  <div class="wrapper-loader">
+
+
+
+    <div class='loader'></div>
+
+
+
+  </div>
+
+
+
+
+
+
   <!-- ======== 😎😎 Script actually starts here 😎😎 ======== -->
 
   <script src="./assets/js/app.js"></script>
   <script src="./assets/js/semesters.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 600,
-    });
-  </script>
+  
 </body>
 
 <!-- ======== Script Ends 🗣️🗣️🪦🪦 ======== -->
