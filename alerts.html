@@ -51,10 +51,12 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      gap: 30px;
+      gap: 20px;
       justify-content: center !important;
       align-items: start !important;
       margin-bottom: 100px;
+      padding: 1.5%;
+
     }
 
     .c1 {
@@ -64,6 +66,15 @@
     @media (max-width: 768px) {
       .c1 {
         max-width: 400px;
+         margin-left: 10px;
+      margin-right: 10px;
+      }
+    }
+
+    
+    @media (min-width: 768px) {
+      .row{
+        justify-content: left!important;
       }
     }
 
@@ -78,7 +89,7 @@
 
     .menu-link:hover {
       background-color: #f5ede6 !important;
-      transform: translateX(-50%) !important;
+      transform: translateX(-3px) !important;
       transition: transform 500ms ease-in-out;
       color: #f7be8c !important;
       box-shadow: inset 2px 2px 5px #b8b9bec6, inset -3px -3px 7px #ffffffce !important;
@@ -90,12 +101,18 @@
       transition: transform 500ms ease-in-out;
     }
 
-    .menu-link:hover a .g {
-      transform: translateX(-10px) !important;
+
+    .date {
+      font-size: 13px;
+      font-weight: 600;
+      color: #ab8479;
     }
 
     .show-full {
       height: auto !important;
+      margin-bottom: 15px!important;
+      overflow: show !important;
+      white-space: wrap!important;
     }
 
     .hide-button {
@@ -104,6 +121,7 @@
 
     .hidden {
       display: none;
+      
     }
 
     .button:hover,
@@ -119,9 +137,13 @@
     .c1 {
       background-color: #f5ede6;
       padding: 1.5rem;
+      padding-top: 0.8em;
       border-radius: 16px;
       box-shadow: 4px 4px 6px #b8b9be58, -4px -4px 6px #ffffffc1 !important;
       border: #754d425f 1px solid;
+
+  
+     
     }
 
     .tag {
@@ -140,7 +162,7 @@
 
     .title {
       font-size: 1.2rem;
-      color: var(--c-void);
+
       line-height: 1.25;
     }
 
@@ -148,7 +170,14 @@
       height: 3em;
       line-height: 1.5em;
       overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-bottom: -10px;
+      font-weight: 500;
+      font-size: 15px;
+      color: rgb(103, 107, 114);
     }
+
 
     .button {
       font: inherit;
@@ -167,17 +196,27 @@
     }
 
 
-    [data-aos="fade-up"] {
+    .fade-up-heading {
       display: flex;
       align-content: center;
       justify-content: center;
     }
 
     .shadow-inset {
-      width: 180px;
+      width: 160px;
       height: 50px;
-      padding-top: 33px;
+      display: flex;
       border-radius: 90px;
+      align-items: center;
+      justify-content: center;
+
+      padding: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 9.5px;
+
+
+
     }
 
     .menu-link {
@@ -187,9 +226,8 @@
       padding: 15px;
       padding-left: 25px;
       padding-right: 25px;
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 30px !important;
+
+
       border-radius: 25px;
       font-size: 16px;
       font-weight: 600;
@@ -205,13 +243,13 @@
       opacity: 0.6;
     }
 
-     .fade-up-heading {
-    font-size: 34px;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-  }
+    .fade-up-heading {
+      font-size: 34px;
+      margin-top: 40px;
+      margin-bottom: 60px;
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+    }
   </style>
 
 
@@ -225,7 +263,7 @@
   <div class="row1" style="margin-bottom: 50px; margin-top: 50px">
 
 
-    <div data-aos="fade-up" data-aos-delay="200">
+    <div data-aos="fade-down" data-aos-delay="100">
       <div class="shadow-inset">
         <a class="menu-link" onclick="goBack()">
           <i class="fas fa-arrow-left"></i>
@@ -375,7 +413,7 @@
 
 
 
-    <div class="c1">
+    <div id="notifications" class="c1">
       <span class="tag">Kabarak Notices</span>
       <h2 class="title">Signing Of The Students Nominal Roll</h2>
       <p class="date">09th June 2023</p>
@@ -408,6 +446,46 @@
     </div>
 
 
+
+
+
+    <div class="c1">
+      <span class="tag">Sir Anonymous-V73X</span>
+      <h2 class="title">Support My Cause with a Generous Contribution</h2>
+      <p class="date">08th June 2023</p>
+      <p class="info">
+        Dear User,
+        <br><br>
+        I hope this message finds you well. As an independent developer, I have been tirelessly working on creating
+        innovative and useful software solutions that can make a positive impact in people's lives. However, developing
+        high-quality software requires significant time, effort, and resources. That's why I am reaching out to you today to
+        kindly request your support and donation.
+        <br><br>
+        With your generous contribution, I will be able to continue dedicating my time and energy to develop and improve
+        these software projects. Your donation will directly contribute to the advancement of new features, bug fixes, and
+        overall enhancement of the user experience. By supporting independent developers like me, you are not only helping
+        me pursue my passion but also empowering the creation of valuable tools for individuals and businesses alike.
+        <br><br>
+        Every contribution matters, no matter the amount. Your donation will be used judiciously to further the development
+        of these projects and bring them to a wider audience. If you believe in the importance of supporting independent
+        developers and the impact that innovative software can have on society, I kindly request you to consider making a
+        donation today.
+        <br><br>
+        Thank you for your time and consideration. Your support means the world to me, and I am truly grateful for any
+        contribution you can make. Together, we can make a difference and shape the future of technology.
+        <br><br>
+
+       <b>Click here to donate:</b>  <a href="https://www.paypal.com/donate/?hosted_button_id=QZLE9MFJQ2DLW"> Paypal Support</a> 
+        <br><br>
+        <b>Sincerely,</b>
+        <br>
+       <b>Sir Anonymous-V73X</b> 
+      </p>
+      <button class="button">
+        <span>Read More</span>
+        <i class="icon fas fa-eye"></i>
+      </button>
+    </div>
 
 
 
