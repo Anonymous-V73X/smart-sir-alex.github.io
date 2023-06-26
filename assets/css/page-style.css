@@ -467,6 +467,7 @@ nav {
   padding: 16px 32px;
   height: 70px;
   transition: box-shadow 0.5s ease, height 0.5s ease;
+  padding-right: 42px;
 }
 
 .hamburger {
@@ -478,31 +479,35 @@ nav {
 
   appearance: none;
 
-  border: none !important;
+  border: none ;
   outline: none !important;
 
   background: none;
 
   cursor: pointer;
+   border-radius: 12px!important;
 }
 
 .hamburger span:nth-child(3) {
   display: block;
   width: 20px;
-  height: 1.85px;
-  margin-bottom: 4px;
+  height: 2.5px;
+  margin-bottom: 3px;
   position: relative;
   background-color: #685c51;
-  border-radius: 12px;
+ border-radius: 12px;
   z-index: 1;
   transform-origin: 0 0;
   transition: 0.4s;
+  
+
 }
 
 .hamburger span:nth-child(2) {
   display: block;
-  width: 20px;
-  height: 2px;
+  width: 15px;
+  transform: translateX(30%);
+  height: 2.5px;
   margin-bottom: 4px;
   position: relative;
   background-color: #685c51;
@@ -515,7 +520,7 @@ nav {
 .hamburger span:nth-child(1) {
   display: block;
   width: 20px;
-  height: 2px;
+  height: 2.5px;
   margin-bottom: 4px;
   position: relative;
   background-color: #685c51;
@@ -526,11 +531,11 @@ nav {
 }
 
 .hamburger.is-active span:nth-child(1) {
-  transform: translate(0px, -1.1px) rotate(45deg);
+  transform: translate(0px, -1.5px) rotate(45deg);
 }
 
 .hamburger.is-active span:nth-child(3) {
-  transform: translate(-1.7px, 1.5px) rotate(-45deg);
+  transform: translate(-1.5px, 0px) rotate(-46deg);
 }
 
 .hamburger.is-active span:nth-child(2) {
@@ -540,7 +545,10 @@ nav {
 
 .hamburger.is-active:hover span {
   background-color: #fbb54b;
+  
 }
+
+
 
 .menu {
   display: none;
@@ -1743,15 +1751,17 @@ p {
   z-index: 1000;
 }
 
+
 .scroll-to-top:before {
   content: "";
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   border-top: 3px solid #f8f6f5;
   border-left: 3px solid #f8f6f5;
   transform: rotate(45deg);
   transition: border-color 0.4s;
+  border-radius: 2px;
 }
 
 .scroll-to-top:hover {

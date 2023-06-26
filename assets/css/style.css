@@ -244,6 +244,8 @@ a {
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
+    box-shadow: 2px 2px 6px #b8b9be58, -2px -2px 6px #ffffffd0 !important;
+    font-size: 16px;
     
   }
   
@@ -555,6 +557,8 @@ strong {
   border-left: 3px solid #f8f6f5;
   transform: rotate(45deg);
   transition: border-color 0.4s;
+  border-radius: 2px;
+
 }
 
 .scroll-to-top:hover {
