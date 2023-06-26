@@ -37,8 +37,7 @@
         <a class="menu-link" onclick="navigateTo('#past-papers')" style="color: #6B5840; cursor: pointer;">Past
           Papers</a>
         <a class="menu-link" onclick="navigateTo('#tutorials')" style="color: #6B5840; cursor: pointer;">Tutorials</a>
-        <a class="menu-link" onclick="navigateTo('index.html#brainstorms')"
-          style="color: #6B5840; cursor: pointer;">Brainstorms</a>
+        <a class="menu-link" onclick="navigateTo('index.html#apps')" style="color: #6B5840; cursor: pointer;">Web Apps</a>
 
         <script>
           function navigateTo(page) {
@@ -210,6 +209,32 @@
   <div data-aos="fade-left" data-aos-delay="200" class="scroll-to-top" onclick="scrollToTop()"></div>
 
 
+  <script>
+    // Scroll to top
+
+      window.addEventListener("scroll", function () {
+        var scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+        var scrollHeight =
+          document.documentElement.scrollHeight || document.body.scrollHeight;
+
+        if (scrollPos > (1 / 4) * scrollHeight) {
+          document.querySelector(".scroll-to-top").style.display = "flex";
+        } else {
+          document.querySelector(".scroll-to-top").style.display = "none";
+        }
+      });
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+  </script>
   <!------------------------  📝📚 Scroll To Top Icon 📝📚 ---------------->
 
 

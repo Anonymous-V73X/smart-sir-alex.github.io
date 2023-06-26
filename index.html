@@ -33,17 +33,17 @@
 
 <!-- ========= 👽👽👽 Body 👽👽👽 =========== -->
 
-<body >
+<body>
 
   <!---------=========🔃🔃 PreLoader Starts Here 🔃🔃  ==========-------->
-  
-  
-  
+
+
+
   <div class="wrapper-loader">
-  
-  
+
+
     <div class="loader"></div>
-  
+
     <div class="scene">
       <div class="cube-wrapper">
         <div class="cube">
@@ -59,10 +59,10 @@
         </div>
       </div>
     </div>
-  
-  
+
+
     <p class="get" id="typing-dots">Getting Things Ready</p>
-  
+
     <script>
 
       const dotsElement = document.getElementById('typing-dots');
@@ -78,23 +78,24 @@
       animateTypingDots();
 
     </script>
-  
-  
-  
-  
+
+
+
+
   </div>
-  
-  
-  
-  
-  
+
+
+
+
+
   <!---------=========🔃🔃 PreLoader Ends Here 🔃🔃  ==========-------->
 
 
 
-  
+
   <!-- Navbar -->
-  <nav data-bs-spy="scroll" data-bs-target=".navbar" class="navbar navbar-expand-lg py-4 fixed-top navbar-light bg-body">
+  <nav data-bs-spy="scroll" data-bs-target=".navbar"
+    class="navbar navbar-expand-lg py-4 fixed-top navbar-light bg-body">
     <div class="container">
       <a class="navbar-brand" href="https://www.paypal.com/donate/?hosted_button_id=QZLE9MFJQ2DLW">
         <h4 class="fw-bold" style="padding-left:8px">Bsc. IT</h4>
@@ -113,13 +114,6 @@
             display: none;
           }
         }
-
-        /* Set margin-right of 5px for fas icons on screens smaller than 768px */
-        @media (max-width: 767px) {
-          .navbar-nav .nav-link i.fas {
-            margin-right: 6px;
-          }
-        }
       </style>
 
 
@@ -131,35 +125,44 @@
 
           <li class="nav-item">
             <a class="nav-link" onclick="navigateThis('alerts.html')">
-              <i class="fas fa-exclamation-circle"></i> Alerts
+              <i class="fas fa-exclamation-circle" style="margin-right: 1px; margin-left: 1px;"></i>
+              <span>Alerts</span>
+              <i class="fas fa-exclamation-circle" style="margin-left: 1px; margin-right: 1px;"></i>
             </a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" onclick="navigateTo('brainstorms')">
-              <i class="fas fa-lightbulb"></i> Brainstorms
+              <i class="fas fa-lightbulb" style="margin-right: 1px; margin-left: 1px;"></i>
+              <span>Brainstorms</span>
+              <i class="fas fa-lightbulb" style="margin-left: 1px; margin-right: 1px;"></i>
             </a>
           </li>
 
-
-
           <li class="nav-item">
             <a class="nav-link" onclick="navigateTo('links')">
-              <i class="fas fa-link"></i> Links
+              <i class="fas fa-link" style="margin-right: 1px; margin-left: 1px;"></i>
+              <span>Links</span>
+              <i class="fas fa-link" style="margin-left: 1px; margin-right: 1px;"></i>
             </a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" onclick="navigateTo('contact')">
-              <i class="fas fa-envelope"></i> Contact
+              <i class="fas fa-envelope" style="margin-right: 1px; margin-left: 1px;"></i>
+              <span>Contact</span>
+              <i class="fas fa-envelope" style="margin-left: 1px; margin-right: 1px;"></i>
             </a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" onclick="navigateThis('donate.html')">
-              <i class="fas fa-donate"></i> Donate
+              <i class="fas fa-donate" style="margin-right: 1px; margin-left: 1px;"></i>
+              <span>Donate</span>
+              <i class="fas fa-donate" style="margin-left: 1px; margin-right: 1px;"></i>
             </a>
           </li>
+
 
 
 
@@ -190,7 +193,7 @@
 
       <div class="row gy-4 align-items-center">
         <div class="col-lg-5">
-          <img id="image" data-aos="fade-down" data-aos-delay="200" class="img-fluid" alt="" />
+          <img id="image" data-aos="zoom-in-down" data-aos-delay="100" class="img-fluid" alt="" />
         </div>
 
 
@@ -214,11 +217,10 @@
             box-shadow:  5px 5px 10px rgba(202, 202, 202, 0.8),
               -5px -5px 10px rgba(246, 246, 246, 0.8);">Semesters</a>
 
-            <a data-aos="fade-up" data-aos-delay="100" onclick="navigateThis('donate.html')" class="btn btn-contacts"
-              style="
+            <a data-aos="fade-up" data-aos-delay="100" onclick="navigateTo('apps')" class="btn btn-contacts" style="
               box-shadow:  5px 5px 10px rgba(202, 202, 202, 0.8),
               -5px -5px 10px rgba(246, 246, 246, 0.8); font-size:16px;">
-              Contribute
+              Web Tools
             </a>
 
 
@@ -560,7 +562,7 @@
                       class="img-fluid rounded-5 mb-3" alt="" />
 
                   </div>
-                  <a href="#" class="d-block mt-2">
+                  <a class="d-block mt-2">
                     <h5 class="fw-bold" style="font-size: 16px;
                                   margin-bottom:20px;">FinanceTrack: Online Personal Finance Manager</h5>
                   </a>
@@ -579,7 +581,7 @@
                       class="img-fluid rounded-5 mb-3" alt="" />
 
                   </div>
-                  <a href="#" class="d-block mt-2">
+                  <a class="d-block mt-2">
                     <h5 class="fw-bold" style="font-size: 16px;
                                   margin-bottom:20px;">DialectLing: Interactive Local Dialect Learning App</h5>
                   </a>
@@ -597,7 +599,7 @@
                       class="img-fluid rounded-5 mb-3" alt="" />
 
                   </div>
-                  <a href="#" class="d-block mt-2">
+                  <a class="d-block mt-2">
                     <h5 class="fw-bold" style="font-size: 16px;
                                   margin-bottom:20px;">CommuniSafe: Empowering Community Safety Through a Mobile App
                     </h5>
@@ -636,7 +638,7 @@
                       src="./assets/images/vecteezy_friendly-and-approachable-3d-engineer-women-personable-and_22694986_383-min.png"
                       class="img-fluid rounded-5 mb-3" alt="" />
                   </div>
-                  <a href="#" class="d-block mt-2">
+                  <a class="d-block mt-2">
                     <h5 class="fw-bold" style="font-size: 16px;
                                     margin-bottom:10px; margin-top:20px;">CareerLink: Job Training and Placement Portal
                       at Kabarak
@@ -655,7 +657,7 @@
                   <div class="farm">
                     <img class="mess" src="./assets/images/food.jpg" class="img-fluid rounded-5 mb-3" alt="" />
                   </div>
-                  <a href="#" class="d-block mt-4">
+                  <a class="d-block mt-4">
                     <h5 class="fw-bold messy" style="font-size: 16px; 
                     margin-bottom:20px; ">MessMaster: Streamlining Food Orders at Kabarak University
                     </h5>
